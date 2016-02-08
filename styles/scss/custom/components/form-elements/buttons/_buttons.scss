@@ -1,0 +1,63 @@
+.hb-button {
+	@include transition(opacity .3s .1s);
+	@include border-radius($primary-radius-size);
+	width: auto;
+	min-width: 94px;
+	height: auto;
+	padding: 9px 16px 10px 16px;
+	background-color: $primary-button-bg-color;
+	text-align: center;
+	color: $primary-button-font-color;
+	font-size: $primary-button-font-size;
+	line-height: 1;
+	border: none;
+	outline: none;
+
+	&:hover {
+		@include transition(opacity .3s .1s);
+		@include opacity(.8);
+	}
+	
+	&.alternative {
+		background-color: $secondary-button-bg-color;
+	}
+
+	&.big {
+		padding: 16px 24px 17px;
+		font-size: $secondary-button-font-size;
+	}
+
+	&.disabled {
+		background-color: $disabled-bg-color;
+		color: $disabled-color;
+
+		&:hover {
+			@include opacity(1);
+		}
+	}
+
+	&.with-badge {
+		padding-right: 20px;
+		position: relative;
+
+		.notification {
+			@include border-radius(100%);
+			@include square(20px);
+			text-align: center;
+			line-height: 16px;
+			font-size: $fiveth-font-size;
+			font-style: normal;
+			border: 2px solid $primary-notification-border-color;
+			background-color: $primary-notification-bg-color;
+			position: absolute;
+			top: 5px;
+			right: -5px;
+			box-sizing: border-box;
+		}
+	}
+
+	.icon {
+		font-size: 20px;
+		margin-right: 11px;
+	}
+}

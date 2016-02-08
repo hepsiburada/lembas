@@ -1,0 +1,22 @@
+{
+  "name": "hb-styleguide",
+  "version": "1.0.0",
+  "description": "Hepsiburada Style Guide",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt-sass": "^1.1.0",
+    "grunt-contrib-concat": "^0.5.1"
+  },
+  "devDependencies": {
+    "grunt-webfont": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hepsiburada",
+    "styleguide"
+  ],
+  "author": "hepsiburada.com developers",
+  "license": "ISC"
+}

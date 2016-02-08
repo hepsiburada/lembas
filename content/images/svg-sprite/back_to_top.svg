@@ -1,0 +1,26 @@
+<svg id="back_to_top" data-name="back to top" xmlns="http://www.w3.org/2000/svg" width="89" height="44" viewBox="0 0 89 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #484848;
+      }
+
+      .cls-2 {
+        font-size: 11px;
+        font-family: Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #bfbfbf;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rounded_Rectangle_5_copy" data-name="Rounded Rectangle 5 copy" class="cls-1" width="89" height="44" rx="4" ry="4"/>
+  <text id="BAŞA_DÖN" data-name="BAŞA DÖN" class="cls-2" x="15.059" y="36.156">BAŞA DÖN</text>
+  <path id="collapse_arraow" data-name="collapse arraow" class="cls-3" d="M56,18l-2,2-9-8-9,8-2-2L45,8Z"/>
+</svg>

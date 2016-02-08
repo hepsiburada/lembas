@@ -1,0 +1,64 @@
+.hb-button-group {
+	@include clearfix;
+	display: table;
+	overflow: hidden;
+	
+	.hb-button-group-content {
+		display: table-cell;
+	}
+
+	.hb-button {
+		@include border-radius(0px);
+		@include transition(background-color .3s .1s);
+		display: table-cell;
+		float: left;
+
+		&:hover, &.active {
+			@include opacity(1);
+			@include transition(background-color .3s .1s);
+		}
+	}
+
+	&.eliptical {
+		@include border-radius($primary-radius-size);
+
+		.hb-button {			
+			background-color: $primary-tabs-background-color;
+			color: $primary-font-color;
+
+			&:hover, &.active {
+				background-color: $primary-tabs-hover-background-color;
+			}
+		}
+	}
+
+	&.square {
+
+		.hb-button {
+			background-color: $primary-tabs-background-color;
+			color: $primary-font-color;
+
+			&:hover, &.active {
+				background-color: $secondary-tabs-hover-background-color;
+			}
+		}
+
+		&.dark {
+
+			.hb-button {
+				padding: 15px 16px 16px 16px;
+				background-color: $third-tabs-backgorund-color;
+				color: $third-tabs-color;
+				font-size: $fourth-font-size;
+
+				&.with-badge {
+					padding-right: 20px;
+				}
+
+				&:hover {
+					background-color: $third-tabs-hover-backgorund-color;
+				}
+			}
+		}
+	}
+}

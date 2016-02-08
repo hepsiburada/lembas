@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #919191;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="next_arrow" data-name="next arrow" class="cls-1" d="M675.986,462.205l10.375-11.214,1.633,1.67-8.821,9.352,8.806,9.347-1.535,1.633Z" transform="translate(-676 -451)"/>
+</svg>

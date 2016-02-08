@@ -1,0 +1,16 @@
+<svg id="close_button" data-name="close button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eee;
+      }
+
+      .cls-2 {
+        fill: #484848;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" class="cls-1" cx="12" cy="12" r="12"/>
+  <path id="Rounded_Rectangle_7_copy" data-name="Rounded Rectangle 7 copy" class="cls-2" d="M13.349,12l2.364,2.364a0.955,0.955,0,0,1-1.351,1.351L12,13.349,9.633,15.714a0.952,0.952,0,0,1-1.347-1.347L10.651,12,8.257,9.608A0.955,0.955,0,1,1,9.608,8.257L12,10.651l2.364-2.364a0.952,0.952,0,1,1,1.347,1.347Z"/>
+</svg>

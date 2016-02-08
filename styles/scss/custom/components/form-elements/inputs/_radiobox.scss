@@ -1,0 +1,53 @@
+.hb-input-group {
+
+	.hb-radiobox-content {
+		min-height: 18px;
+		padding-left: $space-bigger;
+		position: relative;
+
+		.hb-input {
+
+			&.radiobox {
+				@include opacity(0);
+				@include square(18px);
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 1;
+
+		    & + label {
+		    	@include border-radius(100%);
+					@include square(18px);
+					display: block;
+					box-sizing: border-box;
+					border: 2px solid $secondary-border-color;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+
+					&:after {
+						@include border-radius(100%);
+						@include square(8px);
+						content: "";
+						display: none;
+						background-color: $primary-input-focus-color;
+						position: absolute;
+						top: 3px;
+						left: 3px;
+					}
+		    }
+
+		    &:checked {
+
+		    	& + label {
+
+		    		&:after {
+		    			display: block;
+		    			z-index: 1
+		    		} 
+		    	}
+		    }
+			}
+		}
+	}
+}

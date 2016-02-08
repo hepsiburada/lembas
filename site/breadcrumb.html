@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hepsiburada Styleguide</title>
+	
+	<link rel="stylesheet" type="text/css" href="../styles/css/hb-styleguide.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<header>
+		<div class="hb-container hb-fluid">
+			<div class="version-content">
+				<span class="version">Version: 1.0</span>
+			</div>
+			<div class="logo-content" id="logoContent">
+				<a href="index.html" class="logo"></a>
+			</div>
+		</div>
+	</header>
+	
+	<section class="hb-container content">
+		<div class="left-column" id="allCategories">
+				<div class="title-wrapper">
+					<span class="title">Nasıl Kullanılır?</span>
+				</div>
+				<ul class="navigation">
+					<li>
+						<a href="index.html">Homepage</a>
+					</li>
+					<li>
+						<a href="typography.html">Typography & Icons</a>
+					</li>
+					<li>
+						<a href="colors.html">Colors</a>
+					</li>
+					<li>
+						<a href="components.html">Components</a>
+					</li>
+					<li class="active">
+						<a href="form-elements.html">Breadcrumb</a>
+					</li>
+				</ul>
+		</div>
+
+		<div class="right-column">
+			<div class="detail-content">
+				<div class="title-content" id="arkaplan">
+					<h1>Breadcrumb <span class="subtitle">/ Breadcrumb Gösterimi</span></h1>
+				</div>
+
+				<div class="pre no-margin">
+					<code>
+						<span class="tag description">
+							// Kullanmak istediğiniz rengin kodunu alıp <br>backgorund-color özellğine atamanız gerekmektedir.
+						</span>
+						<br>
+						<br>
+						<span class="tag">&lt;div</span>
+						<span class="tag css-title">class=</span>
+						<span>"hb-breadcrumb-wrapper"></span>
+						<br>
+						&ensp;&ensp;<span class="tag">&lt;ul</span> 
+						<span class="tag css-title">class=</span>
+						<span>"hb-breadcrumb"</span>
+						<span class="tag">></span>
+						<br>
+						&ensp;&ensp;&ensp;&ensp;<span class="tag">&lt;li></span>
+						<br>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<span class="tag">&lt;a</span>
+						<span class="tag css-title">href=</span>
+						<span>"javascript:;"</span>
+						<span class="tag">></span>
+						Anasayfa
+						<span class="tag">&lt;/a></span>
+						<br>
+						&ensp;&ensp;&ensp;&ensp;<span class="tag">&lt;/li></span>
+						<br>
+						&ensp;&ensp;&ensp;&ensp;<span class="tag">&lt;li></span>
+						<br>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<span class="tag">&lt;a</span>
+						<span class="tag css-title">href=</span>
+						<span>"javascript:;"</span>
+						<span class="tag">></span>
+						Bilgisayarlar
+						<span class="tag">&lt;/a></span>
+						<br>
+						&ensp;&ensp;&ensp;&ensp;<span class="tag">&lt;/li></span>
+						<br>
+						&ensp;&ensp;&ensp;&ensp;<span class="tag">&lt;li></span>
+						<br>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<span class="tag">&lt;a</span>
+						<span class="tag css-title">href=</span>
+						<span>"javascript:;"</span>
+						<span class="tag">></span>
+						Laptop ve Notebook
+						<span class="tag">&lt;/a></span>
+						<br>
+						&ensp;&ensp;&ensp;&ensp;<span class="tag">&lt;/li></span>
+						<br>
+						&ensp;&ensp;<span class="tag">&lt;/ul></span>
+						<br>
+						<span class="tag">&lt;/div></span>
+					</code>
+				</div>
+
+				<div class="hb-breadcrumb-wrapper">
+					<ul class="hb-breadcrumb">
+						<li><a href="http://www.hepsiburada.com" target="_blank">Anasayfa</a></li>
+						<li><a href="http://www.hepsiburada.com/bilgisayarlar-c-2147483646" target="_blank">Bilgisayarlar</a></li>
+						<li><a href="http://www.hepsiburada.com/laptop-notebook-dizustu-bilgisayarlar-c-98" target="_blank">Laptop ve Notebook</a></li>
+					</ul>
+				</div>
+
+				<div class="warning">
+					NOT: Breadcrumb kullanmak kullanıcı deneyiminin yanında, sitenizin SEO optimizasyonu içinde yararlıdır.
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		window.onscroll = function (argument) {
+			var logoContent = document.getElementById("logoContent");
+			var allCategories = document.getElementById("allCategories");
+
+			var logoContentTop = document.getElementById("logoContent").offsetTop;
+			var allCategoriesWidth = document.getElementById("allCategories").offsetWidth;
+
+			 if(window.scrollY > logoContentTop) {
+			 		allCategories.style.width = allCategoriesWidth + "px";
+			 		logoContent.classList.add("fix");
+			 		allCategories.classList.add("fix");
+			 }else {
+			 		logoContent.classList.remove("fix");
+			 		allCategories.classList.remove("fix");
+			 }
+
+		}
+	</script>
+</body>
+</html>

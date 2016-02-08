@@ -1,0 +1,93 @@
+.hb-input-group {
+	position: relative;
+	font-family: $secondary-font;
+
+	.hb-input {
+		@include transition(border .3s .1s);
+		@include border-radius($primary-radius-size);
+		width: auto;
+		height: 40px;
+		padding: 0 20px;
+		border: 2px solid $secondary-border-color;
+		background-color: transparent;
+		outline: none;
+
+		&:focus {
+			@include transition(border .3s .1s);
+			border: 2px solid $primary-input-focus-color;
+		}
+	}
+
+	.placeholder {
+		@include transition(top .3s .1s);
+		padding: 0 10px;
+		color: $secondary-border-color;
+		background-color: #fff;
+		position: absolute;
+		font-weight: bold;
+	}
+
+	&.no-animate {
+
+		.placeholder {
+			top: -9px;
+			left: 12px;
+			z-index: 2;
+		} 
+
+		.hb-input:focus {
+
+			& + .placeholder {
+				@include transition(color .3s .1s);
+				color: $primary-input-focus-color;
+			}
+		}
+	}
+
+	&.animate {
+		
+		.hb-input {
+			position: relative;
+			z-index: 1;	
+		}
+
+		.placeholder {
+			top: 15px;
+			left: 12px;
+		}
+
+		.hb-input:focus {
+			& + .placeholder {
+				@include transition(top .3s .1s);
+				color: $primary-input-focus-color;
+				top: -9px;
+				z-index: 2;
+			}
+		}
+	}
+
+	&.error {
+		
+		.placeholder {
+			color: $error-color;
+		}
+
+		.hb-input {
+			border: 2px solid $error-color;
+
+			&:focus {
+				& + .placeholder {
+					color: $error-color; 
+				}
+			}
+		}
+
+	}
+
+	&.disabled {
+
+		.hb-input {
+			cursor: no-drop;
+		}
+	}
+} 

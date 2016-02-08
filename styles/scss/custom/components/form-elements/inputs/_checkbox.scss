@@ -1,0 +1,51 @@
+.hb-input-group {
+
+	.hb-checkbox-content {
+		min-height: 18px;
+		padding-left: $space-bigger;
+		line-height: 18px;
+		position: relative;
+
+		.hb-input {
+
+			&.checkbox {
+				@include opacity(0);
+				@include square(18px);
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 1;
+
+		    & + label {
+					@include square(18px);
+					@include border-radius($secondary-radius-size);
+					display: block;
+					box-sizing: border-box;
+					border: 2px solid $secondary-border-color;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+
+					& + .icon {
+						@include square(15px);
+						display: none;
+						color: $primary-input-focus-color;
+						position: absolute;
+						top: 3px;
+						left: 4px;
+					}
+		    }
+
+		    &:checked {
+
+		    	& + label {
+
+		    		& + .icon {
+		    			display: block;
+		    		}
+		    	}
+		    }
+			}
+		}
+	}
+}

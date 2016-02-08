@@ -1,0 +1,16 @@
+<svg id="info_icon" data-name="info icon" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f28b00;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_5_copy_2" data-name="Ellipse 5 copy 2" class="cls-1" cx="36" cy="36" r="36"/>
+  <path id="i" class="cls-2" d="M39.5,25A4.5,4.5,0,1,1,44,20.5,4.5,4.5,0,0,1,39.5,25ZM41,37l-2,7c-2.583,8.925,5,7,5,7-1.563.6-18.062,6.656-13-6l2-7c2.219-7.281-4-7-4-7C30.28,30.493,45.886,24.135,41,37Z"/>
+</svg>

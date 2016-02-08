@@ -1,0 +1,81 @@
+@import "animate/transition";
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin square($size) {
+    width: #{$size};
+    height: #{$size};
+}
+
+@mixin border-radius($radius, $important: "") {
+    border-radius: $radius #{$important};
+    -moz-border-radius: $radius #{$important};
+    -o-border-radius: $radius #{$important};
+    -webkit-border-radius: $radius #{$important};
+    -ms-webkit-radius: $radius #{$important};
+}
+
+@mixin box-shadow($value) {
+   -webkit-box-shadow: $value;
+   -moz-box-shadow: $value;
+   -ms-box-shadow: $value;
+   -o-box-shadow: $value;
+   box-shadow: $value;
+}
+
+@mixin global-shadow {
+  @include box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.2));
+}
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+   @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+       -o-transform-origin: $origin;
+      -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+@mixin all-center {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  @include transform(translateX(-50%) translateY(-50%));
+}
+
+@mixin opacity($val) {
+  $msVal: $val*100;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$msVal)";
+  filter: alpha(opacity=$msVal);
+  opacity: $val;
+}

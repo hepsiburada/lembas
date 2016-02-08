@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hepsiburada Styleguide</title>
+	
+	<link rel="stylesheet" type="text/css" href="../styles/css/hb-styleguide.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<header>
+		<div class="hb-container hb-fluid">
+			<div class="version-content">
+				<span class="version">Version: 1.0</span>
+			</div>
+			<div class="logo-content" id="logoContent">
+				<a href="index.html" class="logo"></a>
+			</div>
+		</div>
+	</header>
+	
+	<section class="hb-container content">
+		<div class="left-column" id="allCategories">
+				<div class="title-wrapper">
+					<span class="title">Nasıl Kullanılır?</span>
+				</div>
+				<ul class="navigation">
+					<li>
+						<a href="index.html">Homepage</a>
+					</li>
+					<li>
+						<a href="typography.html">Typography & Icons</a>
+					</li>
+					<li class="active">
+						<a href="colors.html">Colors</a>
+						<ul>
+							<li>
+								<a href="#arkaplan">Arkaplan Renkleri</a>
+							</li>
+							<li>
+								<a href="#font">Font Renkleri</a>
+							</li>
+							<li>
+								<a href="#border">Border Renkleri</a>
+							</li>
+							<li>
+								<a href="#menu">Menü Renkleri</a>
+							</li>
+							<li>
+								<a href="#uyari">Uyarı Renkleri</a>
+							</li>
+							<li>
+								<a href="#diger">Diğer Renkler</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="components.html">Components</a>
+					</li>
+					<li>
+						<a href="breadcrumb.html">Breadcrumb</a>
+					</li>
+				</ul>
+		</div>
+
+		<div class="right-column colors">
+			<div class="detail-content">
+				<div class="title-content" id="arkaplan">
+					<h1>Arkaplan Renkleri <span class="subtitle">/ Kullanılan arkaplan renkleri</span></h1>
+				</div>
+
+				<div class="pre no-margin">
+					<code>
+						<span class="tag description">
+							// Kullanmak istediğiniz rengin kodunu alıp <br>backgorund-color özellğine atamanız gerekmektedir.
+						</span>
+						<br>
+						<br>
+						<span class="tag css-title">background-color: </span><span class="tag css">$primary-bg-color</span>
+					</code>
+				</div>
+
+				<div class="warning">
+					NOT: Oluşturduğunuz yeni komponentler için yeni renk değişkenleri tanımlamanız, global bir yapı için gereklidir.
+				</div>
+
+				<br><br>
+
+				<ul class="colors">
+					<li class="color-1">
+						<span class="using">
+							<span>Global Arkaplan Rengi <b>($primary-bg-color)</b></span>
+						</span>
+						<span class="color-code">#e5e5e5</span>
+					</li>
+					<li class="color-2">
+						<span class="using">
+							<span>İkincil Arkaplan Rengi <b>($secondary-bg-color)</b></span>
+						</span>
+						<span class="color-code">#ffffff</span>
+					</li>
+				</ul>
+
+				<div class="title-content" id="font">
+					<h1>Font Renkleri <span class="subtitle">/ Kullanılan font renkleri</span></h1>
+				</div>
+				<ul class="colors">
+					<li class="color-3">
+						<span class="using">
+							<span>Global Font Rengi <b>($primary-font-color)</b></span>
+							<span>Global Link Rengi <b>($primary-link-color)</b></span>
+							<span>Menü Alt Kategori Rengi <b>($navigation-category-color)</b></span>
+						</span>
+						<span class="color-code">#484848</span>
+					</li>
+					<li class="color-4">
+						<span class="using">
+							<span>İkincil Global Font Rengi <b>($secondary-font-color)</b></span>
+						</span>
+						<span class="color-code">#919191</span>
+					</li>
+					<li class="color-5">
+						<span class="using">
+							<span>Menü Ana Kategori Rengi <b>($navigation-font-color)</b></span>
+						</span>
+						<span class="color-code">#ffffff</span>
+					</li>
+					<li class="color-6">
+						<span class="using">
+							<span>Menü Kategori Hover Rengi <b>($navigation-category-color-hover)</b></span>
+							<span>Menü Alt Kategori Rengi <b>($navigation-subcategory-color)</b></span>
+						</span>
+						<span class="color-code">#ff8600</span>
+					</li>
+					<li class="color-7">
+						<span class="using">
+							<span>Global Link Hover Rengi <b>($primary-hover-link-color)</b></span>
+						</span>
+						<span class="color-code">#f28b00</span>
+					</li>
+				</ul>
+
+				<div class="title-content" id="border">
+					<h1>Border Renkleri <span class="subtitle">/ Kullanılan border renkleri</span></h1>
+				</div>
+				<ul class="colors">
+					<li class="color-1">
+						<span class="using">
+							<span>Global Border Rengi <b>($primary-border-color)</b></span>
+						</span>
+						<span class="color-code">#e5e5e5</span>
+					</li>
+				</ul>
+
+				<div class="title-content" id="menu">
+					<h1>Menü Renkleri <span class="subtitle">/ Menüde kullanılan renkler</span></h1>
+				</div>
+				<ul class="colors">
+					<li class="color-6">
+						<span class="using">
+							<span>Menü Arkaplan Rengi <b>($navigation-bg)</b></span>
+						</span>
+						<span class="color-code">#ff8600</span>
+					</li>
+					<li class="color-8">
+						<span class="using">
+							<span>Menü Pipe Rengi <b>($navigation-pipe-color)</b></span>
+						</span>
+						<span class="color-code">#e67a02</span>
+					</li>
+					<li class="color-14">
+						<span class="using">
+							<span>Menü Tablet Arkaplan Rengi <b>($navigation-tablet-bg-color)</b></span>
+						</span>
+						<span class="color-code">#faf9f9</span>
+					</li>
+				</ul>
+
+				<div class="title-content" id="uyari">
+					<h1>Uyarı Renkleri <span class="subtitle">/ Kullanılan uyarı(Hata, başarı...vs) renkleri</span></h1>
+				</div>
+				<ul class="colors">
+					<li class="color-16">
+						<span class="using">
+							<span>Hata Rengi <b>($error-color)</b></span>
+						</span>
+						<span class="color-code">#f90000</span>
+					</li>
+					<li class="color-17">
+						<span class="using">
+							<span>Success Rengi <b>($success-color)</b></span>
+						</span>
+						<span class="color-code">#9cc435</span>
+					</li>
+					<li class="color-19">
+						<span class="using">
+							<span>Not Rengi <b>($note-color)</b></span>
+						</span>
+						<span class="color-code">#ffffcc</span>
+					</li>
+				</ul>
+
+				<div class="title-content" id="diger">
+					<h1>Diğer Renkler <span class="subtitle">/ Sitede kullanılan diğer renkler</span></h1>
+				</div>
+				<ul class="colors">
+					<li class="color-9">
+						<span class="using">
+							<span>Top Link Rengi <b>($top-links-color)</b></span>
+						</span>
+						<span class="color-code">#7b7b7b</span>
+					</li>
+					<li class="color-10">
+						<span class="using">
+							<span>Genel Deaktif Rengi <b>($disabled-color)</b></span>
+						</span>
+						<span class="color-code">#5c5e5f</span>
+					</li>
+					<li class="color-11">
+						<span class="using">
+							<span>Genel Tablo Satır Arkaplan Rengi <b>($primary-table-row-bg-color)</b></span>
+							<span>Genel Tooltip Arkaplan Rengi <b>($primary-tooltip-bg-color)</b></span>
+						</span>
+						<span class="color-code">#f1f1f1</span>
+					</li>
+					<li class="color-12">
+						<span class="using">
+							<span>Genel Scroll Track Arkaplan Rengi <b>($primary-scroll-track-bg-color)</b></span>
+						</span>
+						<span class="color-code">#eeeeee</span>
+					</li>
+					<li class="color-13">
+						<span class="using">
+							<span>Genel Scroll Thumb Arkaplan Rengi <b>($primary-scroll-thumb-bg-color)</b></span>
+						</span>
+						<span class="color-code">#cccccc</span>
+					</li>
+					<li class="color-15">
+						<span class="using">
+							<span>Tab Ayıraç Rengi <b>($tabs-pipe-color)</b></span>
+						</span>
+						<span class="color-code">#9f9f9f</span>
+					</li>
+					<li class="color-18">
+						<span class="using">
+							<span>Kampanya Text Rengi <b>($campaigns-color)</b></span>
+						</span>
+						<span class="color-code">#009900</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		window.onscroll = function (argument) {
+			var logoContent = document.getElementById("logoContent");
+			var allCategories = document.getElementById("allCategories");
+
+			var logoContentTop = document.getElementById("logoContent").offsetTop;
+			var allCategoriesWidth = document.getElementById("allCategories").offsetWidth;
+
+			 if(window.scrollY > logoContentTop) {
+			 		allCategories.style.width = allCategoriesWidth + "px";
+			 		logoContent.classList.add("fix");
+			 		allCategories.classList.add("fix");
+			 }else {
+			 		logoContent.classList.remove("fix");
+			 		allCategories.classList.remove("fix");
+			 }
+
+		}
+	</script>
+</body>
+</html>
