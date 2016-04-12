@@ -1,0 +1,23 @@
+{
+  "name": "lembas-demo",
+  "version": "0.0.1",
+  "description": "Hepsiburada Style Guide Demo",
+  "repository": "https://github.com/hepsiburada/lembas",
+  "keywords": [
+    "hepsiburada",
+    "styleguide"
+  ],
+  "scripts": {
+    "precommit": "node_modules/.bin/gulp && git add static/"
+  },
+  "author": "hepsiburada.com developers",
+  "license": "MIT",
+  "devDependencies": {
+    "run-sequence": "^1.1.5",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-size": "^2.1.0",
+    "gulp-task-loader": "^1.4.2",
+    "husky": "^0.11.4"
+  }
+}

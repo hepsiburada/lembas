@@ -1,0 +1,25 @@
+{
+  "name": "lembas-demo",
+  "version": "0.0.1",
+  "description": "Hepsiburada Style Guide Demo",
+  "authors": [
+    "hepsiburada.com developers"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "hepsiburada",
+    "styleguide"
+  ],
+  "homepage": "https://github.com/hepsiburada/lembas",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lembas": "^0.0.2"
+  }
+}
