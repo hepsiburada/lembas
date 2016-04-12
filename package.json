@@ -22,6 +22,10 @@
   },
   "repository": "https://github.com/hepsiburada/lembas",
   "scripts": {
+    "major": "npm version major -m 'New major version %s' && npm publish",
+    "minor": "npm version minor -m 'New minor version %s' && npm publish",
+    "patch": "npm version patch -m 'New patch version %s' && npm publish",
+    "postpublish": "git push && git push --tags",
     "precommit": "node_modules/.bin/gulp && git add dist/",
     "test": "npm run-script lint",
     "lint": "node_modules/.bin/gulp eslint"
