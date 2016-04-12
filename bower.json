@@ -1,0 +1,22 @@
+{
+  "name": "lembas",
+  "version": "0.0.1",
+  "description": "Hepsiburada Style Guide",
+  "authors": [
+    "hepsiburada.com developers"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "hepsiburada",
+    "styleguide"
+  ],
+  "homepage": "https://github.com/hepsiburada/lembas",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
