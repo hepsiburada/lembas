@@ -1,6 +1,6 @@
 {
   "name": "lembas",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hepsiburada Style Guide",
   "devDependencies": {
     "del": "^2.2.0",
