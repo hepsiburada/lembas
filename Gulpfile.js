@@ -15,7 +15,8 @@ var ignoreList = [
 
 // example js files
 var jsFiles = [
-  '**/*.js'
+  '**/*.js',
+  '**/*.json'
 ];
 
 // loading gulp tasks
