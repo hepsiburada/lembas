@@ -1,17 +1,29 @@
 {
-  "name": "hb-styleguide",
-  "version": "1.0.0",
+  "name": "lembas",
+  "version": "0.0.1",
   "description": "Hepsiburada Style Guide",
-  "main": "gruntfile.js",
-  "dependencies": {
-    "grunt-sass": "^1.1.0",
-    "grunt-contrib-concat": "^0.5.1"
-  },
   "devDependencies": {
-    "grunt-webfont": "^1.1.0"
+    "eslint": "^2.7.0",
+    "eslint-config-hepsiburada": "^0.0.6",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.1.0",
+    "grunt-text-replace": "^0.4.0",
+    "grunt-webfont": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-size": "^2.1.0",
+    "gulp-task-loader": "^1.4.2"
   },
+  "repository": "https://github.com/hepsiburada/lembas",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run-script lint",
+    "lint": "node_modules/.bin/gulp eslint"
   },
   "keywords": [
     "hepsiburada",
