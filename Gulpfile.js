@@ -1,8 +1,8 @@
 // load gulp tasks
 var plugins = require('gulp-load-plugins')();
-// plugins.seq = require('run-sequence');
-// plugins.del = require('del');
-// plugins.merge = require('merge-stream');
+plugins.seq = require('run-sequence');
+plugins.del = require('del');
+plugins.merge = require('merge-stream');
 
 // ignoring some folders
 var ignoreList = [
@@ -15,16 +15,24 @@ var ignoreList = [
 
 // example js files
 var jsFiles = [
-  '**/*.js'
+  '**/*.js',
+  '**/*.json'
 ];
+
+// example sass files
+var sassFiles = [
+  'src/lembas.scss'
+];
+
+var config = {
+  dist: './dist'
+};
 
 // loading gulp tasks
 require('gulp-task-loader')({
   dir: 'gulp',
   $: plugins,
-  js: jsFiles.concat(ignoreList)
-  // css: scssFiles.concat(ignoreList),
-  // ts: tsFiles.concat(ignoreList),
-  // config: config,
-  // args: args
+  js: jsFiles.concat(ignoreList),
+  sass: sassFiles.concat(ignoreList),
+  config: config
 });
