@@ -2,7 +2,7 @@
 	@include clearfix;
 	display: table;
 	overflow: hidden;
-	
+
 	.hb-button-group-content {
 		display: table-cell;
 	}
@@ -22,7 +22,7 @@
 	&.eliptical {
 		@include border-radius($primary-radius-size);
 
-		.hb-button {			
+		.hb-button {
 			background-color: $primary-tabs-background-color;
 			color: $primary-font-color;
 
@@ -47,7 +47,7 @@
 
 			.hb-button {
 				padding: 15px 16px 16px 16px;
-				background-color: $third-tabs-backgorund-color;
+				background-color: $third-tabs-background-color;
 				color: $third-tabs-color;
 				font-size: $fourth-font-size;
 
@@ -56,7 +56,7 @@
 				}
 
 				&:hover {
-					background-color: $third-tabs-hover-backgorund-color;
+					background-color: $third-tabs-hover-background-color;
 				}
 			}
 		}

@@ -1,33 +1,26 @@
 // Paths
-
 @import "paths/paths";
 
 // Fonts
-
 @import "custom/fonts/fonts";
 @import "custom/fonts/icons";
 
 // Variables
-
 @import "custom/variables/color";
 @import "custom/variables/font";
 @import "custom/variables/gutter";
 @import "custom/variables/radius";
 
 // General
-
 @import "common/normalize";
 @import "common/mixins/mixins";
 @import "common/general";
 
 // Typography
-
 @import "custom/typography/typography";
 
 //Breadcrumb
-
 @import "custom/breadcrumb/breadcrumb";
 
 //Components
-
 @import "custom/components/form-elements/form-elements";
