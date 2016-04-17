@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hepsiburada Styleguide</title>
+  <link rel="stylesheet" type="text/css" href="../static/main.css">
+</head>
+<body>
+<header>
+  <div class="hb-container hb-fluid">
+    <div class="version-content">
+      <span class="version">Version: 1.0</span>
+    </div>
+    <div class="logo-content" id="logoContent">
+      <a href="../index.html" class="logo"></a>
+    </div>
+  </div>
+</header>
+
+<section class="hb-container content">
+  <div class="left-column" id="allCategories">
+    <div class="title-wrapper">
+      <span class="title">Nasıl Kullanılır?</span>
+    </div>
+    <ul class="navigation">
+      <li>
+        <a href="../index.html">Homepage</a>
+      </li>
+      <li>
+        <a href="typography.html">Typography & Icons</a>
+      </li>
+      <li>
+        <a href="colors.html">Colors</a>
+      </li>
+      <li class="active">
+        <a href="components.html">Components</a>
+        <ul>
+          <li>
+            <a href="#buttons">Buttons</a>
+          </li>
+          <li>
+            <a href="#buttonGroups">Button Groups</a>
+          </li>
+          <li>
+            <a href="#inputs">Inputs</a>
+          </li>
+          <li>
+            <a href="#textareas">Textareas</a>
+          </li>
+          <li>
+            <a href="#dropdowns">Dropdowns</a>
+          </li>
+          <li>
+            <a href="#checkbox">Checkboxs & Radio Box</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="breadcrumb.html">Breadcrumb</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="right-column colors">
+    <div class="detail-content">
+
+      <div class="title-content" id="buttons">
+        <h1>Butonlar <span class="subtitle">/ Kullanılan butonlar</span></h1>
+      </div>
+
+      <div class="elements-content">
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz butonun kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag css-title">></span>Sepete Ekle
+            <span class="tag">&lt;/button></span>
+            <br>
+            <br>
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button alternative"
+            <span class="tag css-title">></span>Sepete Ekle
+            <span class="tag">&lt;/button></span>
+            <br>
+            <br>
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button disabled"
+            <span class="tag">disabled</span>
+            <span class="tag css-title">></span>Sepete Ekle
+            <span class="tag">&lt;/button></span>
+          </code>
+        </div>
+        <button type="button" class="hb-button">Sepete Ekle</button>
+        <button type="button" class="hb-button alternative">Sepete Ekle</button>
+        <button type="button" class="hb-button disabled" disabled>Sepete Ekle
+        </button>
+      </div>
+
+      <div class="elements-content">
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz butonun kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button big"
+            <span class="tag css-title">></span>Sepete Ekle
+            <span class="tag">&lt;/button></span>
+            <br>
+            <br>
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button alternative big"
+            <span class="tag css-title">></span>Sepete Ekle
+            <span class="tag">&lt;/button></span>
+            <br>
+            <br>
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button disabled big"
+            <span class="tag">disabled</span>
+            <span class="tag css-title">></span>Sepete Ekle
+            <span class="tag">&lt;/button></span>
+          </code>
+        </div>
+
+        <button type="button" class="hb-button big">Sepete Ekle</button>
+        <button type="button" class="hb-button alternative big">Sepete Ekle
+        </button>
+        <button type="button" class="hb-button disabled big" disabled>Sepete
+          Ekle
+        </button>
+      </div>
+
+      <div class="elements-content">
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz butonun kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button big"
+            <span class="tag css-title">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;i class=</span>"icon
+            icon_basket_icon_solid_disabled"
+            <span class="tag">>&lt;/i></span>
+            <br>&ensp;&ensp;&ensp;Sepete Ekle
+            <br>
+            <span class="tag">&lt;/button></span>
+            <br>
+            <br>
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button alternative big"
+            <span class="tag css-title">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;i class=</span>"icon
+            icon_basket_icon_solid_disabled"
+            <span class="tag">>&lt;/i></span>
+            <br>&ensp;&ensp;&ensp;Sepete Ekle
+            <br>
+            <span class="tag">&lt;/button></span>
+            <br>
+            <br>
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button disabled big"
+            <span class="tag">disabled</span>
+            <span class="tag css-title">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;i class=</span>"icon
+            icon_basket_icon_solid_disabled"
+            <span class="tag">>&lt;/i></span>
+            <br>&ensp;&ensp;&ensp;Sepete Ekle
+            <br>
+            <span class="tag">&lt;/button></span>
+          </code>
+        </div>
+
+        <button type="button" class="hb-button big">
+          <i class="icon icon_basket_icon_solid_disabled"></i>
+          Sepete Ekle
+        </button>
+        <button type="button" class="hb-button alternative big">
+          <i class="icon icon_footer_tek_tikla_alisveris"></i>
+          Tek Tıkla Al
+        </button>
+        <button type="button" class="hb-button big disabled" disabled>
+          <i class="icon icon_basket_icon_solid_disabled"></i>
+          Sepete Ekle
+        </button>
+      </div>
+
+      <div class="title-content" id="buttonGroups">
+        <h1>Buton Grupları <span class="subtitle">/ Kullanılan butonlar</span>
+        </h1>
+      </div>
+
+      <div class="elements-content">
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz buton grubunun kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-button-group eliptical"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button active"
+            <span class="tag">></span>
+            Çok Satanlar
+            <span class="tag">&lt;/button></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag">></span>
+            En Yeniler
+            <span class="tag">&lt;/button></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag">></span>
+            En Düşük Fiyat
+            <span class="tag">&lt;/button></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag">></span>
+            En Yüksek Fiyat
+            <span class="tag">&lt;/button></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+          </code>
+        </div>
+
+        <div class="hb-button-group eliptical">
+          <button type="button" class="hb-button active">
+            Çok Satanlar
+          </button>
+          <button type="button" class="hb-button">
+            En Yeniler
+          </button>
+          <button type="button" class="hb-button">
+            En Düşük Fiyat
+          </button>
+          <button type="button" class="hb-button">
+            En Yüksek Fiyat
+          </button>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz buton grubunun kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-button-group square"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button active"
+            <span class="tag">></span>
+            Çok Satanlar
+            <span class="tag">&lt;/button></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag">></span>
+            En Yeniler
+            <span class="tag">&lt;/button></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag">></span>
+            En Düşük Fiyat
+            <span class="tag">&lt;/button></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag">></span>
+            En Yüksek Fiyat
+            <span class="tag">&lt;/button></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+          </code>
+        </div>
+
+        <div class="hb-button-group square">
+          <button type="button" class="hb-button active">
+            Çok Satanlar
+          </button>
+          <button type="button" class="hb-button">
+            En Yeniler
+          </button>
+          <button type="button" class="hb-button">
+            En Düşük Fiyat
+          </button>
+          <button type="button" class="hb-button">
+            En Yüksek Fiyat
+          </button>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz buton grubunun kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-button-group square
+            dark"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button active"
+            <span class="tag">></span>
+            Çok Satanlar
+            <span class="tag">&lt;/button></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag">></span>
+            En Yeniler
+            <span class="tag">&lt;/button></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag">></span>
+            En Düşük Fiyat
+            <span class="tag">&lt;/button></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;button</span>
+            <span class="tag css-title">type=</span>"button"
+            <span class="tag css-title">class=</span>"hb-button"
+            <span class="tag">></span>
+            En Yüksek Fiyat
+            <span class="tag">&lt;/button></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+          </code>
+        </div>
+
+        <div class="hb-button-group square dark">
+          <div class="hb-button-group-content">
+            <button type="button" class="hb-button active">
+              Çok Satanlar
+            </button>
+            <button type="button" class="hb-button with-badge">
+              En Yeniler
+              <i class="notification">7</i>
+            </button>
+            <button type="button" class="hb-button">
+              En Düşük Fiyat
+            </button>
+            <button type="button" class="hb-button">
+              En Yüksek Fiyat
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="title-content" id="inputs">
+        <h1>İnputlar <span class="subtitle">/ Kullanılan inputlar</span></h1>
+      </div>
+
+      <div class="elements-content">
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz butonun kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input"
+            <span class="tag css-title">placeholder=</span>"Write Something"
+            <span class="tag">/></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Hata Gösteren İnput
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group error"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input"
+            <span class="tag css-title">placeholder=</span>"Write Something"
+            <span class="tag">/></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Deaktif İnput
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group disabled"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input"
+            <span class="tag css-title">placeholder=</span>"Aktif Değil"
+            <span class="tag">disabled /></span>
+            <br>
+            <span class="tag">&lt/div></span>
+          </code>
+        </div>
+
+        <div class="hb-input-group">
+          <input type="text" class="hb-input" placeholder="Write Something">
+        </div>
+
+        <br>
+
+        <div class="hb-input-group error">
+          <input type="text" class="hb-input" placeholder="Write Something">
+        </div>
+
+        <br>
+
+        <div class="hb-input-group disabled">
+          <input type="text" class="hb-input" placeholder="Aktif Değil"
+                 disabled>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz butonun kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group animate"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input"
+            <span class="tag">/></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&ltspan class=</span>"placeholder"
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Hata gösteren input
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group animate
+            error"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input"
+            <span class="tag">/></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&ltspan class=</span>"placeholder"
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Deaktif İnput
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group animate
+            disabled"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input"
+            <span class="tag">disabled /></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&ltspan class=</span>"placeholder"
+            <span class="tag">></span>Aktif Değil
+            <span class="tag">&lt/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+          </code>
+        </div>
+
+        <div class="hb-input-group animate">
+          <input type="text" class="hb-input">
+          <span class="placeholder">Write Something</span>
+        </div>
+
+        <br>
+
+        <div class="hb-input-group animate error">
+          <input type="text" class="hb-input">
+          <span class="placeholder">Write Something</span>
+        </div>
+
+        <br>
+
+        <div class="hb-input-group animate disabled">
+          <input type="text" class="hb-input" disabled>
+          <span class="placeholder">Aktif Değil</span>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz butonun kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group no-animate"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input"
+            <span class="tag">/></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&ltspan class=</span>"placeholder"
+            <span class="tag">></span>Aktif Değil
+            <span class="tag">&lt/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Hata gösteren input.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group no-animate
+            error"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input"
+            <span class="tag">/></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&ltspan class=</span>"placeholder"
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Deaktif İnput.
+							</span>
+            <br>
+            <br>
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group no-animate
+            disabled"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input"
+            <span class="tag">disabled /></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&ltspan class=</span>"placeholder"
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+          </code>
+        </div>
+
+        <div class="hb-input-group no-animate">
+          <input type="text" class="hb-input">
+          <span class="placeholder">Write Something</span>
+        </div>
+
+        <br>
+
+        <div class="hb-input-group no-animate error">
+          <input type="text" class="hb-input">
+          <span class="placeholder">Write Something</span>
+        </div>
+
+        <br>
+
+        <div class="hb-input-group no-animate disabled">
+          <input type="text" class="hb-input" disabled>
+          <span class="placeholder">Aktif Değil</span>
+        </div>
+      </div>
+
+      <div class="title-content" id="textareas">
+        <h1>Textarea <span
+          class="subtitle">/ Kullanılan textarea stilleri</span></h1>
+      </div>
+
+      <div class="elements-content">
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz textarea kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;textarea</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input textarea"
+            <span class="tag css-title">placeholder=</span>"Write Something"
+            <span class="tag">>&lt;/textarea></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;textarea</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input textarea error"
+            <span class="tag css-title">placeholder=</span>"Write Something"
+            <span class="tag">>&lt;/textarea></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;textarea</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input textarea
+            disabled"
+            <span class="tag css-title">placeholder=</span>"Write Something"
+            <span class="tag">disabled >&lt;/textarea></span>
+            <br>
+            <span class="tag">&lt/div></span>
+          </code>
+        </div>
+
+        <div class="hb-input-group">
+          <textarea type="text" class="hb-input textarea"
+                    placeholder="Write Something"></textarea>
+        </div>
+        <br>
+        <br>
+        <div class="hb-input-group error">
+          <textarea type="text" class="hb-input textarea"
+                    placeholder="Write Something"></textarea>
+        </div>
+        <br>
+        <br>
+        <div class="hb-input-group disabled">
+          <textarea type="text" class="hb-input textarea"
+                    placeholder="Write Something" disabled></textarea>
+        </div>
+        <br>
+        <br>
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz textarea kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group animate"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;textarea</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input textarea"
+            <span class="tag">>&lt;/textarea></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;span</span>
+            <span class="css-title">class=</span>
+            <span class="tag css-title">"placeholder"</span>
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt;/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group animate
+            error"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;textarea</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input textarea"
+            <span class="tag">>&lt;/textarea></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;span </span>
+            <span class="css-title">class=</span>
+            <span class="tag css-title">"placeholder"</span>
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt;/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group animate
+            disabled"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;textarea</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input textarea"
+            <span class="tag"> disabled >&lt;/textarea></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;span </span>
+            <span class="css-title">class=</span>
+            <span class="tag css-title">"placeholder"</span>
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt;/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+          </code>
+        </div>
+
+        <div class="hb-input-group animate">
+          <textarea type="text" class="hb-input textarea"></textarea>
+          <span class="placeholder">Write Something</span>
+        </div>
+        <br>
+        <br>
+
+        <div class="hb-input-group animate error">
+          <textarea type="text" class="hb-input textarea"></textarea>
+          <span class="placeholder">Write Something</span>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="hb-input-group animate disabled">
+          <textarea type="text" class="hb-input textarea" disabled></textarea>
+          <span class="placeholder">Write Something</span>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz textarea kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group no-animate"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;textarea</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input textarea"
+            <span class="tag">>&lt;/textarea></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;span</span>
+            <span class="css-title">class=</span>
+            <span class="tag css-title">"placeholder"</span>
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt;/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group no-animate
+            error"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;textarea</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input textarea"
+            <span class="tag">>&lt;/textarea></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;span </span>
+            <span class="css-title">class=</span>
+            <span class="tag css-title">"placeholder"</span>
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt;/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+
+            <br>
+            <br>
+
+            <span class="tag">&ltdiv</span>
+            <span class="tag css-title">class=</span>"hb-input-group no-animate
+            disabled"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;textarea</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input textarea"
+            <span class="tag"> disabled >&lt;/textarea></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;span </span>
+            <span class="css-title">class=</span>
+            <span class="tag css-title">"placeholder"</span>
+            <span class="tag">></span>Write Something
+            <span class="tag">&lt;/span></span>
+            <br>
+            <span class="tag">&lt/div></span>
+          </code>
+        </div>
+
+        <div class="hb-input-group no-animate">
+          <textarea type="text" class="hb-input textarea"></textarea>
+          <span class="placeholder">Write Something</span>
+        </div>
+        <br>
+        <br>
+
+        <div class="hb-input-group no-animate error">
+          <textarea type="text" class="hb-input textarea"></textarea>
+          <span class="placeholder">Write Something</span>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="hb-input-group no-animate disabled">
+          <textarea type="text" class="hb-input textarea" disabled></textarea>
+          <span class="placeholder">Write Something</span>
+        </div>
+      </div>
+
+      <div class="title-content" id="dropdowns">
+        <h1>Dropdowns <span
+          class="subtitle">/ Kullanılan dropdown stilleri</span></h1>
+      </div>
+
+      <div class="elements-content">
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz selectbox kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-input-group"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;select</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input select"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;option></span>Options 1
+            <span class="tag">&lt;/option></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;/select></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;i </span>
+            <span class="tag css-title">class=</span>"icon icon_selectbox_arrow"
+            <span class="tag">></span>
+            <span class="tag">&lt;/i></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Hata
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-input-group error"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;select</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input select"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;option></span>Options 1
+            <span class="tag">&lt;/option></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;/select></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;i </span>
+            <span class="tag css-title">class=</span>"icon icon_selectbox_arrow"
+            <span class="tag">></span>
+            <span class="tag">&lt;/i></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Deaktif
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-input-group disabled"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;select</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input select"
+            <span class="tag">disabled ></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;option></span>Options 1
+            <span class="tag">&lt;/option></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;/select></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;i </span>
+            <span class="tag css-title">class=</span>"icon icon_selectbox_arrow"
+            <span class="tag">></span>
+            <span class="tag">&lt;/i></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+
+          </code>
+        </div>
+
+        <div class="hb-input-group">
+          <select type="text" class="hb-input select">
+            <option>Options 1</option>
+          </select>
+          <i class="icon icon_selectbox_arrow"></i>
+        </div>
+
+        <br>
+
+        <div class="hb-input-group error">
+          <select type="text" class="hb-input select">
+            <option>Options 1</option>
+          </select>
+          <i class="icon icon_selectbox_arrow"></i>
+        </div>
+
+        <br>
+
+        <div class="hb-input-group disabled">
+          <select type="text" class="hb-input select" disabled>
+            <option>Options 1</option>
+          </select>
+          <i class="icon icon_selectbox_arrow"></i>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz selectbox kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-input-group no-animate"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;select</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input select"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;option></span>Options 1
+            <span class="tag">&lt;/option></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;/select></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;span</span>
+            <span class="tag css-title">class=</span>"placeholder"
+            <span class="tag">></span>Başlık
+            <span class="tag">&lt;/span></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;i </span>
+            <span class="tag css-title">class=</span>"icon icon_selectbox_arrow"
+            <span class="tag">></span>
+            <span class="tag">&lt;/i></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Hata
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-input-group no-animate
+            error"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;select</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input select"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;option></span>Options 1
+            <span class="tag">&lt;/option></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;/select></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;span</span>
+            <span class="tag css-title">class=</span>"placeholder"
+            <span class="tag">></span>Başlık
+            <span class="tag">&lt;/span></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;i </span>
+            <span class="tag css-title">class=</span>"icon icon_selectbox_arrow"
+            <span class="tag">></span>
+            <span class="tag">&lt;/i></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Deaktif
+							</span>
+            <br>
+            <br>
+
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-input-group no-animate
+            disabled"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;select</span>
+            <span class="tag css-title">type=</span>"text"
+            <span class="tag css-title">class=</span>"hb-input select"
+            <span class="tag">disabled ></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;option></span>Options 1
+            <span class="tag">&lt;/option></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;/select></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;span</span>
+            <span class="tag css-title">class=</span>"placeholder"
+            <span class="tag">></span>Başlık
+            <span class="tag">&lt;/span></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;i </span>
+            <span class="tag css-title">class=</span>"icon icon_selectbox_arrow"
+            <span class="tag">></span>
+            <span class="tag">&lt;/i></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+
+          </code>
+        </div>
+
+        <div class="hb-input-group no-animate">
+          <select type="text" class="hb-input select">
+            <option>Options 1</option>
+          </select>
+          <span class="placeholder">Başlık</span>
+          <i class="icon icon_selectbox_arrow"></i>
+        </div>
+
+        <br>
+
+        <div class="hb-input-group no-animate error">
+          <select type="text" class="hb-input select">
+            <option>Options 1</option>
+          </select>
+          <span class="placeholder">Başlık</span>
+          <i class="icon icon_selectbox_arrow"></i>
+        </div>
+
+        <br>
+
+        <div class="hb-input-group no-animate disabled">
+          <select type="text" class="hb-input select" disabled>
+            <option>Options 1</option>
+          </select>
+          <span class="placeholder">Başlık</span>
+          <i class="icon icon_selectbox_arrow"></i>
+        </div>
+      </div>
+
+      <div class="title-content" id="checkbox">
+        <h1>Checkbox & Radiobox <span class="subtitle">/ Kullanılan checkbox ve radiobox stilleri</span>
+        </h1>
+      </div>
+
+      <div class="elements-content">
+
+        <div class="pre no-margin">
+          <code>
+							<span class="tag description">
+								// Kullanmak istediğiniz checkbox ve radiobox kodunu alıp <br>projenize ekleyebilirsiniz.
+							</span>
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Checkbox
+							</span>
+
+            <br>
+            <br>
+
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-input-group"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;div</span>
+            <span class="tag">class=</span>"hb-checkbox-content"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;label</span>
+            <span class="tag css-title">class=</span>"hb-box-value"
+            <span class="tag">></span>Seçenek 1
+            <span class="tag">&lt;/label></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"checkbox"
+            <span class="tag css-title">class=</span>"hb-input checkbox"
+            <span class="tag">/></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;label>&lt;/label></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;i</span>
+            <span class="tag css-title">class=</span>"icon icon_checkbox_tick"
+            <span class="tag">>&lt;/i></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;/div></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+
+            <br>
+            <br>
+
+							<span class="tag description">
+								// Radiobox
+							</span>
+
+            <br>
+            <br>
+
+            <span class="tag">&lt;div</span>
+            <span class="tag css-title">class=</span>"hb-input-group"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;div</span>
+            <span class="tag">class=</span>"hb-radibox-content"
+            <span class="tag">></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;label</span>
+            <span class="tag css-title">class=</span>"hb-box-value"
+            <span class="tag">></span>Seçenek 1
+            <span class="tag">&lt;/label></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;input</span>
+            <span class="tag css-title">type=</span>"radio"
+            <span class="tag css-title">class=</span>"hb-input radibox"
+            <span class="tag">/></span>
+            <br>
+            &ensp;&ensp;&ensp;&ensp;
+            <span class="tag">&lt;label>&lt;/label></span>
+            <br>
+            &ensp;&ensp;
+            <span class="tag">&lt;/div></span>
+            <br>
+            <span class="tag">&lt;/div></span>
+
+          </code>
+        </div>
+
+        <div class="hb-input-group">
+          <div class="hb-checkbox-content">
+            <label class="hb-box-value">Seçenek 1</label>
+            <input type="checkbox" class="hb-input checkbox"/>
+            <label></label>
+            <i class="icon icon_checkbox_tick"></i>
+          </div>
+        </div>
+        <br>
+        <div class="hb-input-group">
+          <div class="hb-radiobox-content">
+            <label class="hb-box-value">Seçenek 1</label>
+            <input type="radio" class="hb-input radiobox"/>
+            <label></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  window.onscroll = function (argument) {
+    var logoContent = document.getElementById("logoContent");
+    var allCategories = document.getElementById("allCategories");
+
+    var logoContentTop = document.getElementById("logoContent").offsetTop;
+    var allCategoriesWidth = document.getElementById("allCategories").offsetWidth;
+
+    if (window.scrollY > logoContentTop) {
+      allCategories.style.width = allCategoriesWidth + "px";
+      logoContent.classList.add("fix");
+      allCategories.classList.add("fix");
+    } else {
+      logoContent.classList.remove("fix");
+      allCategories.classList.remove("fix");
+    }
+
+  }
+</script>
+</body>
+</html>

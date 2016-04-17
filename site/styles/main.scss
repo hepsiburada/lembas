@@ -1,0 +1,492 @@
+@import "../../src/lembas";
+
+body {
+	background-color: #e5e5e5;
+}
+
+h1 {
+	font-family: $secondary-font;
+
+	span {
+		font-size: $secondary-font-size;
+		color: $secondary-font-color;
+	}
+}
+
+.pre {
+	display: block;
+	margin: $space-big 0;
+	padding: $space-medium $space-bigger;
+	border: 1px solid $primary-border-color;
+	background-color: #484848;
+	color: #ffffff;
+	position: relative;
+
+	&:before {
+		content: "";
+		width: 1px;
+		height: calc(100% - 32px);
+		background-color: $primary-border-color;
+		position: absolute;
+		top: $space-medium;
+		left: $space-medium;
+	}
+
+	&.no-margin {
+		margin-top: 0px;
+	}
+
+	.tag {
+		color: #ff2929;
+
+		&.css-title {
+			color: #50bc71;
+		}
+
+		&.css {
+			color: #ffffff;
+		}
+
+		&.description {
+			color: #6f7678;
+		}
+	}
+}
+
+.warning {
+	display: block;
+	margin-top: $space-big;
+	padding: $space-big;
+	border: 1px solid pink;
+	background-color: 1px solid pink;
+}
+
+.title-content {
+	margin-bottom: $space-medium;
+	padding-bottom: $space-medium;
+	font-family: $secondary-font;
+	border-bottom: 1px solid $primary-border-color;
+}
+
+.elements-content {
+	margin: $space-medium 0;
+}
+
+header {
+	@include global-shadow;
+	width: 100%;
+	background-color: #f28b00;
+	border-bottom: 1px solid #f28b00;
+	box-sizing: border-box;
+
+	.version-content {
+		padding: $space-big;
+		text-align: right;
+	}
+
+	.logo-content {
+		@include transition(padding .3s .1s);
+		width: 100%;
+		height: auto;
+		padding: $space-bigger 0;
+		background-color: #ffffff;
+
+		&.fix {
+			@include transition(padding .3s .1s);
+			@include global-shadow;
+			padding: $space-small 0;
+			position: fixed;
+			top: 0px;
+			z-index: 2;
+		}
+	}
+
+	.logo {
+		width: 192px;
+		height: 37px;
+		display: block;
+		margin: 0 auto;
+		background-image: url("../static/images/hepsiburada-logo.png");
+		background-repeat: no-repeat;
+	}
+
+	.menu {
+		@include clearfix;
+		max-width: 640px;
+		margin-top: $space-big;
+		margin-bottom: $space-big;
+		padding: 0px;
+		text-align: center;
+
+		li {
+				display: inline-block;
+				padding: 0px;
+
+			a {
+				@include transition(background-color .3s .1s, color .3s .1s);
+				@include border-radius(100%);
+				@include square(190px);
+				display: inline-block;
+				background-color: #fff;
+				line-height: 190px;
+				font-size: 17px;
+				font-family: $secondary-font;
+				color: $primary-font-color;
+				font-weight: bold;
+
+				&:hover {
+					@include transition(background-color .3s .1s, color .3s .1s);
+					background-color: #484848;
+					color: #ffffff;
+				}
+			}
+
+			&.circle-1 {
+				a {
+					@include square(240px);
+					line-height: 240px;
+				}
+			}
+		}
+	}
+}
+
+.content {
+	max-width: 100%;
+	padding: $space-big;
+}
+
+.left-column {
+	@include global-shadow;
+	width: 240px;
+	height: auto;
+	float: left;
+	background-color: #ffffff;
+
+	&.fix {
+		position: fixed;
+		top: 77px;
+	}
+
+	.title-wrapper {
+		padding: $space-big;
+		border-bottom: 1px solid $primary-border-color;
+		background-color: #d5d5d5;
+
+		.title {
+			display: block;
+			font-size: $secondary-font-size;
+		}
+	}
+}
+
+.left-column {
+	.navigation {
+		margin: 0px;
+		padding: $space-small 0;
+
+		li {
+			margin: 0px;
+			padding: 0px;
+			text-align: left;
+			font-size: $primary-font-size;
+			font-family: $secondary-font;
+
+			> a {
+				display: block;
+				padding: $space-small 24px;
+				text-decoration: none;
+
+				&:hover {
+					color: $primary-hover-link-color;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $primary-hover-link-color;
+				}
+			}
+
+			ul {
+				padding-left: $space-bigger;
+
+				li {
+					border-left: 1px solid $primary-border-color;
+
+					a {
+						padding-left: $space-medium;
+					}
+				}
+			}
+		}
+	}
+}
+
+.right-column {
+	width: calc(100% - 240px);
+	height: auto;
+	padding: 0 24px;
+	float: right;
+	box-sizing: border-box;
+
+	.detail-content {
+		@include global-shadow;
+		padding: $space-big;
+		background-color: #ffffff;
+	}
+
+	&.colors {
+
+		.colors {
+			@include clearfix;
+			padding-bottom: $space-big;
+
+			&:last-child {
+				padding-bottom: 0px;
+			}
+		}
+
+		li {
+			width: 20%;
+			display: block;
+			margin: 0 1% $space-medium;
+			padding: 3px;
+			position: relative;
+			border: 1px solid $primary-border-color;
+			float: left;
+
+			&:last-child {
+				margin-bottom: 0px;
+			}
+
+			&:before {
+				content: "";
+				display: block;
+				height: 150px;
+
+			}
+
+			.color-code {
+				@include transition(opacity .1s .1s);
+				opacity: .2;
+				padding: 0 $space-medium;
+				background-color: #e5e5e5;
+				position: absolute;
+				right: 3px;
+				top: 137px;
+			}
+
+			.using {
+				height: 60px;
+				display: block;
+				padding: 5px $space-medium;
+				margin-top: 3px;
+				background-color: #e5e5e5;
+
+				span {
+					display: block;
+
+					b {
+						color: $secondary-font-color;
+					}
+				}
+			}
+
+			&:hover {
+				.color-code {
+					@include transition(opacity .1s .1s);
+					opacity: 1;
+				}
+			}
+
+			&.color-1 {
+				&:before {
+					background-color: $primary-bg-color;
+				}
+			}
+
+			&.color-2 {
+				&:before {
+					background-color: $secondary-bg-color;
+				}
+			}
+
+			&.color-3 {
+				&:before {
+					background-color: $primary-font-color;
+				}
+			}
+
+			&.color-4 {
+				&:before {
+					background-color: $secondary-font-color;
+				}
+			}
+
+			&.color-5 {
+				&:before {
+					background-color: $navigation-font-color;
+				}
+			}
+
+			&.color-6 {
+				&:before {
+					background-color: $navigation-hover-font-color;
+				}
+			}
+
+			&.color-7 {
+				&:before {
+					background-color: $primary-hover-link-color;
+				}
+			}
+
+			&.color-8 {
+				&:before {
+					background-color: $navigation-pipe-color;
+				}
+			}
+
+			&.color-9 {
+				&:before {
+					background-color: $top-links-color;
+				}
+			}
+
+			&.color-10 {
+				&:before {
+					background-color: $disabled-color;
+				}
+			}
+
+			&.color-11 {
+				&:before {
+					background-color: $primary-table-row-bg-color;
+				}
+			}
+
+			&.color-12 {
+				&:before {
+					background-color: $primary-scroll-track-bg-color;
+				}
+			}
+
+			&.color-13 {
+				&:before {
+					background-color: $primary-scroll-thumb-bg-color;
+				}
+			}
+
+			&.color-14 {
+				&:before {
+					background-color: $navigation-tablet-bg-color;
+				}
+			}
+
+			&.color-15 {
+				&:before {
+					background-color: $tabs-pipe-color;
+				}
+			}
+
+			&.color-16 {
+				&:before {
+					background-color: $error-color;
+				}
+			}
+
+			&.color-17 {
+				&:before {
+					background-color: $success-color;
+				}
+			}
+
+			&.color-18 {
+				&:before {
+					background-color: $campaigns-color;
+				}
+			}
+
+			&.color-19 {
+				&:before {
+					background-color: $note-color;
+				}
+			}
+		}
+	}
+
+	&.type {
+		.fonts {
+			@include clearfix;
+
+			li {
+				width: 46%;
+				display: block;
+				margin: 0 1%;
+				padding: 3px;
+				position: relative;
+				border: 1px solid $primary-border-color;
+				float: left;
+
+				&.helvetica {
+					font-family: $secondary-font;
+				}
+
+				&.avenir {
+					font-family: $primary-font;
+				}
+
+				span.font {
+					display: block;
+					height: 150px;
+					line-height: 80px;
+					text-align: center;
+
+					.letter {
+						height: auto;
+						display: block;
+						padding-top: 30px;
+						line-height: 1;
+						font-size: 48px;
+					}
+				}
+			}
+		}
+
+		.icons {
+			@include clearfix;
+
+			li {
+				width: 30%;
+				height: 150px;
+				display: block;
+				margin: 0 1% $space-medium;
+				padding: 3px;
+				position: relative;
+				border: 1px solid $primary-border-color;
+				float: left;
+				position: relative;
+			}
+
+			span.icons-element {
+				display: block;
+				font-size: 40px;
+				text-align: center;
+
+				.icon {
+					margin-top: $space-big;
+				}
+			}
+
+			.sub-title {
+				display: block;
+				margin-top: $space-bigger;
+				padding: 0 $space-medium;
+				font-size: $primary-font-size;
+				color: $secondary-font-color;
+				word-wrap: break-word;
+			}
+		}
+	}
+}

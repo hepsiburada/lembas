@@ -4,24 +4,8 @@ $secondary-bg-color: #ffffff;
 
 // Header
 $header-bg: #ffffff;
-$top-links-color: #7b7b7b;
-
-// Navigation
-
-$navigation-bg: #ff8600;
-$navigation-tablet-bg-color: #faf9f9;
-
-$navigation-font-color: #ffffff;
-$navigation-hover-font-color: #ff8600;
-$navigation-pipe-color: #e67a02;
-
-$navigation-category-color: #484848;
-$navigation-category-color-hover: #ff8600;
-
-$navigation-subcategory-color: #ff8600;
 
 //Fonts
-
 $primary-font-color: #484848;
 $secondary-font-color: #919191;
 
@@ -29,27 +13,22 @@ $primary-price-font-color: #f28b00;
 $secondary-price-font-color: #484848;
 
 //Links
-
 $primary-link-color: #484848;
-
 $primary-hover-link-color: #f28b00;
 
 //Border
-
 $primary-border-color: #e5e5e5;
 $secondary-border-color: #bfbfbf;
 
 //Breadcrumb
-
 $breadcrumb-font-color: #646464;
 
 //Buttons
-
+$disabled-color: #bfbfbf;
 $primary-button-bg-color: #f28b00;
 $secondary-button-bg-color: #537ecf;
 
 $disabled-bg-color: #dddddd;
-$disabled-color: #bfbfbf;
 
 $primary-button-font-color: #ffffff;
 
@@ -65,46 +44,25 @@ $third-tabs-color: #ffffff;
 $primary-notification-bg-color: #f28b00;
 $secondary-notification-bg-color: #ffffff;
 
-$primary-notification-border-color: #ffffff; 
+$primary-notification-border-color: #ffffff;
 
 //Inputs
-
 $primary-input-focus-color: #f28b00;
 
 //Table
-
 $primary-table-row-bg-color: #f1f1f1;
 
 //Tooltip
-
 $primary-tooltip-bg-color: #f1f1f1;
 
 //Scrollbar
-
 $primary-scroll-track-bg-color: #eeeeee;
 $primary-scroll-thumb-bg-color: #cccccc;
 
 //Tabs
-
 $tabs-pipe-color: #9f9f9f;
 
 //Warnings
-
 $error-color: #f90000;
 $success-color: #9cc435;
 $note-color: #ffffcc;
-
-//Banks
-
-$garanti-bg-color:  #9cc435;
-$ykredi-bg-color: #650c6f;
-$isbank-bg-color: #c12a72;
-$finans-bg-color: #103993;
-$akbank-bg-color: #efa222;
-$bankasya-bg-color: #45c3d9;
-$hsbc-bg-color: #f77b00;
-$halkbank-bg-color: #00ddff;
-
-//Campaigns
-
-$campaigns-color: #009900;
