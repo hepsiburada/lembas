@@ -1,4 +1,4 @@
-@import "../.bower/bower/lembas/src/lembas";
+@import "../../src/lembas";
 
 body {
 	background-color: #e5e5e5;
@@ -33,7 +33,7 @@ h1 {
 	}
 
 	&.no-margin {
-		margin-top: 0px;
+		margin-top: 0;
 	}
 
 	.tag {
@@ -58,7 +58,6 @@ h1 {
 	margin-top: $space-big;
 	padding: $space-big;
 	border: 1px solid pink;
-	background-color: 1px solid pink;
 }
 
 .title-content {
@@ -96,7 +95,7 @@ header {
 			@include global-shadow;
 			padding: $space-small 0;
 			position: fixed;
-			top: 0px;
+			top: 0;
 			z-index: 2;
 		}
 	}
@@ -106,21 +105,20 @@ header {
 		height: 37px;
 		display: block;
 		margin: 0 auto;
-		background-image: url("../static/images/hepsiburada-logo.png");
-		background-repeat: no-repeat;
-	}
+    background: url("../static/images/hepsiburada-logo.png") no-repeat;
+  }
 
 	.menu {
 		@include clearfix;
 		max-width: 640px;
 		margin-top: $space-big;
 		margin-bottom: $space-big;
-		padding: 0px;
+		padding: 0;
 		text-align: center;
 
 		li {
 				display: inline-block;
-				padding: 0px;
+				padding: 0;
 
 			a {
 				@include transition(background-color .3s .1s, color .3s .1s);
@@ -182,12 +180,12 @@ header {
 
 .left-column {
 	.navigation {
-		margin: 0px;
+		margin: 0;
 		padding: $space-small 0;
 
 		li {
-			margin: 0px;
-			padding: 0px;
+			margin: 0;
+			padding: 0;
 			text-align: left;
 			font-size: $primary-font-size;
 			font-family: $secondary-font;
@@ -402,12 +400,6 @@ header {
 				}
 			}
 
-			&.color-18 {
-				&:before {
-					background-color: $campaigns-color;
-				}
-			}
-
 			&.color-19 {
 				&:before {
 					background-color: $note-color;
@@ -466,7 +458,6 @@ header {
 				position: relative;
 				border: 1px solid $primary-border-color;
 				float: left;
-				position: relative;
 			}
 
 			span.icons-element {

@@ -784,7 +784,7 @@ h1 {
     top: 16px;
     left: 16px; }
   .pre.no-margin {
-    margin-top: 0px; }
+    margin-top: 0; }
   .pre .tag {
     color: #ff2929; }
     .pre .tag.css-title {
@@ -798,8 +798,7 @@ h1 {
   display: block;
   margin-top: 24px;
   padding: 24px;
-  border: 1px solid pink;
-  background-color: 1px solid pink; }
+  border: 1px solid pink; }
 
 .title-content {
   margin-bottom: 16px;
@@ -844,20 +843,19 @@ header {
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
       padding: 8px 0;
       position: fixed;
-      top: 0px;
+      top: 0;
       z-index: 2; }
   header .logo {
     width: 192px;
     height: 37px;
     display: block;
     margin: 0 auto;
-    background-image: url("../static/images/hepsiburada-logo.png");
-    background-repeat: no-repeat; }
+    background: url("../static/images/hepsiburada-logo.png") no-repeat; }
   header .menu {
     max-width: 640px;
     margin-top: 24px;
     margin-bottom: 24px;
-    padding: 0px;
+    padding: 0;
     text-align: center; }
     header .menu:after {
       content: "";
@@ -865,7 +863,7 @@ header {
       clear: both; }
     header .menu li {
       display: inline-block;
-      padding: 0px; }
+      padding: 0; }
       header .menu li a {
         -moz-transition: background-color 0.3s 0.1s, color 0.3s 0.1s;
         -o-transition: background-color 0.3s 0.1s, color 0.3s 0.1s;
@@ -923,11 +921,11 @@ header {
       font-size: 15px; }
 
 .left-column .navigation {
-  margin: 0px;
+  margin: 0;
   padding: 8px 0; }
   .left-column .navigation li {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-align: left;
     font-size: 13px;
     font-family: Helvetica, Arial, sans-serif; }
@@ -1043,8 +1041,6 @@ header {
       background-color: #f90000; }
     .right-column.colors li.color-17:before {
       background-color: #9cc435; }
-    .right-column.colors li.color-18:before {
-      background-color: #009900; }
     .right-column.colors li.color-19:before {
       background-color: #ffffcc; }
   .right-column.type .fonts:after {
@@ -1086,8 +1082,7 @@ header {
     padding: 3px;
     position: relative;
     border: 1px solid #e5e5e5;
-    float: left;
-    position: relative; }
+    float: left; }
   .right-column.type .icons span.icons-element {
     display: block;
     font-size: 40px;
