@@ -20,5 +20,8 @@ module.exports = function () {
     .pipe($.rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest(dist));
+    .pipe(gulp.dest(dist))
+    .pipe($.browserSync.reload({
+      stream: true
+    }));
 };

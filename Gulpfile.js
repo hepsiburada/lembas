@@ -3,6 +3,7 @@ var plugins = require('gulp-load-plugins')();
 plugins.seq = require('run-sequence');
 plugins.del = require('del');
 plugins.merge = require('merge-stream');
+plugins.browserSync = require('browser-sync').create();
 
 // ignoring some folders
 var ignoreList = [
