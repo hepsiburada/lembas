@@ -1,6 +1,6 @@
 {
   "name": "lembas",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Hepsiburada Style Guide",
   "devDependencies": {
     "browser-sync": "^2.12.4",
