@@ -394,13 +394,13 @@ a {
     transition: color 0.3s 0.1s; }
 
 ul {
-  margin: 0px;
-  padding: 0px; }
+  margin: 0;
+  padding: 0; }
 
 li {
   list-style: none;
-  margin: 0px;
-  padding: 0px; }
+  margin: 0;
+  padding: 0; }
 
 .hb-container {
   width: auto;
@@ -415,43 +415,40 @@ li {
     margin: 0 auto; }
 
 h1, h2 {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-size: 17px; }
 
 h1 {
   font-family: "AvenirNextLTPro"; }
 
-.hb-breadcrumb-wrapper .hb-breadcrumb {
-  display: block; }
-  .hb-breadcrumb-wrapper .hb-breadcrumb:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .hb-breadcrumb-wrapper .hb-breadcrumb li {
-    width: auto;
-    height: auto;
-    white-space: nowrap;
-    position: relative;
-    padding: 0 17px 0 15px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    float: left; }
-    .hb-breadcrumb-wrapper .hb-breadcrumb li:first-child {
-      padding-left: 0px; }
-    .hb-breadcrumb-wrapper .hb-breadcrumb li:last-child {
-      padding-right: 0px; }
-      .hb-breadcrumb-wrapper .hb-breadcrumb li:last-child:after {
-        display: none; }
-    .hb-breadcrumb-wrapper .hb-breadcrumb li:after {
-      content: ">";
-      position: absolute;
-      top: 0px;
-      right: 0px; }
-    .hb-breadcrumb-wrapper .hb-breadcrumb li a {
-      display: block;
-      color: #646464; }
+ul.hb-breadcrumb:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+ul.hb-breadcrumb li {
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+  position: relative;
+  padding: 0 17px 0 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  float: left; }
+  ul.hb-breadcrumb li:first-child {
+    padding-left: 0; }
+  ul.hb-breadcrumb li:last-child {
+    padding-right: 0; }
+  ul.hb-breadcrumb li:not(:last-child):after {
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: 0; }
+  ul.hb-breadcrumb li a {
+    display: block;
+    color: #646464; }
 
 .hb-button {
   -moz-transition: opacity 0.3s 0.1s;
@@ -551,7 +548,7 @@ h1 {
     transition: top 0.3s 0.1s;
     padding: 0 10px;
     color: #bfbfbf;
-    background-color: #fff;
+    background-color: #ffffff;
     position: absolute;
     font-weight: bold; }
   .hb-input-group.no-animate .placeholder {
@@ -629,8 +626,8 @@ h1 {
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 1; }
     .hb-input-group .hb-checkbox-content .hb-input.checkbox + label {
       width: 18px;
@@ -644,8 +641,8 @@ h1 {
       box-sizing: border-box;
       border: 2px solid #bfbfbf;
       position: absolute;
-      top: 0px;
-      left: 0px; }
+      top: 0;
+      left: 0; }
       .hb-input-group .hb-checkbox-content .hb-input.checkbox + label + .icon {
         width: 15px;
         height: 15px;
@@ -668,8 +665,8 @@ h1 {
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 1; }
     .hb-input-group .hb-radiobox-content .hb-input.radiobox + label {
       border-radius: 100% ;
@@ -683,8 +680,8 @@ h1 {
       box-sizing: border-box;
       border: 2px solid #bfbfbf;
       position: absolute;
-      top: 0px;
-      left: 0px; }
+      top: 0;
+      left: 0; }
       .hb-input-group .hb-radiobox-content .hb-input.radiobox + label:after {
         border-radius: 100% ;
         -moz-border-radius: 100% ;
@@ -965,7 +962,7 @@ header {
       display: table;
       clear: both; }
     .right-column.colors .colors:last-child {
-      padding-bottom: 0px; }
+      padding-bottom: 0; }
   .right-column.colors li {
     width: 20%;
     display: block;
@@ -975,7 +972,7 @@ header {
     border: 1px solid #e5e5e5;
     float: left; }
     .right-column.colors li:last-child {
-      margin-bottom: 0px; }
+      margin-bottom: 0; }
     .right-column.colors li:before {
       content: "";
       display: block;

@@ -1,0 +1,11 @@
+.hb-input-group {
+  .hb-input {
+    &.textarea {
+      width: 100%;
+      height: 132px;
+      padding-top: $space-2x;
+      box-sizing: border-box;
+      resize: none;
+    }
+  }
+}

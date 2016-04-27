@@ -1,0 +1,37 @@
+ul.hb-breadcrumb {
+  @include clearfix;
+
+  li {
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    position: relative;
+    padding: 0 17px 0 15px;
+    font-family: $secondary-font;
+    font-size: $third-font-size;
+    font-weight: bold;
+    float: left;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:not(:last-child) {
+      &:after {
+        content: ">";
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    a {
+      display: block;
+      color: $breadcrumb-font-color;
+    }
+  }
+}

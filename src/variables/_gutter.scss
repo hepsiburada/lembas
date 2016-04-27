@@ -1,0 +1,10 @@
+@function space($size) {
+  @return unquote(($size * 8) + 'px');
+}
+
+$space: space(1);
+$space-2x: space(2);
+$space-3x: space(3);
+$space-4x: space(4);
+$space-5x: space(5);
+$space-6x: space(6);

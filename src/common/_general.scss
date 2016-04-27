@@ -1,38 +1,38 @@
 body {
-	font-family: $primary-font;
-	color: $primary-font-color;
-	font-size: $primary-font-size;
+  font-family: $primary-font;
+  color: $primary-font-color;
+  font-size: $primary-font-size;
 }
 
 a {
-	@include transition(color .3s .1s);
-	color: $primary-link-color;
-	text-decoration: none;
+  @include transition(color .3s .1s);
+  color: $primary-link-color;
+  text-decoration: none;
 
-	&:hover {
-		@include transition(color .3s .1s);
-	}
+  &:hover {
+    @include transition(color .3s .1s);
+  }
 }
 
 ul {
-	margin: 0px;
-	padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .hb-container {
-	@include clearfix;
-	width: auto;
-	max-width: 1200px;
-	margin: 0 auto;
+  @include clearfix;
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 
-	&.hb-fluid {
-		max-width: initial;
-		margin: 0 auto;
-	}
+  &.hb-fluid {
+    max-width: initial;
+    margin: 0 auto;
+  }
 }

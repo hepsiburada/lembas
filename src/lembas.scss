@@ -1,15 +1,12 @@
+// Variables
+@import "variables/all";
+
 // Paths
 @import "paths/paths";
 
 // Fonts
-@import "custom/fonts/fonts";
-@import "custom/fonts/icons";
-
-// Variables
-@import "custom/variables/color";
-@import "custom/variables/font";
-@import "custom/variables/gutter";
-@import "custom/variables/radius";
+@import "components/fonts/fonts";
+@import "components/fonts/icons";
 
 // General
 @import "common/normalize";
@@ -17,10 +14,10 @@
 @import "common/general";
 
 // Typography
-@import "custom/typography/typography";
+@import "components/typography/typography";
 
 //Breadcrumb
-@import "custom/breadcrumb/breadcrumb";
+@import "components/breadcrumb/breadcrumb";
 
 //Components
-@import "custom/components/form-elements/form-elements";
+@import "components/form-elements/form-elements";
