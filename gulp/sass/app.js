@@ -6,6 +6,6 @@ module.exports = function () {
       showFiles: true
     }))
     .pipe($.sass().on('error', $.sass.logError))
-    .pipe(this.gulp.dest('app/static/'));
+    .pipe(this.gulp.dest('publish/static/'));
 };
 
