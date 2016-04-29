@@ -1,5 +1,5 @@
 module.exports = function () {
-  return this.opts.$.seq('eslint', 'publish', ['sass:lembas', 'sass:app', 'copy:font']);
+  return this.opts.$.seq('eslint', ['sass:lembas', 'sass:app', 'copy:font'], 'publish');
 };
 
 module.exports.dependencies = ['clean:all'];
