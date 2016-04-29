@@ -15,8 +15,8 @@ h1 {
 
 .pre {
 	display: block;
-	margin: $space-big 0;
-	padding: $space-medium $space-bigger;
+	margin: $space-3x 0;
+	padding: $space-2x $space-4x;
 	border: 1px solid $primary-border-color;
 	background-color: #484848;
 	color: #ffffff;
@@ -25,11 +25,11 @@ h1 {
 	&:before {
 		content: "";
 		width: 1px;
-		height: calc(100% - 32px);
+		height: calc(100% - #{$space-4x});
 		background-color: $primary-border-color;
 		position: absolute;
-		top: $space-medium;
-		left: $space-medium;
+		top: $space-2x;
+		left: $space-2x;
 	}
 
 	&.no-margin {
@@ -55,20 +55,20 @@ h1 {
 
 .warning {
 	display: block;
-	margin-top: $space-big;
-	padding: $space-big;
+	margin-top: $space-3x;
+	padding: $space-3x;
 	border: 1px solid pink;
 }
 
 .title-content {
-	margin-bottom: $space-medium;
-	padding-bottom: $space-medium;
+	margin-bottom: $space-2x;
+	padding-bottom: $space-2x;
 	font-family: $secondary-font;
 	border-bottom: 1px solid $primary-border-color;
 }
 
 .elements-content {
-	margin: $space-medium 0;
+	margin: $space-2x 0;
 }
 
 header {
@@ -79,7 +79,7 @@ header {
 	box-sizing: border-box;
 
 	.version-content {
-		padding: $space-big;
+		padding: $space-3x;
 		text-align: right;
 	}
 
@@ -87,13 +87,13 @@ header {
 		@include transition(padding .3s .1s);
 		width: 100%;
 		height: auto;
-		padding: $space-bigger 0;
+		padding: $space-4x 0;
 		background-color: #ffffff;
 
 		&.fix {
 			@include transition(padding .3s .1s);
 			@include global-shadow;
-			padding: $space-small 0;
+			padding: $space 0;
 			position: fixed;
 			top: 0;
 			z-index: 2;
@@ -111,8 +111,8 @@ header {
 	.menu {
 		@include clearfix;
 		max-width: 640px;
-		margin-top: $space-big;
-		margin-bottom: $space-big;
+		margin-top: $space-3x;
+		margin-bottom: $space-3x;
 		padding: 0;
 		text-align: center;
 
@@ -151,7 +151,7 @@ header {
 
 .content {
 	max-width: 100%;
-	padding: $space-big;
+	padding: $space-3x;
 }
 
 .left-column {
@@ -167,7 +167,7 @@ header {
 	}
 
 	.title-wrapper {
-		padding: $space-big;
+		padding: $space-3x;
 		border-bottom: 1px solid $primary-border-color;
 		background-color: #d5d5d5;
 
@@ -181,7 +181,7 @@ header {
 .left-column {
 	.navigation {
 		margin: 0;
-		padding: $space-small 0;
+		padding: $space 0;
 
 		li {
 			margin: 0;
@@ -192,7 +192,7 @@ header {
 
 			> a {
 				display: block;
-				padding: $space-small 24px;
+				padding: $space $space-3x;
 				text-decoration: none;
 
 				&:hover {
@@ -207,13 +207,13 @@ header {
 			}
 
 			ul {
-				padding-left: $space-bigger;
+				padding-left: $space-4x;
 
 				li {
 					border-left: 1px solid $primary-border-color;
 
 					a {
-						padding-left: $space-medium;
+						padding-left: $space-2x;
 					}
 				}
 			}
@@ -230,7 +230,7 @@ header {
 
 	.detail-content {
 		@include global-shadow;
-		padding: $space-big;
+		padding: $space-3x;
 		background-color: #ffffff;
 	}
 
@@ -238,24 +238,24 @@ header {
 
 		.colors {
 			@include clearfix;
-			padding-bottom: $space-big;
+			padding-bottom: $space-3x;
 
 			&:last-child {
-				padding-bottom: 0px;
+				padding-bottom: 0;
 			}
 		}
 
 		li {
 			width: 20%;
 			display: block;
-			margin: 0 1% $space-medium;
+			margin: 0 1% $space-2x;
 			padding: 3px;
 			position: relative;
 			border: 1px solid $primary-border-color;
 			float: left;
 
 			&:last-child {
-				margin-bottom: 0px;
+				margin-bottom: 0;
 			}
 
 			&:before {
@@ -268,7 +268,7 @@ header {
 			.color-code {
 				@include transition(opacity .1s .1s);
 				opacity: .2;
-				padding: 0 $space-medium;
+				padding: 0 $space-2x;
 				background-color: #e5e5e5;
 				position: absolute;
 				right: 3px;
@@ -278,7 +278,7 @@ header {
 			.using {
 				height: 60px;
 				display: block;
-				padding: 5px $space-medium;
+				padding: 5px $space-2x;
 				margin-top: 3px;
 				background-color: #e5e5e5;
 
@@ -453,7 +453,7 @@ header {
 				width: 30%;
 				height: 150px;
 				display: block;
-				margin: 0 1% $space-medium;
+				margin: 0 1% $space-2x;
 				padding: 3px;
 				position: relative;
 				border: 1px solid $primary-border-color;
@@ -466,14 +466,14 @@ header {
 				text-align: center;
 
 				.icon {
-					margin-top: $space-big;
+					margin-top: $space-3x;
 				}
 			}
 
 			.sub-title {
 				display: block;
-				margin-top: $space-bigger;
-				padding: 0 $space-medium;
+				margin-top: $space-4x;
+				padding: 0 $space-2x;
 				font-size: $primary-font-size;
 				color: $secondary-font-color;
 				word-wrap: break-word;

@@ -1,0 +1,120 @@
+@import "palette";
+
+// Page
+$primary-bg-color: $whisper;
+$secondary-bg-color: $white;
+
+// Header
+$header-bg: $white;
+$top-links-color: $grey;
+
+// Navigation
+
+$navigation-bg: $dark-orange;
+$navigation-tablet-bg-color: $snow;
+
+$navigation-font-color: $white;
+$navigation-hover-font-color: $dark-orange;
+$navigation-pipe-color: $mango-tango;
+
+$navigation-category-color: $charcoal;
+$navigation-category-color-hover: $dark-orange;
+$navigation-subcategory-color: $dark-orange;
+
+//Fonts
+
+$primary-font-color: $charcoal;
+$secondary-font-color: $suva-grey;
+
+$primary-price-font-color: $tangerine;
+$secondary-price-font-color: $charcoal;
+
+//Links
+
+$primary-link-color: $charcoal;
+$primary-hover-link-color: $tangerine;
+
+//Border
+
+$primary-border-color: $whisper;
+$secondary-border-color: $silver;
+
+//Breadcrumb
+
+$breadcrumb-font-color: $dim-gray;
+
+//Buttons
+
+$primary-button-bg-color: $tangerine;
+$secondary-button-bg-color: $havelock-blue;
+
+$disabled-bg-color: $gainsboro;
+$disabled-color: $silver;
+
+$primary-button-font-color: $white;
+
+$primary-tabs-background-color: $gainsboro;
+$primary-tabs-hover-background-color: $silver;
+
+$secondary-tabs-hover-background-color: $white;
+
+$third-tabs-background-color: $suva-grey;
+$third-tabs-hover-background-color: $dim-gray;
+$third-tabs-color: $white;
+
+$primary-notification-bg-color: $tangerine;
+$secondary-notification-bg-color: $white;
+
+$primary-notification-border-color: $white;
+
+//Inputs
+
+$primary-input-focus-color: $tangerine;
+
+//Table
+
+$primary-table-row-bg-color: $white-smoke;
+
+//Tooltip
+
+$primary-tooltip-bg-color: $white-smoke;
+
+//Scrollbar
+
+$primary-scroll-track-bg-color: $whisper-1;
+$primary-scroll-thumb-bg-color: $very-light-grey;
+
+//Tabs
+
+$tabs-pipe-color: $nobel;
+
+//Warnings
+
+$error-color: $red;
+$success-color: $yellow-green;
+$note-color: $cream;
+
+//Banks
+
+$garanti-bg-color: $cream;
+$ykredi-bg-color: $purple;
+$isbank-bg-color: $medium-red-violet;
+$finans-bg-color: $smalt;
+$akbank-bg-color: $carrot-orange;
+$bankasya-bg-color: $medium-turquoise;
+$hsbc-bg-color: $tangerine;
+$halkbank-bg-color: $deep-sky-blue;
+
+//Campaigns
+
+$campaigns-color: $islamic-green;
+
+// Tabs
+// TODO: Names need to be changed to avoid confusion
+$primary-tabs-background-color: $gainsboro;
+$primary-tabs-hover-background-color: $silver;
+$secondary-tabs-hover-background-color: $white;
+
+$third-tabs-background-color: $suva-grey;
+$third-tabs-hover-background-color: $dim-gray;
+$third-tabs-color: $white;

@@ -1,39 +1,38 @@
 .hb-input-group {
 
-	.hb-radiobox-content {
+	.hb-checkbox-content {
 		min-height: 18px;
-		padding-left: $space-bigger;
+		padding-left: $space-4x;
+		line-height: 18px;
 		position: relative;
 
 		.hb-input {
 
-			&.radiobox {
+			&.checkbox {
 				@include opacity(0);
 				@include square(18px);
 				position: absolute;
-				top: 0px;
-				left: 0px;
+				top: 0;
+				left: 0;
 				z-index: 1;
 
 		    & + label {
-		    	@include border-radius(100%);
 					@include square(18px);
+					@include border-radius($secondary-radius-size);
 					display: block;
 					box-sizing: border-box;
 					border: 2px solid $secondary-border-color;
 					position: absolute;
-					top: 0px;
-					left: 0px;
+					top: 0;
+					left: 0;
 
-					&:after {
-						@include border-radius(100%);
-						@include square(8px);
-						content: "";
+					& + .icon {
+						@include square(15px);
 						display: none;
-						background-color: $primary-input-focus-color;
+						color: $primary-input-focus-color;
 						position: absolute;
 						top: 3px;
-						left: 3px;
+						left: 4px;
 					}
 		    }
 
@@ -41,10 +40,9 @@
 
 		    	& + label {
 
-		    		&:after {
+		    		& + .icon {
 		    			display: block;
-		    			z-index: 1
-		    		} 
+		    		}
 		    	}
 		    }
 			}
