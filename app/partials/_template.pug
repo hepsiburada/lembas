@@ -1,0 +1,13 @@
+doctype html
+html(lang='en')
+  include ./_head.pug
+  body(onload='prettyPrint()')
+    include ./_header.pug
+    section.hb-container.content
+      .left-column
+        include ./_navigation.pug
+      .right-column
+        .detail-content
+          block content
+  block script
+

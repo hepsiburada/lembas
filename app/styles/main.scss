@@ -13,46 +13,6 @@ h1 {
 	}
 }
 
-.pre {
-	display: block;
-	margin: $space-3x 0;
-	padding: $space-2x $space-4x;
-	border: 1px solid $primary-border-color;
-	background-color: #484848;
-	color: #ffffff;
-	position: relative;
-
-	&:before {
-		content: "";
-		width: 1px;
-		height: calc(100% - #{$space-4x});
-		background-color: $primary-border-color;
-		position: absolute;
-		top: $space-2x;
-		left: $space-2x;
-	}
-
-	&.no-margin {
-		margin-top: 0;
-	}
-
-	.tag {
-		color: #ff2929;
-
-		&.css-title {
-			color: #50bc71;
-		}
-
-		&.css {
-			color: #ffffff;
-		}
-
-		&.description {
-			color: #6f7678;
-		}
-	}
-}
-
 .warning {
 	display: block;
 	margin-top: $space-3x;

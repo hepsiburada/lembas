@@ -17,6 +17,7 @@ var ignoreList = [
 // example js files
 var jsFiles = [
   '**/*.js',
+  '!**/prettify/**/*.js',
   '**/*.json'
 ];
 
