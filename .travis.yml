@@ -2,3 +2,13 @@ language: node_js
 node_js:
   - "5"
   - "5.1"
+before_install:
+  - npm install -g casperjs gulp-cli
+before_script:
+  - phantomjs --version
+  - casperjs --version
+script:
+  - nohup gulp serve &
+  - sleep 15
+  - casperjs test ./test --verbose
+  - node ./phantomcss/image-upload

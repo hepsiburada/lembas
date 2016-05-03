@@ -3,5 +3,8 @@
     "browser": true,
     "node": true
   },
-  "extends": "hepsiburada/legacy"
+  "extends": "hepsiburada/legacy",
+  "globals": {
+    "casper": true
+  }
 }
