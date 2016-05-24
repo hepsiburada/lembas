@@ -1,265 +1,231 @@
 extends ../partials/_template.pug
 block content
-  .detail-content
-      #type.title-content
-        h1
-          | Typography
-          span.subtitle / Kullanılan font tipleri
-      .pre.no-margin
-        code
-          span.tag.description
-            | // Kullanmak istediğiniz rengin kodunu alıp
-            br
-            | font-family özellğine atamanız gerekmektedir.
-          br
-          br
-          span.tag.css-title font-family:
-          span.tag.css $primary-font;
-      ul.fonts
-        li.avenir
-          span.font
-            span.letter Aa Bb
-            |              Avenir Next LT Pro ($primary-font)
-        li.helvetica
-          span.font
-            span.letter Aa Bb
-            |              Helvetica  ($secondary-font)
-      .pre
-        code
-          span.tag <h1>
-          | Hepsiburada Styleguide
-          span.tag </h1>
-      .write
-        h1 Hepsiburada Styleguide
-      .pre
-        code
-          span.tag <h2>
-          | Hepsiburada Styleguide
-          span.tag </h2>
-      .write
-        h2 Hepsiburada Styleguide
-      br
-      br
-      #icons.title-content
-        h1
-          | İkonlar
-          span.subtitle / Kullanılan ikonlar
-      .pre
-        code
-          span.tag.description
-            | // Kullanmak istediğiniz iconun kodunu alıp, dosyanıza ekleyebilirsiniz.
-          br
-          br
-          span.tag <i
-          span.tag.css-title class=
-          | &quot;icon icon_a_z_sort&quot;
-          span.tag ></i>
-      ul.icons
-        li
-          span.icons-element
-            i.icon.icon_a_z_sort
-            span.sub-title "icon icon_a_z_sort"
-        li
-          span.icons-element
-            i.icon.icon_add_to_fav
-            span.sub-title "icon icon_add_to_fav"
-        li
-          span.icons-element
-            i.icon.icon_android
-            span.sub-title "icon icon_android"
-        li
-          span.icons-element
-            i.icon.icon_basket_icon_line
-            span.sub-title "icon icon_basket_icon_line"
-        li
-          span.icons-element
-            i.icon.icon_basket_icon_solid_disabled
-            span.sub-title "icon icon_basket_icon_solid_disabled"
-        li
-          span.icons-element
-            i.icon.icon_best_seller_down
-            span.sub-title "icon icon_best_seller_down"
-        li
-          span.icons-element
-            i.icon.icon_best_seller_stand
-            span.sub-title "icon icon_best_seller_stand"
-        li
-          span.icons-element
-            i.icon.icon_best_seller_up
-            span.sub-title "icon icon_best_seller_up"
-        li
-          span.icons-element
-            i.icon.icon_checkbox_tick
-            span.sub-title "icon icon_checkbox_tick"
-        li
-          span.icons-element
-            i.icon.icon_close_popup
-            span.sub-title "icon icon_close_popup"
-        li
-          span.icons-element
-            i.icon.icon_comment_bubble
-            span.sub-title "icon icon_comment_bubble"
-        li
-          span.icons-element
-            i.icon.icon_compare
-            span.sub-title "icon icon_compare"
-        li
-          span.icons-element
-            i.icon.icon_down_arrow
-            span.sub-title "icon icon_down_arrow"
-        li
-          span.icons-element
-            i.icon.icon_down_arrow_gray
-            span.sub-title "icon icon_down_arrow_gray"
-        li
-          span.icons-element
-            i.icon.icon_down_arrow_orange
-            span.sub-title "icon icon_down_arrow_orange"
-        li
-          span.icons-element
-            i.icon.icon_facebook
-            span.sub-title "icon icon_facebook"
-        li
-          span.icons-element
-            i.icon.icon_filter-active
-            span.sub-title "icon icon_filter-active"
-        li
-          span.icons-element
-            i.icon.icon_filter
-            span.sub-title "icon icon_filter"
-        li
-          span.icons-element
-            i.icon.icon_footer_bugun_teslimat
-            span.sub-title "icon icon_footer_bugun_teslimat"
-        li
-          span.icons-element
-            i.icon.icon_footer_kolay_iade
-            span.sub-title "icon icon_footer_kolay_iade"
-        li
-          span.icons-element
-            i.icon.icon_footer_mobil_cebinizde
-            span.sub-title "icon icon_footer_mobil_cebinizde"
-        li
-          span.icons-element
-            i.icon.icon_footer_tek_tikla_alisveris
-            span.sub-title "icon icon_footer_tek_tikla_alisveris"
-        li
-          span.icons-element
-            i.icon.icon_google-plus
-            span.sub-title "icon icon_google-plus"
-        li
-          span.icons-element
-            i.icon.icon_grid_view
-            span.sub-title "icon icon_grid_view"
-        li
-          span.icons-element
-            i.icon.icon_hamburger_menu
-            span.sub-title "icon icon_hamburger_menu"
-        li
-          span.icons-element
-            i.icon.icon_info
-            span.sub-title "icon icon_info"
-        li
-          span.icons-element
-            i.icon.icon_info_icon
-            span.sub-title "icon icon_info_icon"
-        li
-          span.icons-element
-            i.icon.icon_instagram
-            span.sub-title "icon icon_instagram"
-        li
-          span.icons-element
-            i.icon.icon_ipad_icon
-            span.sub-title "icon icon_ipad_icon"
-        li
-          span.icons-element
-            i.icon.icon_iphone_icon
-            span.sub-title "icon icon_iphone_icon"
-        li
-          span.icons-element
-            i.icon.icon_linkedin
-            span.sub-title "icon icon_linkedin"
-        li
-          span.icons-element
-            i.icon.icon_list_view
-            span.sub-title "icon icon_list_view"
-        li
-          span.icons-element
-            i.icon.icon_mobile_search_icon
-            span.sub-title "icon icon_mobile_search_icon"
-        li
-          span.icons-element
-            i.icon.icon_next_arrow
-            span.sub-title "icon icon_next_arrow"
-        li
-          span.icons-element
-            i.icon.icon_no_result_icon
-            span.sub-title "icon icon_no_result_icon"
-        li
-          span.icons-element
-            i.icon.icon_occ_icon
-            span.sub-title "icon icon_occ_icon"
-        li
-          span.icons-element
-            i.icon.icon_placeholder
-            span.sub-title "icon icon_placeholder"
-        li
-          span.icons-element
-            i.icon.icon_preorder
-            span.sub-title "icon icon_preorder"
-        li
-          span.icons-element
-            i.icon.icon_previous_arrow
-            span.sub-title "icon icon_previous_arrow"
-        li
-          span.icons-element
-            i.icon.icon_price_alarm
-            span.sub-title "icon icon_price_alarm"
-        li
-          span.icons-element
-            i.icon.icon_review
-            span.sub-title "icon icon_review"
-        li
-          span.icons-element
-            i.icon.icon_right_arrow_blue
-            span.sub-title "icon icon_right_arrow_blue"
-        li
-          span.icons-element
-            i.icon.icon_search_icon
-            span.sub-title "icon icon_search_icon"
-        li
-          span.icons-element
-            i.icon.icon_selectbox_arrow
-            span.sub-title "icon icon_selectbox_arrow"
-        li
-          span.icons-element
-            i.icon.icon_seller_icon
-            span.sub-title "icon icon_seller_icon"
-        li
-          span.icons-element
-            i.icon.icon_share
-            span.sub-title "icon icon_share"
-        li
-          span.icons-element
-            i.icon.icon_special_price_discount_icon
-            span.sub-title "icon icon_special_price_discount_icon"
-        li
-          span.icons-element
-            i.icon.icon_table_sort_icon
-            span.sub-title "icon icon_table_sort_icon"
-        li
-          span.icons-element
-            i.icon.icon_table_sort_icon
-            span.sub-title "icon icon_table_sort_icon"
-        li
-          span.icons-element
-            i.icon.icon_twitter
-            span.sub-title "icon icon_twitter"
-        li
-          span.icons-element
-            i.icon.icon_variant_warning_icon
-            span.sub-title "icon icon_variant_warning_icon"
-        li
-          span.icons-element
-            i.icon.icon_youtube
-            span.sub-title "icon icon_youtube"
+  .type
+    #type.title-content
+      h1
+        | Typography
+        span.subtitle / Kullanılan font tipleri
+    ul.fonts
+      li.avenir
+        span.font
+          span.letter Aa Bb
+          |              Avenir Next LT Pro ($primary-font)
+      li.helvetica
+        span.font
+          span.letter Aa Bb
+          |              Helvetica  ($secondary-font)
+    br
+    br
+    #icons.title-content
+      h1
+        | İkonlar
+        span.subtitle / Kullanılan ikonlar
+    ul.icons
+      li
+        span.icons-element
+          i.icon.icon_a_z_sort
+          span.sub-title "icon icon_a_z_sort"
+      li
+        span.icons-element
+          i.icon.icon_add_to_fav
+          span.sub-title "icon icon_add_to_fav"
+      li
+        span.icons-element
+          i.icon.icon_android
+          span.sub-title "icon icon_android"
+      li
+        span.icons-element
+          i.icon.icon_basket_icon_line
+          span.sub-title "icon icon_basket_icon_line"
+      li
+        span.icons-element
+          i.icon.icon_basket_icon_solid_disabled
+          span.sub-title "icon icon_basket_icon_solid_disabled"
+      li
+        span.icons-element
+          i.icon.icon_best_seller_down
+          span.sub-title "icon icon_best_seller_down"
+      li
+        span.icons-element
+          i.icon.icon_best_seller_stand
+          span.sub-title "icon icon_best_seller_stand"
+      li
+        span.icons-element
+          i.icon.icon_best_seller_up
+          span.sub-title "icon icon_best_seller_up"
+      li
+        span.icons-element
+          i.icon.icon_checkbox_tick
+          span.sub-title "icon icon_checkbox_tick"
+      li
+        span.icons-element
+          i.icon.icon_close_popup
+          span.sub-title "icon icon_close_popup"
+      li
+        span.icons-element
+          i.icon.icon_comment_bubble
+          span.sub-title "icon icon_comment_bubble"
+      li
+        span.icons-element
+          i.icon.icon_compare
+          span.sub-title "icon icon_compare"
+      li
+        span.icons-element
+          i.icon.icon_down_arrow
+          span.sub-title "icon icon_down_arrow"
+      li
+        span.icons-element
+          i.icon.icon_down_arrow_gray
+          span.sub-title "icon icon_down_arrow_gray"
+      li
+        span.icons-element
+          i.icon.icon_down_arrow_orange
+          span.sub-title "icon icon_down_arrow_orange"
+      li
+        span.icons-element
+          i.icon.icon_facebook
+          span.sub-title "icon icon_facebook"
+      li
+        span.icons-element
+          i.icon.icon_filter-active
+          span.sub-title "icon icon_filter-active"
+      li
+        span.icons-element
+          i.icon.icon_filter
+          span.sub-title "icon icon_filter"
+      li
+        span.icons-element
+          i.icon.icon_footer_bugun_teslimat
+          span.sub-title "icon icon_footer_bugun_teslimat"
+      li
+        span.icons-element
+          i.icon.icon_footer_kolay_iade
+          span.sub-title "icon icon_footer_kolay_iade"
+      li
+        span.icons-element
+          i.icon.icon_footer_mobil_cebinizde
+          span.sub-title "icon icon_footer_mobil_cebinizde"
+      li
+        span.icons-element
+          i.icon.icon_footer_tek_tikla_alisveris
+          span.sub-title "icon icon_footer_tek_tikla_alisveris"
+      li
+        span.icons-element
+          i.icon.icon_google-plus
+          span.sub-title "icon icon_google-plus"
+      li
+        span.icons-element
+          i.icon.icon_grid_view
+          span.sub-title "icon icon_grid_view"
+      li
+        span.icons-element
+          i.icon.icon_hamburger_menu
+          span.sub-title "icon icon_hamburger_menu"
+      li
+        span.icons-element
+          i.icon.icon_info
+          span.sub-title "icon icon_info"
+      li
+        span.icons-element
+          i.icon.icon_info_icon
+          span.sub-title "icon icon_info_icon"
+      li
+        span.icons-element
+          i.icon.icon_instagram
+          span.sub-title "icon icon_instagram"
+      li
+        span.icons-element
+          i.icon.icon_ipad_icon
+          span.sub-title "icon icon_ipad_icon"
+      li
+        span.icons-element
+          i.icon.icon_iphone_icon
+          span.sub-title "icon icon_iphone_icon"
+      li
+        span.icons-element
+          i.icon.icon_linkedin
+          span.sub-title "icon icon_linkedin"
+      li
+        span.icons-element
+          i.icon.icon_list_view
+          span.sub-title "icon icon_list_view"
+      li
+        span.icons-element
+          i.icon.icon_mobile_search_icon
+          span.sub-title "icon icon_mobile_search_icon"
+      li
+        span.icons-element
+          i.icon.icon_next_arrow
+          span.sub-title "icon icon_next_arrow"
+      li
+        span.icons-element
+          i.icon.icon_no_result_icon
+          span.sub-title "icon icon_no_result_icon"
+      li
+        span.icons-element
+          i.icon.icon_occ_icon
+          span.sub-title "icon icon_occ_icon"
+      li
+        span.icons-element
+          i.icon.icon_placeholder
+          span.sub-title "icon icon_placeholder"
+      li
+        span.icons-element
+          i.icon.icon_preorder
+          span.sub-title "icon icon_preorder"
+      li
+        span.icons-element
+          i.icon.icon_previous_arrow
+          span.sub-title "icon icon_previous_arrow"
+      li
+        span.icons-element
+          i.icon.icon_price_alarm
+          span.sub-title "icon icon_price_alarm"
+      li
+        span.icons-element
+          i.icon.icon_review
+          span.sub-title "icon icon_review"
+      li
+        span.icons-element
+          i.icon.icon_right_arrow_blue
+          span.sub-title "icon icon_right_arrow_blue"
+      li
+        span.icons-element
+          i.icon.icon_search_icon
+          span.sub-title "icon icon_search_icon"
+      li
+        span.icons-element
+          i.icon.icon_selectbox_arrow
+          span.sub-title "icon icon_selectbox_arrow"
+      li
+        span.icons-element
+          i.icon.icon_seller_icon
+          span.sub-title "icon icon_seller_icon"
+      li
+        span.icons-element
+          i.icon.icon_share
+          span.sub-title "icon icon_share"
+      li
+        span.icons-element
+          i.icon.icon_special_price_discount_icon
+          span.sub-title "icon icon_special_price_discount_icon"
+      li
+        span.icons-element
+          i.icon.icon_table_sort_icon
+          span.sub-title "icon icon_table_sort_icon"
+      li
+        span.icons-element
+          i.icon.icon_table_sort_icon
+          span.sub-title "icon icon_table_sort_icon"
+      li
+        span.icons-element
+          i.icon.icon_twitter
+          span.sub-title "icon icon_twitter"
+      li
+        span.icons-element
+          i.icon.icon_variant_warning_icon
+          span.sub-title "icon icon_variant_warning_icon"
+      li
+        span.icons-element
+          i.icon.icon_youtube
+          span.sub-title "icon icon_youtube"

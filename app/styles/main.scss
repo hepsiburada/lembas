@@ -194,7 +194,7 @@ header {
 		background-color: #ffffff;
 	}
 
-	&.colors {
+	.colors {
 
 		.colors {
 			@include clearfix;
@@ -368,7 +368,7 @@ header {
 		}
 	}
 
-	&.type {
+	.type {
 		.fonts {
 			@include clearfix;
 
