@@ -1,0 +1,363 @@
+@font-face {
+	font-family: "HbSpecialFont";
+	src: url('#{$styleguide-webfont-path}/HbFont/HbSpecialFont.eot');
+	src: url('#{$styleguide-webfont-path}/HbFont/HbSpecialFont.eot?#iefix') format('eot'),
+		url('#{$styleguide-webfont-path}/HbFont/HbSpecialFont.woff2') format('woff2'),
+		url('#{$styleguide-webfont-path}/HbFont/HbSpecialFont.woff') format('woff'),
+		url('#{$styleguide-webfont-path}/HbFont/HbSpecialFont.ttf') format('truetype'),
+		url('#{$styleguide-webfont-path}/HbFont/HbSpecialFont.svg#HbSpecialFont') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "HbSpecialFont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == add_to_fav {
+		$char: "\E001";
+	}
+	@if $filename == android {
+		$char: "\E002";
+	}
+	@if $filename == a_z_sort {
+		$char: "\E003";
+	}
+	@if $filename == basket_icon_line {
+		$char: "\E004";
+	}
+	@if $filename == basket_icon_solid_disabled {
+		$char: "\E005";
+	}
+	@if $filename == best_seller_down {
+		$char: "\E006";
+	}
+	@if $filename == best_seller_stand {
+		$char: "\E007";
+	}
+	@if $filename == best_seller_up {
+		$char: "\E008";
+	}
+	@if $filename == breadcrumb-arrow {
+		$char: "\E009";
+	}
+	@if $filename == checkbox_tick {
+		$char: "\E00A";
+	}
+	@if $filename == close_popup {
+		$char: "\E00B";
+	}
+	@if $filename == comment_bubble {
+		$char: "\E00C";
+	}
+	@if $filename == compare {
+		$char: "\E00D";
+	}
+	@if $filename == down_arrow {
+		$char: "\E00E";
+	}
+	@if $filename == down_arrow_gray {
+		$char: "\E00F";
+	}
+	@if $filename == down_arrow_orange {
+		$char: "\E010";
+	}
+	@if $filename == facebook {
+		$char: "\E011";
+	}
+	@if $filename == filter-active {
+		$char: "\E012";
+	}
+	@if $filename == filter {
+		$char: "\E013";
+	}
+	@if $filename == footer_bugun_teslimat {
+		$char: "\E014";
+	}
+	@if $filename == footer_kolay_iade {
+		$char: "\E015";
+	}
+	@if $filename == footer_mobil_cebinizde {
+		$char: "\E016";
+	}
+	@if $filename == footer_tek_tikla_alisveris {
+		$char: "\E017";
+	}
+	@if $filename == google-plus {
+		$char: "\E018";
+	}
+	@if $filename == grid_view {
+		$char: "\E019";
+	}
+	@if $filename == hamburger_menu {
+		$char: "\E01A";
+	}
+	@if $filename == info {
+		$char: "\E01B";
+	}
+	@if $filename == info_icon {
+		$char: "\E01C";
+	}
+	@if $filename == instagram {
+		$char: "\E01D";
+	}
+	@if $filename == ipad_icon {
+		$char: "\E01E";
+	}
+	@if $filename == iphone_icon {
+		$char: "\E01F";
+	}
+	@if $filename == linkedin {
+		$char: "\E020";
+	}
+	@if $filename == list_view {
+		$char: "\E021";
+	}
+	@if $filename == mobile_search_icon {
+		$char: "\E022";
+	}
+	@if $filename == next_arrow {
+		$char: "\E023";
+	}
+	@if $filename == no_result_icon {
+		$char: "\E024";
+	}
+	@if $filename == occ_icon {
+		$char: "\E025";
+	}
+	@if $filename == placeholder {
+		$char: "\E026";
+	}
+	@if $filename == preorder {
+		$char: "\E027";
+	}
+	@if $filename == previous_arrow {
+		$char: "\E028";
+	}
+	@if $filename == price_alarm {
+		$char: "\E029";
+	}
+	@if $filename == review {
+		$char: "\E02A";
+	}
+	@if $filename == right_arrow_blue {
+		$char: "\E02B";
+	}
+	@if $filename == search_icon {
+		$char: "\E02C";
+	}
+	@if $filename == selectbox_arrow {
+		$char: "\E02D";
+	}
+	@if $filename == seller_icon {
+		$char: "\E02E";
+	}
+	@if $filename == share {
+		$char: "\E02F";
+	}
+	@if $filename == special_price_discount_icon {
+		$char: "\E030";
+	}
+	@if $filename == table_sort_icon {
+		$char: "\E031";
+	}
+	@if $filename == twitter {
+		$char: "\E032";
+	}
+	@if $filename == user_icon {
+		$char: "\E033";
+	}
+	@if $filename == variant_warning_icon {
+		$char: "\E034";
+	}
+	@if $filename == youtube {
+		$char: "\E035";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-add_to_fav {
+	@include icon(add_to_fav);
+}
+.icon-android {
+	@include icon(android);
+}
+.icon-a_z_sort {
+	@include icon(a_z_sort);
+}
+.icon-basket_icon_line {
+	@include icon(basket_icon_line);
+}
+.icon-basket_icon_solid_disabled {
+	@include icon(basket_icon_solid_disabled);
+}
+.icon-best_seller_down {
+	@include icon(best_seller_down);
+}
+.icon-best_seller_stand {
+	@include icon(best_seller_stand);
+}
+.icon-best_seller_up {
+	@include icon(best_seller_up);
+}
+.icon-breadcrumb-arrow {
+	@include icon(breadcrumb-arrow);
+}
+.icon-checkbox_tick {
+	@include icon(checkbox_tick);
+}
+.icon-close_popup {
+	@include icon(close_popup);
+}
+.icon-comment_bubble {
+	@include icon(comment_bubble);
+}
+.icon-compare {
+	@include icon(compare);
+}
+.icon-down_arrow {
+	@include icon(down_arrow);
+}
+.icon-down_arrow_gray {
+	@include icon(down_arrow_gray);
+}
+.icon-down_arrow_orange {
+	@include icon(down_arrow_orange);
+}
+.icon-facebook {
+	@include icon(facebook);
+}
+.icon-filter-active {
+	@include icon(filter-active);
+}
+.icon-filter {
+	@include icon(filter);
+}
+.icon-footer_bugun_teslimat {
+	@include icon(footer_bugun_teslimat);
+}
+.icon-footer_kolay_iade {
+	@include icon(footer_kolay_iade);
+}
+.icon-footer_mobil_cebinizde {
+	@include icon(footer_mobil_cebinizde);
+}
+.icon-footer_tek_tikla_alisveris {
+	@include icon(footer_tek_tikla_alisveris);
+}
+.icon-google-plus {
+	@include icon(google-plus);
+}
+.icon-grid_view {
+	@include icon(grid_view);
+}
+.icon-hamburger_menu {
+	@include icon(hamburger_menu);
+}
+.icon-info {
+	@include icon(info);
+}
+.icon-info_icon {
+	@include icon(info_icon);
+}
+.icon-instagram {
+	@include icon(instagram);
+}
+.icon-ipad_icon {
+	@include icon(ipad_icon);
+}
+.icon-iphone_icon {
+	@include icon(iphone_icon);
+}
+.icon-linkedin {
+	@include icon(linkedin);
+}
+.icon-list_view {
+	@include icon(list_view);
+}
+.icon-mobile_search_icon {
+	@include icon(mobile_search_icon);
+}
+.icon-next_arrow {
+	@include icon(next_arrow);
+}
+.icon-no_result_icon {
+	@include icon(no_result_icon);
+}
+.icon-occ_icon {
+	@include icon(occ_icon);
+}
+.icon-placeholder {
+	@include icon(placeholder);
+}
+.icon-preorder {
+	@include icon(preorder);
+}
+.icon-previous_arrow {
+	@include icon(previous_arrow);
+}
+.icon-price_alarm {
+	@include icon(price_alarm);
+}
+.icon-review {
+	@include icon(review);
+}
+.icon-right_arrow_blue {
+	@include icon(right_arrow_blue);
+}
+.icon-search_icon {
+	@include icon(search_icon);
+}
+.icon-selectbox_arrow {
+	@include icon(selectbox_arrow);
+}
+.icon-seller_icon {
+	@include icon(seller_icon);
+}
+.icon-share {
+	@include icon(share);
+}
+.icon-special_price_discount_icon {
+	@include icon(special_price_discount_icon);
+}
+.icon-table_sort_icon {
+	@include icon(table_sort_icon);
+}
+.icon-twitter {
+	@include icon(twitter);
+}
+.icon-user_icon {
+	@include icon(user_icon);
+}
+.icon-variant_warning_icon {
+	@include icon(variant_warning_icon);
+}
+.icon-youtube {
+	@include icon(youtube);
+}
+

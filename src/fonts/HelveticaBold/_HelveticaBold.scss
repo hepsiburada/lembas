@@ -1,0 +1,15 @@
+@import "../../paths/paths";
+
+@font-face {
+  font-family: 'HelveticaBold';
+  src: url('#{$styleguide-webfont-path}/HelveticaBold/HelveticaBold.eot');
+  src: url('#{$styleguide-webfont-path}/HelveticaBold/HelveticaBold.eot?#iefix') format('embedded-opentype'),
+  url('#{$styleguide-webfont-path}/HelveticaBold/HelveticaBold.woff') format('woff'),
+  url('#{$styleguide-webfont-path}/HelveticaBold/HelveticaBold.ttf') format('truetype'),
+  url('#{$styleguide-webfont-path}/HelveticaBold/HelveticaBold.otf') format('opentype'),
+  url('#{$styleguide-webfont-path}/HelveticaBold/HelveticaBold.svg#Helvetica') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0-10FFFF;
+}
