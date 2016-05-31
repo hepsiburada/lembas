@@ -3,6 +3,8 @@ phantomcss.init({
   screenshotRoot: './phantomcss/screenshot',
   failedComparisonsRoot: './phantomcss/failures',
   comparisonResultRoot: './phantomcss/results',
+  cleanupComparisonImages: true,
+  mismatchTolerance: 0.05,
   outputSettings: {
     errorColor: {
       red: 255,

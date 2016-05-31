@@ -51,7 +51,7 @@
 	@if $filename == best_seller_up {
 		$char: "\E008";
 	}
-	@if $filename == breadcrumb-arrow {
+	@if $filename == breadcrumb_arrow {
 		$char: "\E009";
 	}
 	@if $filename == checkbox_tick {
@@ -225,8 +225,8 @@
 .icon-best_seller_up {
 	@include icon(best_seller_up);
 }
-.icon-breadcrumb-arrow {
-	@include icon(breadcrumb-arrow);
+.icon-breadcrumb_arrow {
+	@include icon(breadcrumb_arrow);
 }
 .icon-checkbox_tick {
 	@include icon(checkbox_tick);
@@ -360,4 +360,4 @@
 .icon-youtube {
 	@include icon(youtube);
 }
-
+

@@ -2,7 +2,7 @@ module.exports = function () {
   var $ = this.opts.$;
   var svgPath = 'src/images/svg-fonts/*.svg';
   var fontName = 'HbSpecialFont';
-  var fontPath = '#{$styleguide-webfont-path}/HbFont/';
+  var fontPath = './src/fonts/HbFont/';
   var webfontConfig = {
     fontName: fontName,
     formats: ['ttf', 'eot', 'woff', 'svg'],
