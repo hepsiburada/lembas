@@ -1,0 +1,9 @@
+extends ../partials/_template.pug
+include ../partials/_mixin.pug
+block content
+	+showcase()
+		.hb-part
+			.hb-column-left
+				| Column Left (Width: %60)
+			.hb-column-right
+				| Column Right (Width: %40)

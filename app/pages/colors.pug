@@ -1,177 +1,174 @@
 extends ../partials/_template.pug
+include ../partials/_mixin.pug
 block content
-  #arkaplan.title-content
-    h1
-      | Arkaplan Renkleri
-      span.subtitle / Kullanılan arkaplan renkleri
-  .pre.no-margin
-    code
-      span.tag.description
-        | // Kullanmak istediğiniz rengin kodunu alıp
-        br
-        | backgorund-color özellğine atamanız gerekmektedir.
-      br
-      br
-      span.tag.css-title background-color:
-      span.tag.css $primary-bg-color
-  .warning
-    | NOT: Oluşturduğunuz yeni komponentler için yeni renk değişkenleri
-    | tanımlamanız, global bir yapı için gereklidir.
-  ul.colors
-    li.color-1
-      span.using
-        span
-          | Global Arkaplan Rengi
-          b ($primary-bg-color)
-      span.color-code #e5e5e5
-    li.color-2
-      span.using
-        span
-          | İkincil Arkaplan Rengi
-          b ($secondary-bg-color)
-      span.color-code #ffffff
-  #font.title-content
-    h1
-      | Font Renkleri
-      span.subtitle / Kullanılan font renkleri
-  ul.colors
-    li.color-3
-      span.using
-        span
-          | Global Font Rengi
-          b ($primary-font-color)
-        span
-          | Global Link Rengi
-          b ($primary-link-color)
-        span
-          | Menü Alt Kategori Rengi
-          b ($navigation-category-color)
-      span.color-code #484848
-    li.color-4
-      span.using
-        span
-          | İkincil Global Font Rengi
-          b ($secondary-font-color)
-      span.color-code #919191
-    li.color-5
-      span.using
-        span
-          | Menü Ana Kategori Rengi
-          b ($navigation-font-color)
-      span.color-code #ffffff
-    li.color-6
-      span.using
-        span
-          | Menü Kategori Hover Rengi
-          b ($navigation-category-color-hover)
-        span
-          | Menü Alt Kategori Rengi
-          b ($navigation-subcategory-color)
-      span.color-code #ff8600
-    li.color-7
-      span.using
-        span
-          | Global Link Hover Rengi
-          b ($primary-hover-link-color)
-      span.color-code #f28b00
-  #border.title-content
-    h1
-      | Border Renkleri
-      span.subtitle / Kullanılan border renkleri
-  ul.colors
-    li.color-1
-      span.using
-        span
-          | Global Border Rengi
-          b ($primary-border-color)
-      span.color-code #e5e5e5
-  #menu.title-content
-    h1
-      | Menü Renkleri
-      span.subtitle / Menüde kullanılan renkler
-  ul.colors
-    li.color-6
-      span.using
-        span
-          | Menü Arkaplan Rengi
-          b ($navigation-bg)
-      span.color-code #ff8600
-    li.color-8
-      span.using
-        span
-          | Menü Pipe Rengi
-          b ($navigation-pipe-color)
-      span.color-code #e67a02
-    li.color-14
-      span.using
-        span
-          | Menü Tablet Arkaplan Rengi
-          b ($navigation-tablet-bg-color)
-      span.color-code #faf9f9
-  #uyari.title-content
-    h1
-      | Uyarı Renkleri
-      span.subtitle / Kullanılan uyarı(Hata, başarı...vs) renkleri
-  ul.colors
-    li.color-16
-      span.using
-        span
-          | Hata Rengi
-          b ($error-color)
-      span.color-code #f90000
-    li.color-17
-      span.using
-        span
-          | Success Rengi
-          b ($success-color)
-      span.color-code #9cc435
-    li.color-19
-      span.using
-        span
-          | Not Rengi
-          b ($note-color)
-      span.color-code #ffffcc
-  #diger.title-content
-    h1
-      | Diğer Renkler
-      span.subtitle / Sitede kullanılan diğer renkler
-  ul.colors
-    li.color-9
-      span.using
-        span
-          | Top Link Rengi
-          b ($top-links-color)
-      span.color-code #7b7b7b
-    li.color-10
-      span.using
-        span
-          | Genel Deaktif Rengi
-          b ($disabled-color)
-      span.color-code #5c5e5f
-    li.color-11
-      span.using
-        span
-          | Genel Tablo Satır Arkaplan Rengi
-          b ($primary-table-row-bg-color)
-        span
-          | Genel Tooltip Arkaplan Rengi
-          b ($primary-tooltip-bg-color)
-      span.color-code #f1f1f1
-    li.color-12
-      span.using
-        span
-          | Genel Scroll Track Arkaplan Rengi
-          b ($primary-scroll-track-bg-color)
-      span.color-code #eeeeee
-    li.color-13
-      span.using
-        span
-          | Genel Scroll Thumb Arkaplan Rengi
-          b ($primary-scroll-thumb-bg-color)
-      span.color-code #cccccc
-    li.color-15
-      span.using
-        span
-          | Tab Ayıraç Rengi
-          b ($tabs-pipe-color)
-      span.color-code #9f9f9f
+  .colors
+    #arkaplan.title-content
+      h1
+        | Arkaplan Renkleri
+        span.subtitle / Kullanılan arkaplan renkleri
+    +showcase()
+      // Kullanmak istediğiniz rengin kodunu alıp backgorund-color özellğine atamanız gerekmektedir.
+      div(style="background-color: $primary-bg-color")
+    .warning
+      | NOT: Oluşturduğunuz yeni komponentler için yeni renk değişkenleri
+      | tanımlamanız, global bir yapı için gereklidir.
+    br
+    br
+    ul.colors
+      li.color-1
+        span.using
+          span
+            | Global Arkaplan Rengi
+            b ($primary-bg-color)
+        span.color-code #e5e5e5
+      li.color-2
+        span.using
+          span
+            | İkincil Arkaplan Rengi
+            b ($secondary-bg-color)
+        span.color-code #ffffff
+    #font.title-content
+      h1
+        | Font Renkleri
+        span.subtitle / Kullanılan font renkleri
+    ul.colors
+      li.color-3
+        span.using
+          span
+            | Global Font Rengi
+            b ($primary-font-color)
+          span
+            | Global Link Rengi
+            b ($primary-link-color)
+          span
+            | Menü Alt Kategori Rengi
+            b ($navigation-category-color)
+        span.color-code #484848
+      li.color-4
+        span.using
+          span
+            | İkincil Global Font Rengi
+            b ($secondary-font-color)
+        span.color-code #919191
+      li.color-5
+        span.using
+          span
+            | Menü Ana Kategori Rengi
+            b ($navigation-font-color)
+        span.color-code #ffffff
+      li.color-6
+        span.using
+          span
+            | Menü Kategori Hover Rengi
+            b ($navigation-category-color-hover)
+          span
+            | Menü Alt Kategori Rengi
+            b ($navigation-subcategory-color)
+        span.color-code #ff8600
+      li.color-7
+        span.using
+          span
+            | Global Link Hover Rengi
+            b ($primary-hover-link-color)
+        span.color-code #f28b00
+    #border.title-content
+      h1
+        | Border Renkleri
+        span.subtitle / Kullanılan border renkleri
+    ul.colors
+      li.color-1
+        span.using
+          span
+            | Global Border Rengi
+            b ($primary-border-color)
+        span.color-code #e5e5e5
+    #menu.title-content
+      h1
+        | Menü Renkleri
+        span.subtitle / Menüde kullanılan renkler
+    ul.colors
+      li.color-6
+        span.using
+          span
+            | Menü Arkaplan Rengi
+            b ($navigation-bg)
+        span.color-code #ff8600
+      li.color-8
+        span.using
+          span
+            | Menü Pipe Rengi
+            b ($navigation-pipe-color)
+        span.color-code #e67a02
+      li.color-14
+        span.using
+          span
+            | Menü Tablet Arkaplan Rengi
+            b ($navigation-tablet-bg-color)
+        span.color-code #faf9f9
+    #uyari.title-content
+      h1
+        | Uyarı Renkleri
+        span.subtitle / Kullanılan uyarı(Hata, başarı...vs) renkleri
+    ul.colors
+      li.color-16
+        span.using
+          span
+            | Hata Rengi
+            b ($error-color)
+        span.color-code #f90000
+      li.color-17
+        span.using
+          span
+            | Success Rengi
+            b ($success-color)
+        span.color-code #9cc435
+      li.color-19
+        span.using
+          span
+            | Not Rengi
+            b ($note-color)
+        span.color-code #ffffcc
+    #diger.title-content
+      h1
+        | Diğer Renkler
+        span.subtitle / Sitede kullanılan diğer renkler
+    ul.colors
+      li.color-9
+        span.using
+          span
+            | Top Link Rengi
+            b ($top-links-color)
+        span.color-code #7b7b7b
+      li.color-10
+        span.using
+          span
+            | Genel Deaktif Rengi
+            b ($disabled-color)
+        span.color-code #5c5e5f
+      li.color-11
+        span.using
+          span
+            | Genel Tablo Satır Arkaplan Rengi
+            b ($primary-table-row-bg-color)
+          span
+            | Genel Tooltip Arkaplan Rengi
+            b ($primary-tooltip-bg-color)
+        span.color-code #f1f1f1
+      li.color-12
+        span.using
+          span
+            | Genel Scroll Track Arkaplan Rengi
+            b ($primary-scroll-track-bg-color)
+        span.color-code #eeeeee
+      li.color-13
+        span.using
+          span
+            | Genel Scroll Thumb Arkaplan Rengi
+            b ($primary-scroll-thumb-bg-color)
+        span.color-code #cccccc
+      li.color-15
+        span.using
+          span
+            | Tab Ayıraç Rengi
+            b ($tabs-pipe-color)
+        span.color-code #9f9f9f

@@ -10,5 +10,3 @@ before_script:
 script:
   - nohup gulp serve &
   - sleep 15
-  - casperjs test ./test --verbose
-  - node ./phantomcss/image-upload

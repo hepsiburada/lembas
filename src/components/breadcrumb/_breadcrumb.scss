@@ -1,13 +1,14 @@
 ul.hb-breadcrumb {
   @include clearfix;
+  display: inline-block;
 
   li {
     width: auto;
     height: auto;
     white-space: nowrap;
     position: relative;
-    padding: 0 17px 0 15px;
-    font-family: $secondary-font;
+    padding: 0 21px 0 15px;
+    font-family: $third-font;
     font-size: $third-font-size;
     font-weight: bold;
     float: left;
@@ -21,10 +22,10 @@ ul.hb-breadcrumb {
     }
 
     &:not(:last-child) {
-      &:after {
-        content: ">";
+      .icon {
+        font-size: 8px;
         position: absolute;
-        top: 0;
+        top: 0px;
         right: 0;
       }
     }

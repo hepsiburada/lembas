@@ -1,0 +1,53 @@
+@mixin part-of($grid-size) {
+	width: (100% / $max-grid) * $grid-size;
+}
+
+@mixin media-desktop{
+	@media screen and(min-width: $breakpoint-desktop) {
+		@content;
+	}
+}
+
+@mixin media-landscape{
+	@media screen and(min-width: $breakpoint-tablet-landscape) and (max-width: $breakpoint-desktop - 1) {
+		@content;
+	}
+}
+
+@mixin media-portrait{
+	@media screen and(min-width: $breakpoint-tablet-portrait) and (max-width: $breakpoint-tablet-landscape - 1) {
+		@content;
+	}
+}
+
+.hb-column-left {
+	float: left;
+
+	@include media-desktop {
+		@include part-of(3);
+	}
+
+	@include media-landscape {
+		@include part-of(4);
+	}
+
+	@include media-portrait {
+		@include part-of(1);
+	}
+}
+
+.hb-column-right {
+	float: left;
+
+	@include media-desktop {
+		@include part-of(2);
+	}
+
+	@include media-landscape {
+		@include part-of(1);
+	}
+
+	@include media-portrait {
+		@include part-of(4);
+	}
+}

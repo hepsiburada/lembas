@@ -1,0 +1,220 @@
+extends ../partials/_template.pug
+include ../partials/_mixin.pug
+block content
+	#buttons.title-content
+		h1
+			| Butonlar
+			span.subtitle / Kullanılan butonlar
+	elements-content
+		#smallButtons
+			+showcase()
+				button.hb-button.normal(type="button")
+					| Sepete Ekle
+				button.hb-button.alternative(type="button")
+					| Sepete Ekle
+				button.hb-button.disabled(type="button" disabled="disabled")
+					| Sepete Ekle
+	.elements-content
+		+showcase()
+			button.hb-button.big(type="button")
+				| Sepete Ekle
+			button.hb-button.alternative.big(type="button")
+				| Sepete Ekle
+			button.hb-button.disabled.big(type="button" disabled="disabled")
+				| Sepete Ekle
+	.elements-content
+		+showcase()
+			button.hb-button.big(type="button")
+				i.icon.icon_basket_icon_solid_disabled
+				| Sepete Ekle
+			button.hb-button.alternative.big(type="button")
+				i.icon.icon_footer_tek_tikla_alisveris
+				| Sepete Ekle
+			button.hb-button.disabled.big(type="button" disabled="disabled")
+				i.icon.icon_basket_icon_solid_disabled
+				| Sepete Ekle
+	#buttonGroups.title-content
+		h1
+			| Buton Grupları
+			span.subtitle / Kullanılan butonlar
+	.elements-content
+		+showcase()
+			div.hb-button-group.eliptical
+				button.hb-button.active(type="button")
+					| Çok Satanlar
+				button.hb-button(type="button")
+					| En Yeniler
+				button.hb-button(type="button")
+					| En Düşük Fiyat
+				button.hb-button(type="button")
+					| En Yüksek Fiyat
+	.elements-content
+		+showcase()
+			div.hb-button-group.square
+				button.hb-button.active(type="button")
+					| Çok Satanlar
+				button.hb-button(type="button")
+					| En Yeniler
+				button.hb-button(type="button")
+					| En Düşük Fiyat
+				button.hb-button(type="button")
+					| En Yüksek Fiyat
+	.elements-content
+		+showcase()
+			div.hb-button-group.square.dark
+				button.hb-button.active(type="button")
+					| Çok Satanlar
+				button.hb-button.with-badge(type="button")
+					| En Yeniler
+					i.notification
+						| 7
+				button.hb-button(type="button")
+					| En Düşük Fiyat
+				button.hb-button(type="button")
+					| En Yüksek Fiyat
+	#inputs.title-content
+		h1
+			| İnputlar
+			span.subtitle / Kullanılan inputlar
+	.elements-content
+		+showcase()
+			div.hb-input-group
+				input.hb-input(type="text" placeholder="Write Something")
+			br
+			div.hb-input-group.error
+				input.hb-input(type="text" placeholder="Write Something")
+			br
+			div.hb-input-group.disabled
+				input.hb-input(type="text" placeholder="Write Something")
+	.elements-content
+		+showcase()
+			div.hb-input-group.animate
+				input.hb-input(type="text")
+				span.placeholder
+					| Write Something
+			br
+			div.hb-input-group.animate.error
+				input.hb-input(type="text")
+				span.placeholder
+					| Write Something
+			br
+			div.hb-input-group.animate.disabled
+				input.hb-input(type="text" disabled)
+				span.placeholder
+					| Write Something
+	.elements-content
+		+showcase()
+			div.hb-input-group.no-animate
+				input.hb-input(type="text")
+				span.placeholder
+					| Write Something
+			br
+			div.hb-input-group.no-animate.error
+				input.hb-input(type="text")
+				span.placeholder
+					| Write Something
+			br
+			div.hb-input-group.no-animate.disabled
+				input.hb-input(type="text" disabled)
+				span.placeholder
+					| Write Something
+	.elements-content
+		+showcase()
+			div.hb-input-group.animate
+				textarea.hb-input.textarea(type="text")
+				span.placeholder
+					| Write Something
+			br
+			div.hb-input-group.animate.error
+				textarea.hb-input.textarea(type="text")
+				span.placeholder
+					| Write Something
+			br
+			div.hb-input-group.animate.disabled
+				textarea.hb-input.textarea(type="text" disabled)
+				span.placeholder
+					| Write Something
+	.elements-content
+		+showcase()
+			div.hb-input-group.no-animate
+				textarea.hb-input.textarea(type="text")
+				span.placeholder
+					| Write Something
+			br
+			div.hb-input-group.no-animate.error
+				textarea.hb-input.textarea(type="text")
+				span.placeholder
+					| Write Something
+			br
+			div.hb-input-group.no-animate.disabled
+				textarea.hb-input.textarea(type="text" disabled)
+				span.placeholder
+					| Write Something
+	#inputs.title-content
+		h1
+			| Dropdowns
+			span.subtitle / Kullanılan dropdown stilleri
+	.elements-content
+		+showcase()
+			div.hb-input-group
+				select.hb-input.select(type="text")
+					option
+						| Options 1
+				i.icon.icon_selectbox_arrow
+			br
+			div.hb-input-group
+				select.hb-input.select(type="text")
+					option
+						| Options 1
+				i.icon.icon_selectbox_arrow
+			br
+			div.hb-input-group
+				select.hb-input.select(type="text" disabled)
+					option
+						| Options 1
+				i.icon.icon_selectbox_arrow
+	.elements-content
+		+showcase()
+			div.hb-input-group.no-animate
+				select.hb-input.select(type="text")
+					option
+						| Options 1
+				span.placeholder
+					| Başlık
+				i.icon.icon_selectbox_arrow
+			br
+			div.hb-input-group.no-animate.error
+				select.hb-input.select(type="text")
+					option
+						| Options 1
+				span.placeholder
+					| Başlık
+				i.icon.icon_selectbox_arrow
+			br
+			div.hb-input-group.no-animate.disabled
+				select.hb-input.select(type="text" disabled)
+					option
+						| Options 1
+				span.placeholder
+					| Başlık
+				i.icon.icon_selectbox_arrow
+	#checkbox.title-content
+		h1
+			| Checkbox & Radiobox
+			span.subtitle / Kullanılan checkbox ve radiobox stilleri
+	.elements-content
+		+showcase()
+			.hb-input-group
+				.hb-checkbox-content
+					label.hb-box-value
+						| Seçenek 1
+					input.hb-input.checkbox(type="checkbox")
+					label
+					i.icon.icon_checkbox_tick
+			br
+			.hb-input-group
+				.hb-radiobox-content
+					label.hb-box-value
+						| Seçenek 1
+					input.hb-input.radiobox(type="radio")
+					label

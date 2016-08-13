@@ -58,6 +58,11 @@
 				&:hover {
 					background-color: $third-tabs-hover-background-color;
 				}
+
+				&.active {
+					background-color: $third-tabs-active-background-color;
+					color: $third-tabs-active-color;
+				}
 			}
 		}
 	}
