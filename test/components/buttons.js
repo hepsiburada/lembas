@@ -2,7 +2,16 @@ var phantomcss = require('phantomcss');
 phantomcss.init({
   screenshotRoot: './phantomcss/screenshot',
   failedComparisonsRoot: './phantomcss/failures',
-  comparisonResultRoot: './phantomcss/results'
+  comparisonResultRoot: './phantomcss/results',
+  outputSettings: {
+    errorColor: {
+      red: 255,
+      green: 255,
+      blue: 0
+    },
+    errorType: 'movement',
+    transparency: 0.3
+  }
 });
 
 casper.test.begin('Form elements testing', 1, function (test) {
