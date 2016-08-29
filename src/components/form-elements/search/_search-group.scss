@@ -1,0 +1,44 @@
+.hb-input-group {
+	&.search {
+		
+		.icon-search_icon {
+			font-size: 18px;
+			color: $silver;
+			position: absolute;
+			top: 13px;
+			left: 20px;
+		}
+
+		.hb-input {
+			width: 100%;
+			height: 48px;
+			padding: 0 70px 0 55px;
+			font-family: $primary-font;
+			font-size: $secondary-font-size;
+			color: $secondary-font-color;
+
+			&:focus {
+
+				& + .hb-button {
+					@include transition(all .3s .1s);
+					background-color: $primary-button-bg-color;
+				}
+			}
+		}
+
+		.hb-button {
+			@include transition(all .3s .1s);
+			width: 66px;
+			min-width: 66px;
+			height: 48px;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			background-color: $third-button-bg-color;
+			font-size: $secondary-font-size;
+			font-family: $primary-font;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+	}
+}
