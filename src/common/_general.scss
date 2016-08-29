@@ -40,3 +40,11 @@ li {
     margin: 0 auto;
   }
 }
+
+.hb-shadow {
+  @include global-shadow;
+}
+
+.section {
+  margin-top: $space-2x;
+}
