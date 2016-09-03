@@ -21,11 +21,25 @@ $grid-map:
 				&.hb-col-#{$smg}-#{$i} {
 					@if $breakpoint-max == none {
 						@media screen and (min-width: $breakpoint) {
-							width: $i * 20%;
+							width: $i * (100% / $grid-length);
 						}
 					} @else {
 						@media screen and (min-width: $breakpoint) and (max-width: $breakpoint-max) {
-							width: $i * 20%;
+							width: $i * (100% / $grid-length);
+						}
+					}
+
+					@for $z from $i through 1 {
+						.hb-col-#{$smg}-#{$z} {
+							@if $breakpoint-max == none {
+								@media screen and (min-width: $breakpoint) {
+									width: $z * (100% / $i);
+								}
+							} @else {
+								@media screen and (min-width: $breakpoint) and (max-width: $breakpoint-max) {
+									width: $z * (100% / $i);
+								}
+							}
 						}
 					}
 				}
