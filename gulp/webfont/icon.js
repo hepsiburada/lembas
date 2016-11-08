@@ -13,7 +13,7 @@ module.exports = function () {
     path: 'src/common/mixins/font-icon-creator/iconfont-template.scss',
     targetPath: '_' + fontName + '.scss',
     fontPath: fontPath,
-    cssClass: 'icon'
+    cssClass: 'hb-icon'
   };
 
   return this.gulp.src(svgPath)

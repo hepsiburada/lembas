@@ -8,7 +8,7 @@
 		url('#{$styleguide-webfont-path}/HbFont/HbSpecialFont.svg#HbSpecialFont') format('svg');
 }
 
-@mixin icon-styles {
+@mixin hb-icon-styles {
 	font-family: "HbSpecialFont";
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -20,11 +20,11 @@
 	text-transform: none;
 }
 
-%icon {
-	@include icon-styles;
+%hb-icon {
+	@include hb-icon-styles;
 }
 
-@function icon-char($filename) {
+@function hb-icon-char($filename) {
 	$char: "";
 
 	@if $filename == add_to_fav {
@@ -190,174 +190,174 @@
 	@return $char;
 }
 
-@mixin icon($filename, $insert: before, $extend: true) {
+@mixin hb-icon($filename, $insert: before, $extend: true) {
 	&:#{$insert} {
 		@if $extend {
-			@extend %icon;
+			@extend %hb-icon;
 		} @else {
-			@include icon-styles;
+			@include hb-icon-styles;
 		}
-		content: icon-char($filename);
+		content: hb-icon-char($filename);
 	}
 }
 
-.icon-add_to_fav {
-	@include icon(add_to_fav);
+.hb-icon-add_to_fav {
+	@include hb-icon(add_to_fav);
 }
-.icon-android {
-	@include icon(android);
+.hb-icon-android {
+	@include hb-icon(android);
 }
-.icon-a_z_sort {
-	@include icon(a_z_sort);
+.hb-icon-a_z_sort {
+	@include hb-icon(a_z_sort);
 }
-.icon-basket_icon_line {
-	@include icon(basket_icon_line);
+.hb-icon-basket_icon_line {
+	@include hb-icon(basket_icon_line);
 }
-.icon-basket_icon_solid_disabled {
-	@include icon(basket_icon_solid_disabled);
+.hb-icon-basket_icon_solid_disabled {
+	@include hb-icon(basket_icon_solid_disabled);
 }
-.icon-best_seller_down {
-	@include icon(best_seller_down);
+.hb-icon-best_seller_down {
+	@include hb-icon(best_seller_down);
 }
-.icon-best_seller_stand {
-	@include icon(best_seller_stand);
+.hb-icon-best_seller_stand {
+	@include hb-icon(best_seller_stand);
 }
-.icon-best_seller_up {
-	@include icon(best_seller_up);
+.hb-icon-best_seller_up {
+	@include hb-icon(best_seller_up);
 }
-.icon-breadcrumb_arrow {
-	@include icon(breadcrumb_arrow);
+.hb-icon-breadcrumb_arrow {
+	@include hb-icon(breadcrumb_arrow);
 }
-.icon-checkbox_tick {
-	@include icon(checkbox_tick);
+.hb-icon-checkbox_tick {
+	@include hb-icon(checkbox_tick);
 }
-.icon-close_popup {
-	@include icon(close_popup);
+.hb-icon-close_popup {
+	@include hb-icon(close_popup);
 }
-.icon-comment_bubble {
-	@include icon(comment_bubble);
+.hb-icon-comment_bubble {
+	@include hb-icon(comment_bubble);
 }
-.icon-compare {
-	@include icon(compare);
+.hb-icon-compare {
+	@include hb-icon(compare);
 }
-.icon-down_arrow {
-	@include icon(down_arrow);
+.hb-icon-down_arrow {
+	@include hb-icon(down_arrow);
 }
-.icon-down_arrow_gray {
-	@include icon(down_arrow_gray);
+.hb-icon-down_arrow_gray {
+	@include hb-icon(down_arrow_gray);
 }
-.icon-down_arrow_orange {
-	@include icon(down_arrow_orange);
+.hb-icon-down_arrow_orange {
+	@include hb-icon(down_arrow_orange);
 }
-.icon-facebook {
-	@include icon(facebook);
+.hb-icon-facebook {
+	@include hb-icon(facebook);
 }
-.icon-filter-active {
-	@include icon(filter-active);
+.hb-icon-filter-active {
+	@include hb-icon(filter-active);
 }
-.icon-filter {
-	@include icon(filter);
+.hb-icon-filter {
+	@include hb-icon(filter);
 }
-.icon-footer_bugun_teslimat {
-	@include icon(footer_bugun_teslimat);
+.hb-icon-footer_bugun_teslimat {
+	@include hb-icon(footer_bugun_teslimat);
 }
-.icon-footer_kolay_iade {
-	@include icon(footer_kolay_iade);
+.hb-icon-footer_kolay_iade {
+	@include hb-icon(footer_kolay_iade);
 }
-.icon-footer_mobil_cebinizde {
-	@include icon(footer_mobil_cebinizde);
+.hb-icon-footer_mobil_cebinizde {
+	@include hb-icon(footer_mobil_cebinizde);
 }
-.icon-footer_tek_tikla_alisveris {
-	@include icon(footer_tek_tikla_alisveris);
+.hb-icon-footer_tek_tikla_alisveris {
+	@include hb-icon(footer_tek_tikla_alisveris);
 }
-.icon-google-plus {
-	@include icon(google-plus);
+.hb-icon-google-plus {
+	@include hb-icon(google-plus);
 }
-.icon-grid_view {
-	@include icon(grid_view);
+.hb-icon-grid_view {
+	@include hb-icon(grid_view);
 }
-.icon-hamburger_menu {
-	@include icon(hamburger_menu);
+.hb-icon-hamburger_menu {
+	@include hb-icon(hamburger_menu);
 }
-.icon-info {
-	@include icon(info);
+.hb-icon-info {
+	@include hb-icon(info);
 }
-.icon-info_icon {
-	@include icon(info_icon);
+.hb-icon-info_icon {
+	@include hb-icon(info_icon);
 }
-.icon-instagram {
-	@include icon(instagram);
+.hb-icon-instagram {
+	@include hb-icon(instagram);
 }
-.icon-ipad_icon {
-	@include icon(ipad_icon);
+.hb-icon-ipad_icon {
+	@include hb-icon(ipad_icon);
 }
-.icon-iphone_icon {
-	@include icon(iphone_icon);
+.hb-icon-iphone_icon {
+	@include hb-icon(iphone_icon);
 }
-.icon-linkedin {
-	@include icon(linkedin);
+.hb-icon-linkedin {
+	@include hb-icon(linkedin);
 }
-.icon-list_view {
-	@include icon(list_view);
+.hb-icon-list_view {
+	@include hb-icon(list_view);
 }
-.icon-mobile_search_icon {
-	@include icon(mobile_search_icon);
+.hb-icon-mobile_search_icon {
+	@include hb-icon(mobile_search_icon);
 }
-.icon-next_arrow {
-	@include icon(next_arrow);
+.hb-icon-next_arrow {
+	@include hb-icon(next_arrow);
 }
-.icon-no_result_icon {
-	@include icon(no_result_icon);
+.hb-icon-no_result_icon {
+	@include hb-icon(no_result_icon);
 }
-.icon-occ_icon {
-	@include icon(occ_icon);
+.hb-icon-occ_icon {
+	@include hb-icon(occ_icon);
 }
-.icon-placeholder {
-	@include icon(placeholder);
+.hb-icon-placeholder {
+	@include hb-icon(placeholder);
 }
-.icon-preorder {
-	@include icon(preorder);
+.hb-icon-preorder {
+	@include hb-icon(preorder);
 }
-.icon-previous_arrow {
-	@include icon(previous_arrow);
+.hb-icon-previous_arrow {
+	@include hb-icon(previous_arrow);
 }
-.icon-price_alarm {
-	@include icon(price_alarm);
+.hb-icon-price_alarm {
+	@include hb-icon(price_alarm);
 }
-.icon-review {
-	@include icon(review);
+.hb-icon-review {
+	@include hb-icon(review);
 }
-.icon-right_arrow_blue {
-	@include icon(right_arrow_blue);
+.hb-icon-right_arrow_blue {
+	@include hb-icon(right_arrow_blue);
 }
-.icon-search_icon {
-	@include icon(search_icon);
+.hb-icon-search_icon {
+	@include hb-icon(search_icon);
 }
-.icon-selectbox_arrow {
-	@include icon(selectbox_arrow);
+.hb-icon-selectbox_arrow {
+	@include hb-icon(selectbox_arrow);
 }
-.icon-seller_icon {
-	@include icon(seller_icon);
+.hb-icon-seller_icon {
+	@include hb-icon(seller_icon);
 }
-.icon-share {
-	@include icon(share);
+.hb-icon-share {
+	@include hb-icon(share);
 }
-.icon-special_price_discount_icon {
-	@include icon(special_price_discount_icon);
+.hb-icon-special_price_discount_icon {
+	@include hb-icon(special_price_discount_icon);
 }
-.icon-table_sort_icon {
-	@include icon(table_sort_icon);
+.hb-icon-table_sort_icon {
+	@include hb-icon(table_sort_icon);
 }
-.icon-twitter {
-	@include icon(twitter);
+.hb-icon-twitter {
+	@include hb-icon(twitter);
 }
-.icon-user_icon {
-	@include icon(user_icon);
+.hb-icon-user_icon {
+	@include hb-icon(user_icon);
 }
-.icon-variant_warning_icon {
-	@include icon(variant_warning_icon);
+.hb-icon-variant_warning_icon {
+	@include hb-icon(variant_warning_icon);
 }
-.icon-youtube {
-	@include icon(youtube);
+.hb-icon-youtube {
+	@include hb-icon(youtube);
 }
 
