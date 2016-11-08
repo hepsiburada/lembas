@@ -1,0 +1,19 @@
+extends ../partials/_template.pug
+include ../partials/_mixin.pug
+block content
+	#buttons.title-content
+		h1
+			| Footer
+			span.subtitle / Footer
+	+showcase()
+		.hb-footer
+			.hb-footer-head
+				a.hb-footer-logo
+				ul.hb-footer-quick-links
+					li.hb-footer-link
+						a(href="http://www.hepsiburada.com/liste/MyPage/OrdersNew.aspx") Siparişlerim
+					li.hb-footer-link
+						a(href="http://www.hepsiburada.com/Liste/MyPage/FAQDetail.aspx?id=20") İade
+					li.hb-footer-link
+						a(href="http://www.hepsiburada.com/liste/MyPage/Yardim.aspx") Yardım
+

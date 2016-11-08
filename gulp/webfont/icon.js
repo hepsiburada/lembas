@@ -20,7 +20,7 @@ module.exports = function () {
   .pipe($.iconfontCss(webfontCssConfig))
   .pipe($.iconfont(webfontConfig))
   .on('glyphs', function (glyphs, options) {
-    console.log(glyphs, options);
+    console.error(glyphs, options);
   })
   .pipe(this.gulp.dest(fontPath));
 };
