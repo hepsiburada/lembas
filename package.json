@@ -45,5 +45,8 @@
     "styleguide"
   ],
   "author": "hepsiburada.com developers",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lembas": "git+https://github.com/hepsiburada/lembas.git"
+  }
 }
