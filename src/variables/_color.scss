@@ -11,9 +11,12 @@ $top-links-color: $grey;
 // Navigation
 
 $navigation-bg: $dark-orange;
+$navigation-secondary-bg: $charcoal;
 $navigation-tablet-bg-color: $snow;
+$navigation-hover-bg: $white;
 
 $navigation-font-color: $white;
+$navigation-secondary-hover-font-color: $charcoal;
 $navigation-hover-font-color: $dark-orange;
 $navigation-pipe-color: $mango-tango;
 
@@ -25,6 +28,7 @@ $navigation-subcategory-color: $dark-orange;
 
 $primary-font-color: $charcoal;
 $secondary-font-color: $suva-grey;
+$third-font-color: $white;
 
 $primary-price-font-color: $tangerine;
 $secondary-price-font-color: $charcoal;
@@ -33,11 +37,13 @@ $secondary-price-font-color: $charcoal;
 
 $primary-link-color: $charcoal;
 $primary-hover-link-color: $tangerine;
+$secondary-link-color: $tangerine;
 
 //Border
 
 $primary-border-color: $whisper;
 $secondary-border-color: $silver;
+$third-border-color: $suva-grey;
 
 //Breadcrumb
 
@@ -47,6 +53,7 @@ $breadcrumb-font-color: $dim-gray;
 
 $primary-button-bg-color: $tangerine;
 $secondary-button-bg-color: $havelock-blue;
+$third-button-bg-color: $suva-grey;
 
 $disabled-bg-color: $gainsboro;
 $disabled-color: $silver;
@@ -69,6 +76,8 @@ $secondary-notification-bg-color: $white;
 
 $primary-notification-border-color: $white;
 
+$my-account-bg-color: $white;
+$my-account-login-bg-color: $white-smoke-2;
 //Inputs
 
 $primary-input-focus-color: $tangerine;
@@ -110,6 +119,16 @@ $halkbank-bg-color: $deep-sky-blue;
 //Campaigns
 
 $campaigns-color: $islamic-green;
+
+//İcons
+
+$primary-icons-font-color: $white;
+
+//Discount
+$discount-color: $red;
+
+//Timer
+$timer-border-color: $suva-grey;
 
 // Tabs
 // TODO: Names need to be changed to avoid confusion

@@ -1,0 +1,24 @@
+.hb-timer {
+	.hb-timer-item {
+		@include border-radius($primary-radius-size);
+		width: 48px;
+		height: 40px;
+		display: inline-block;
+		padding-top: 6px;
+		border: 1px solid $timer-border-color;
+		text-align: center;
+
+		.hb-timer-item-text {
+			color: $primary-font-color;
+			font-size: $eighth-font-size;
+			font-family: $third-font;
+			line-height: 0.9;
+		}
+
+		.hb-timer-item-subtext {
+			color: $secondary-font-color;
+			font-size: $fiveth-font-size;
+			font-family: $secondary-font;
+		}
+	}
+}

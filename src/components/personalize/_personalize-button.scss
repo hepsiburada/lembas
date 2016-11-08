@@ -1,0 +1,96 @@
+.my-account {
+	@include border-radius($primary-radius-size);
+	width: 157px;
+	height: 48px;
+	padding: 10px 0 0 $space-6x;
+	border: 2px solid $third-border-color;
+	background-color: $my-account-bg-color;
+	position: relative;
+	cursor: pointer;
+
+	&.login {
+		background-color: $my-account-login-bg-color;
+	}
+	
+	.icon {
+		color: $secondary-font-color;
+		position: absolute;
+	}
+
+	.icon-user_icon {
+		font-size: 20px;
+		top: 12px;
+		left: $space-2x;
+	}
+
+	.icon-down_arrow {
+		font-size: 7px;
+		top: 19px;
+		right: 15px;
+	}
+
+	.hb-user-area {
+		width: 65px;
+		max-width: 65px;
+
+		a {
+			display: block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			line-height: 1;
+
+			&.hb-user-title {
+				font-size: $secondary-font-size;
+			}
+
+			&.hb-user-subtitle {
+				margin-top: 3px;
+				font-size: $fiveth-font-size;
+				color: $secondary-font-color;
+			}
+		}
+	}
+}
+
+.my-basket {
+	@include border-radius($primary-radius-size);
+	width: 135px;
+	height: 48px;
+	padding: $space-2x 0 0 55px;
+	border: 2px solid $third-border-color;
+	background-color: $third-border-color;
+	position: relative;
+	cursor: pointer;
+
+	.icon-basket_icon_solid_disabled {
+		position: absolute;
+		color: $primary-icons-font-color;
+		top: 15px;
+		left: 18px;
+		font-size: 20px;
+	}
+
+	.hb-basket-text {
+		color: $third-font-color;
+		font-size: $secondary-font-size;
+		line-height: 1;
+	}
+
+	.bubble {
+		$size: 20px;
+
+		@include square($size);
+		@include border-radius(50%);
+		display: block;
+		border: 2px solid $white;
+		background-color: $tangerine;
+		color: $third-font-color;
+		text-align: center;
+		line-height: 16px;
+		font-size: $fiveth-font-size;
+		position: absolute;
+		top: 7px;
+		left: 28px;
+	}
+}

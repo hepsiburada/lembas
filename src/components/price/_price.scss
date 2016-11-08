@@ -1,0 +1,45 @@
+.hb-price-content {
+	@include clearfix;
+	text-align: center;
+	display: inline-block;
+	
+	.hb-discount {
+		width: 42px;
+		height: 35px;
+		padding-top: 5px;
+		float: left;
+		background-color: $discount-color;
+		color: $third-font-color;
+		text-align: center;
+		font-size: $fourth-font-size;
+
+		.hb-discount-text {
+			display: block;
+			font-size: $seventh-font-size;
+		}
+
+		& + .hb-price {
+			padding-left: $space;
+		}
+	}
+
+	.hb-price {
+		width: auto;
+		height: auto;
+		display: inline-block;
+		float: left;
+		text-align: left;
+
+		.hb-price-old {
+			display: block;
+			color: $secondary-font-color;
+			font-size: $primary-font-size;
+		}
+
+		.hb-price-current {
+			padding-top: 2px;
+			font-size: $eighth-font-size;
+			color: $primary-price-font-color;
+		}
+	}
+}

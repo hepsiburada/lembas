@@ -1,0 +1,18 @@
+.hb-quicklinks {
+	@include clearfix;
+
+	li {
+		display: block;
+		margin-right: $space-3x;
+		float: left;
+		
+		a {
+			display: block;
+			font-family: $third-font;
+			font-size: $fiveth-font-size;
+			color: $top-links-color;
+			white-space: nowrap;
+			line-height: 1;
+		}
+	}
+}

@@ -1,0 +1,103 @@
+$menu-height: 48px;
+
+.hb-navigation {
+	@include global-shadow;
+	width: 100%;
+	height: $menu-height;
+	background-color: $navigation-bg;
+
+	ul.menu {
+		max-width: $site-max-width;
+		height: $menu-height;
+		margin: 0 auto;
+
+		li.menu-item {
+			width: calc(100%/9);
+			height: $menu-height;
+			float: left;
+
+			a.menu-link {
+				@include transition(none);
+				width: 100%;
+				height: $menu-height;
+				display: table;
+				padding: 0 10px;
+				border-top: 5px solid $navigation-bg;
+				border-bottom: 5px solid $navigation-bg;
+				color: $third-font-color;
+				text-align: center;
+				position: relative;
+
+				span {
+					display: table-cell;
+					vertical-align: middle;
+
+					&:before, &:after {
+						content: "";
+						width: 1px;
+						height: 24px;
+						background-color: $navigation-pipe-color;
+						position: absolute;
+					}
+
+					&:before {
+						top: 7px;
+						left: 0px;
+					}
+
+					&:after {
+						top: 7px;
+						right: 0px;
+					}
+				}
+
+				&.link {
+					background-color: $navigation-secondary-bg;
+					border-top: 5px solid $navigation-secondary-bg;
+					border-bottom: 5px solid $navigation-secondary-bg;
+				}
+			}
+
+			&:last-child {
+				a.menu-link {
+					span {
+						&:after {
+							width: 2px;
+						}
+					}
+				}
+			}
+
+			&:first-child {
+				a.menu-link {
+					span {
+						&:before {
+							width: 2px;
+						}
+					}
+				}
+			}
+
+			&:hover {
+
+				a.menu-link {
+					@include transition(none);
+					background-color: $navigation-hover-bg;
+					border-bottom: 5px solid $navigation-hover-bg;
+					color: $navigation-hover-font-color;
+
+					&.link {
+						border-top: 5px solid $white;
+						color: $navigation-secondary-hover-font-color;
+					}
+
+					span {
+						&:before, &:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

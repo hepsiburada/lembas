@@ -1,0 +1,50 @@
+.hb-box {
+	text-align: center;
+	background-color: $white;
+
+	a {
+		line-height: 1;
+	}
+
+	.hb-box-title {
+		display: block;
+		padding-top: 15px;
+		font-size: $sixth-font-size;
+		font-family: $third-font;
+	}
+
+	.hb-box-special-link {
+		display: block;
+		padding-top: 3px;
+		font-family: $secondary-font;
+		font-size: $primary-font-size;
+		color: $secondary-link-color;
+	}
+
+	.hb-box-link {
+		display: block;
+		padding: $space $space $space-2x;
+	}
+
+	.hb-box-image {
+		img {
+			display: block;
+			margin: 5px auto 0;
+		}
+	}
+
+	.hb-box-name {
+		@include multiline-ellipsis(30px, 1.2em, 3em);
+		margin-top: 5px;
+		font-size: $primary-font-size;
+		font-family: $secondary-font;
+	}
+
+	.hb-price-content {
+		margin-top: $space-2x;
+	}
+
+	.hb-timer {
+		margin-top: 12px;
+	}
+}

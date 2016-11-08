@@ -1,0 +1,46 @@
+extends ../partials/_template.pug
+include ../partials/_mixin.pug
+block content
+    .type
+      #type.title-content
+        h1
+          | Breadcrumb
+          span.subtitle / Breadcrumb
+
+    +showcase()
+        ul.hb-breadcrumb
+          li
+            a(href='http://www.hepsiburada.com', target='_blank') Ana Sayfa
+            i.icon.icon-breadcrumb_arrow
+          li
+            a(href='http://www.hepsiburada.com/spor-outdoor-urunleri-c-60001546', target='_blank') Spor Outdoor
+            i.icon.icon-breadcrumb_arrow
+          li
+            a(href='http://www.hepsiburada.com/outdoor-urunleri-c-2147483604', target='_blank') Outdoor
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    .type
+      #type.title-content
+        h1
+          | Quick Links
+          span.subtitle / Quick Links
+
+    +showcase()
+        ul.hb-quicklinks
+          li
+            a(href='http://www.hepsiburada.com/liste/MyPage/OrdersNew.aspx', target='_blank') Siparişlerim
+          li
+            a(href='http://www.hepsiburada.com/liste/MyPage/MyDiscounts.aspx', target='_blank') Fırsatlarım
+          li
+            a(href='https://www.hepsiburada.com/ayagina-gelsin/hediye-ceklerim', target='_blank') Hediye Çeklerim
+          li
+            a(href='http://www.hepsiburada.com/staticpage/7601', target='_blank') Tek Tıkla Alışveriş
+          li
+            a(href='http://www.hepsiburada.com/kampanyalar', target='_blank') Kampanyalar
+          li
+            a(href='http://www.hepsiburada.com/liste/MyPage/Yardim.aspx', target='_blank') Yardım
+          li
+            a(href='http://www.hepsiburada.com/liste/MyPage/Support.aspx', target='_blank') Bize Sorun

@@ -1,0 +1,44 @@
+extends ../partials/_template.pug
+include ../partials/_mixin.pug
+block content
+  .box
+    #kutu.title-content
+      h1
+        | Ürün Kutuları
+        span.subtitle / Kullanılan ürün kutuları
+
+    +showcase()
+      .hb-box
+        a.hb-box-title(href="javascript:;")
+          h2 Günün Fırsatı
+        a.hb-box-special-link(href="javascript:;")
+          | Tüm teklifleri gör
+        .hb-timer
+          .hb-timer-item
+            .hb-timer-item-text
+              | 1
+            .hb-timer-item-subtext
+              | Gün
+          .hb-timer-item
+            .hb-timer-item-text
+              | 2
+            .hb-timer-item-subtext
+              | Saat
+          .hb-timer-item
+            .hb-timer-item-text
+              | 16
+            .hb-timer-item-subtext
+              | Dakika
+        a.hb-box-link(href="javascript:;")
+          .hb-box-image
+            img(src="http://images.hepsiburada.net/assets/EE/135/EE_16135785.jpg")
+          .hb-box-name
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a mi vitae
+          .hb-price-content
+            .hb-discount %40 
+              span.hb-discount-text indirim
+            .hb-price
+              del.hb-price-old
+                | 1.299.00 TL
+              .hb-price-current
+                | 1.100.00 TL
