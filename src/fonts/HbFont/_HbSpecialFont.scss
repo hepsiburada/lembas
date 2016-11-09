@@ -105,86 +105,92 @@
 	@if $filename == hamburger_menu {
 		$char: "\E01A";
 	}
-	@if $filename == info {
+	@if $filename == indent_icon {
 		$char: "\E01B";
 	}
-	@if $filename == info_icon {
+	@if $filename == info {
 		$char: "\E01C";
 	}
-	@if $filename == instagram {
+	@if $filename == info_icon {
 		$char: "\E01D";
 	}
-	@if $filename == ipad_icon {
+	@if $filename == instagram {
 		$char: "\E01E";
 	}
-	@if $filename == iphone_icon {
+	@if $filename == ipad_icon {
 		$char: "\E01F";
 	}
-	@if $filename == linkedin {
+	@if $filename == iphone_icon {
 		$char: "\E020";
 	}
-	@if $filename == list_view {
+	@if $filename == linkedin {
 		$char: "\E021";
 	}
-	@if $filename == mobile_search_icon {
+	@if $filename == list_view {
 		$char: "\E022";
 	}
-	@if $filename == next_arrow {
+	@if $filename == menu_back_arrow {
 		$char: "\E023";
 	}
-	@if $filename == no_result_icon {
+	@if $filename == mobile_search_icon {
 		$char: "\E024";
 	}
-	@if $filename == occ_icon {
+	@if $filename == next_arrow {
 		$char: "\E025";
 	}
-	@if $filename == placeholder {
+	@if $filename == no_result_icon {
 		$char: "\E026";
 	}
-	@if $filename == preorder {
+	@if $filename == occ_icon {
 		$char: "\E027";
 	}
-	@if $filename == previous_arrow {
+	@if $filename == placeholder {
 		$char: "\E028";
 	}
-	@if $filename == price_alarm {
+	@if $filename == preorder {
 		$char: "\E029";
 	}
-	@if $filename == review {
+	@if $filename == previous_arrow {
 		$char: "\E02A";
 	}
-	@if $filename == right_arrow_blue {
+	@if $filename == price_alarm {
 		$char: "\E02B";
 	}
-	@if $filename == search_icon {
+	@if $filename == review {
 		$char: "\E02C";
 	}
-	@if $filename == selectbox_arrow {
+	@if $filename == right_arrow_blue {
 		$char: "\E02D";
 	}
-	@if $filename == seller_icon {
+	@if $filename == search_icon {
 		$char: "\E02E";
 	}
-	@if $filename == share {
+	@if $filename == selectbox_arrow {
 		$char: "\E02F";
 	}
-	@if $filename == special_price_discount_icon {
+	@if $filename == seller_icon {
 		$char: "\E030";
 	}
-	@if $filename == table_sort_icon {
+	@if $filename == share {
 		$char: "\E031";
 	}
-	@if $filename == twitter {
+	@if $filename == special_price_discount_icon {
 		$char: "\E032";
 	}
-	@if $filename == user_icon {
+	@if $filename == table_sort_icon {
 		$char: "\E033";
 	}
-	@if $filename == variant_warning_icon {
+	@if $filename == twitter {
 		$char: "\E034";
 	}
-	@if $filename == youtube {
+	@if $filename == user_icon {
 		$char: "\E035";
+	}
+	@if $filename == variant_warning_icon {
+		$char: "\E036";
+	}
+	@if $filename == youtube {
+		$char: "\E037";
 	}
 
 	@return $char;
@@ -279,6 +285,9 @@
 .hb-icon-hamburger_menu {
 	@include hb-icon(hamburger_menu);
 }
+.hb-icon-indent_icon {
+	@include hb-icon(indent_icon);
+}
 .hb-icon-info {
 	@include hb-icon(info);
 }
@@ -299,6 +308,9 @@
 }
 .hb-icon-list_view {
 	@include hb-icon(list_view);
+}
+.hb-icon-menu_back_arrow {
+	@include hb-icon(menu_back_arrow);
 }
 .hb-icon-mobile_search_icon {
 	@include hb-icon(mobile_search_icon);
