@@ -8,6 +8,8 @@
 	}
 
 	.menu-content {
+		background-color: $white;
+
 		.menu-my-account {
 			width: 100%;
 			position: relative;
@@ -27,11 +29,13 @@
 				.menu-my-account-caption {
 					display: block;
 					font-size: $primary-font-size;
+					line-height: 1;
 				}
 
 				.menu-my-account-name {
 					display: block;
 					font-size: 9px;
+					line-height: 1.2;
 				}
 			}
 			
@@ -50,6 +54,7 @@
 							height: 50px;
 							display: block;
 							padding: 17px $space;
+							color: $primary-font-color;
 						}
 					}
 				}
@@ -57,7 +62,7 @@
 			
 		}
 
-		.menu {
+		.hb-menu {
 			padding: $space;
 
 			.menu-item {
@@ -66,6 +71,7 @@
 					padding: $space-2x $space 15px;
 					position: relative;
 					line-height: 1;
+					color: $primary-font-color;
 
 					i.icon {
 						font-size: 5px;
@@ -161,6 +167,7 @@
 						background-color: $navigation-mobile-bg;
 						position: relative;
 						line-height: 1;
+						color: $primary-font-color;
 
 						i.hb-icon-indent_icon {
 							display: none;
