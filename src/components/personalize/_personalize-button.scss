@@ -17,13 +17,13 @@
 		position: absolute;
 	}
 
-	.icon-user_icon {
+	.hb-icon-user_icon {
 		font-size: 20px;
 		top: 12px;
 		left: $space-2x;
 	}
 
-	.icon-down_arrow {
+	.hb-icon-down_arrow {
 		font-size: 7px;
 		top: 19px;
 		right: 15px;
@@ -63,7 +63,7 @@
 	position: relative;
 	cursor: pointer;
 
-	.icon-basket_icon_solid_disabled {
+	.hb-icon-basket_icon_solid_disabled {
 		position: absolute;
 		color: $primary-icons-font-color;
 		top: 15px;
