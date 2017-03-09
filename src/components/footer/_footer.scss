@@ -175,7 +175,7 @@
 
 					&.facebook {
 						.icon {
-							left: 12px;
+							left: 14px;
 						}
 					}
 
@@ -199,13 +199,14 @@
 
 					&.mobile {
 						.icon {
+							top: 12px;
 							left: 14px;
 						}
 					}
 
 					&.tablet {
 						.icon {
-							top: 5px;
+							top: 8px;
 							left: 10px;
 							font-size: 28px;
 						}
@@ -213,7 +214,7 @@
 
 					&.android {
 					 .icon {
-					 		top: 6px;
+					 		top: 8px;
 							left: 10px;
 							font-size: 24px;
 					 }
@@ -272,10 +273,17 @@
 
 		.hb-footer-deep-bottom {
 			@include clearfix;
+			padding-top: $space-2x;
 
 			.hb-dol-logo {
 				@include sprite($dol);
 				margin-right: $space-2x;
+				float: left;
+			}
+
+			a.hb-nesine-link {
+				display: block;
+				padding-top: 11px;
 				float: left;
 			}
 		}
