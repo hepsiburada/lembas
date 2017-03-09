@@ -1,6 +1,7 @@
 ul.hb-breadcrumb {
   @include clearfix;
   display: inline-block;
+  padding: $space-2x 0;
 
   li {
     width: auto;
