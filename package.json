@@ -47,6 +47,10 @@
   "author": "hepsiburada.com developers",
   "license": "ISC",
   "dependencies": {
-    "lembas": "git+https://github.com/hepsiburada/lembas.git"
+    "gulp-svg-sprite": "^1.3.6",
+    "gulp-tinypng-compress": "^1.2.1",
+    "gulp.spritesmith": "^6.3.0",
+    "lembas": "git+https://github.com/hepsiburada/lembas.git",
+    "tinify": "^1.5.0"
   }
 }

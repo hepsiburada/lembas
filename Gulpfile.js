@@ -27,7 +27,10 @@ var sassFiles = [
 ];
 
 var config = {
-  dist: './dist'
+  dist: './dist',
+  styles: {
+    path: 'src'
+  }
 };
 
 // loading gulp tasks

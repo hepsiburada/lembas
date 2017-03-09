@@ -144,53 +144,56 @@
 	@if $filename == occ_icon {
 		$char: "\E027";
 	}
-	@if $filename == placeholder {
+	@if $filename == pinterest {
 		$char: "\E028";
 	}
-	@if $filename == preorder {
+	@if $filename == placeholder {
 		$char: "\E029";
 	}
-	@if $filename == previous_arrow {
+	@if $filename == preorder {
 		$char: "\E02A";
 	}
-	@if $filename == price_alarm {
+	@if $filename == previous_arrow {
 		$char: "\E02B";
 	}
-	@if $filename == review {
+	@if $filename == price_alarm {
 		$char: "\E02C";
 	}
-	@if $filename == right_arrow_blue {
+	@if $filename == review {
 		$char: "\E02D";
 	}
-	@if $filename == search_icon {
+	@if $filename == right_arrow_blue {
 		$char: "\E02E";
 	}
-	@if $filename == selectbox_arrow {
+	@if $filename == search_icon {
 		$char: "\E02F";
 	}
-	@if $filename == seller_icon {
+	@if $filename == selectbox_arrow {
 		$char: "\E030";
 	}
-	@if $filename == share {
+	@if $filename == seller_icon {
 		$char: "\E031";
 	}
-	@if $filename == special_price_discount_icon {
+	@if $filename == share {
 		$char: "\E032";
 	}
-	@if $filename == table_sort_icon {
+	@if $filename == special_price_discount_icon {
 		$char: "\E033";
 	}
-	@if $filename == twitter {
+	@if $filename == table_sort_icon {
 		$char: "\E034";
 	}
-	@if $filename == user_icon {
+	@if $filename == twitter {
 		$char: "\E035";
 	}
-	@if $filename == variant_warning_icon {
+	@if $filename == user_icon {
 		$char: "\E036";
 	}
-	@if $filename == youtube {
+	@if $filename == variant_warning_icon {
 		$char: "\E037";
+	}
+	@if $filename == youtube {
+		$char: "\E038";
 	}
 
 	@return $char;
@@ -323,6 +326,9 @@
 }
 .hb-icon-occ_icon {
 	@include hb-icon(occ_icon);
+}
+.hb-icon-pinterest {
+	@include hb-icon(pinterest);
 }
 .hb-icon-placeholder {
 	@include hb-icon(placeholder);

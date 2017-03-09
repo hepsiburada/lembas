@@ -1,0 +1,64 @@
+%svg-common {
+	background: url("svg/sprite.view-8d09cfad.svg") no-repeat;
+}
+
+%svg-back_to_top {
+	@extend %svg-common;
+	background-position: 0 99.79381443298969%;
+}
+
+%svg-back_to_top-dims {
+	width: 91px;
+	height: 46px;
+}
+
+%svg-back_to_top_mobile {
+	@extend %svg-common;
+	background-position: 17.169811320754718% 99.79381443298969%;
+}
+
+%svg-back_to_top_mobile-dims {
+	width: 46px;
+	height: 46px;
+}
+
+%svg-footer_blog_logo {
+	@extend %svg-common;
+	background-position: 0 58.07622504537205%;
+}
+
+%svg-footer_blog_logo-dims {
+	width: 153.6px;
+	height: 32.8px;
+}
+
+%svg-footer_logo_sprite {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+%svg-footer_logo_sprite-dims {
+	width: 576px;
+	height: 26px;
+}
+
+%svg-logo {
+	@extend %svg-common;
+	background-position: 0 24.761904761904763%;
+}
+
+%svg-logo-dims {
+	width: 194px;
+	height: 38px;
+}
+
+%svg-logo_mobile {
+	@extend %svg-common;
+	background-position: 48.01980198019802% 21.84873949579832%;
+}
+
+%svg-logo_mobile-dims {
+	width: 172px;
+	height: 24px;
+}
+

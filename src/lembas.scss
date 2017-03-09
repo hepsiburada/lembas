@@ -1,3 +1,7 @@
+//sprites
+@import "sprites/svg-sprite/svg-sprite";
+@import "sprites/png-sprite/png-sprite";
+
 // Fonts
 @import "fonts/fonts";
 @import "icons/icons";
@@ -12,6 +16,7 @@
 @import "common/normalize";
 @import "common/mixins/mixins";
 @import "common/grid/grid";
+@import "common/grid/grid-2";
 @import "common/general";
 
 // Typography
@@ -27,7 +32,8 @@
 @import "components/form-elements/form-elements";
 @import "components/personalize/personalize-button"; 
 @import "components/navigation/navigation-mobile"; 
-@import "components/navigation/navigation"; 
+@import "components/navigation/navigation";
+@import "components/footer/footer"; 
 @import "components/box/box"; 
 @import "components/price/price";
 @import "components/timer/timer";
