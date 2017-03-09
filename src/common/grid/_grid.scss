@@ -9,38 +9,90 @@ $grid-map:
 
 .hb-part {
 	@include clearfix;
-	
-	.hb-column {
-		display: block;
-		float: left;
-		box-sizing: border-box;
-		overflow: hidden;
-		
-		@each $breakpoint-name, $breakpoint, $breakpoint-max, $smg in $grid-map {
-			@for $i from $grid-length through 1 {
-				&.hb-col-#{$smg}-#{$i} {
-					@if $breakpoint-max == none {
-						@media screen and (min-width: $breakpoint) {
-							width: $i * (100% / $grid-length);
-						}
-					} @else {
-						@media screen and (min-width: $breakpoint) and (max-width: $breakpoint-max) {
-							width: $i * (100% / $grid-length);
-						}
-					}
 
-					@for $z from $i through 1 {
-						.hb-col-#{$smg}-#{$z} {
-							@if $breakpoint-max == none {
-								@media screen and (min-width: $breakpoint) {
-									width: $z * (100% / $i);
-								}
-							} @else {
-								@media screen and (min-width: $breakpoint) and (max-width: $breakpoint-max) {
-									width: $z * (100% / $i);
+	@each $breakpoint-name, $breakpoint, $breakpoint-max, $smg in $grid-map {
+		@for $y from $grid-length through 1 {
+			@if $breakpoint-max == none {
+				@media screen and (min-width: $breakpoint) {
+					&.hb-contain-#{$smg}-#{$y} {
+						.hb-column {
+							display: block;
+							float: left;
+							box-sizing: border-box;
+							overflow: hidden;
+							
+							@each $breakpoint-name, $breakpoint, $breakpoint-max, $smg in $grid-map {
+								@for $i from $y through 1 {
+									&.hb-col-#{$smg}-#{$i} {
+										@if $breakpoint-max == none {
+											@media screen and (min-width: $breakpoint) {
+												width: $i * (100% / $y);
+											}
+										} @else {
+											@media screen and (min-width: $breakpoint) and (max-width: $breakpoint-max) {
+												width: $i * (100% / $y);
+											}
+										}
+
+										@for $z from $i through 1 {
+											.hb-col-#{$smg}-#{$z} {
+												@if $breakpoint-max == none {
+													@media screen and (min-width: $breakpoint) {
+														width: $z * (100% / $i);
+													}
+												} @else {
+													@media screen and (min-width: $breakpoint) and (max-width: $breakpoint-max) {
+														width: $z * (100% / $i);
+													}
+												}
+											}
+										}
+									}
 								}
 							}
-						}
+						}		
+					}
+				}
+			}
+			@else {
+				@media screen and (min-width: $breakpoint) and (max-width: $breakpoint-max) {
+					&.hb-contain-#{$smg}-#{$y} {
+						.hb-column {
+							display: block;
+							float: left;
+							box-sizing: border-box;
+							overflow: hidden;
+							
+							@each $breakpoint-name, $breakpoint, $breakpoint-max, $smg in $grid-map {
+								@for $i from $y through 1 {
+									&.hb-col-#{$smg}-#{$i} {
+										@if $breakpoint-max == none {
+											@media screen and (min-width: $breakpoint) {
+												width: $i * (100% / $y);
+											}
+										} @else {
+											@media screen and (min-width: $breakpoint) and (max-width: $breakpoint-max) {
+												width: $i * (100% / $y);
+											}
+										}
+
+										@for $z from $i through 1 {
+											.hb-col-#{$smg}-#{$z} {
+												@if $breakpoint-max == none {
+													@media screen and (min-width: $breakpoint) {
+														width: $z * (100% / $i);
+													}
+												} @else {
+													@media screen and (min-width: $breakpoint) and (max-width: $breakpoint-max) {
+														width: $z * (100% / $i);
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}		
 					}
 				}
 			}

@@ -1,0 +1,307 @@
+.hb-footer {
+	@include global-shadow;
+	background-color: $secondary-bg-color;
+
+	.hb-footer-top {
+		padding-top: 32px;
+
+		.hb-footer-logo {
+			@extend %svg-logo;
+			@extend %svg-logo-dims;
+		}
+
+		.hb-footer-menu {
+			text-align: right;
+
+			ul {
+				@include clearfix;
+				display: inline-block;
+
+				li {
+					display: block;
+					padding: 0 16px;
+					float: left;
+					font-size: $secondary-font-size;
+					font-family: $third-font;
+					font-weight: bold;
+					position: relative;
+
+					&:after {
+						content: '|';
+						display: block;
+						position: absolute;
+						top: 0px;
+						right: 0px;
+						color: $primary-font-color;
+					}
+
+					&:last-child {
+						&:after {
+							display: none;
+						}
+					}
+
+					a {
+						color: $secondary-font-color;
+					}
+				}
+			}
+		}
+	}
+
+	.hb-footer-middle {
+		padding: 64px 0;
+
+		.hb-property-link {
+			display: block;
+			padding: 0 $space-5x;
+			font-family: $secondary-font;
+			color: $primary-font-color;
+			text-align: center;
+			position: relative;
+
+			&:after {
+				@include vertical-center;
+				content: '';
+				width: 1px;
+				height: 50%;
+				background-color: #eeebeb;
+				right: 0px;
+			}
+
+			&.last {
+				&:after {
+					display: none;
+				}
+			}
+
+			&:hover {
+				.hb-property-icon {
+					color: $navigation-bg;
+				}
+			}
+
+			.hb-property-title {
+				font-size: $sixth-font-size;
+				font-weight: bold;
+			}
+
+			.hb-property-icon {
+				margin: 48px 0 24px;
+				font-size: 96px;
+				color: $secondary-font-color;
+			}
+
+			.hb-property-dscription {
+				font-size: $fourth-font-size;
+			}
+		}
+	}
+
+	.hb-footer-bottom {
+		.hb-footer-categories {
+			.hb-footer-categories-title {
+				display: block;
+				margin: $space-3x 0;
+				font-size: $fourth-font-size;
+				font-family: $secondary-font;
+				font-weight: bold; 
+				color: $primary-font-color;
+			}
+
+			ul.hb-categories {
+				li {
+					a {
+						display: inline-block;
+						margin-bottom: 8px;
+						color: $secondary-font-color;
+						font-family: $secondary-font;
+						font-weight: bold;
+						font-size: $third-font-size;
+
+						&:hover {
+							color: $primary-font-color;
+						}
+					}
+
+					span {
+						display: inline-block;
+						margin: 0 4px;
+						color: $secondary-font-color;
+					}
+				}
+			}
+
+			ul.hb-social {
+				font-family: $secondary-font;
+
+				li {
+					height: $space-4x;
+					display: block;
+					margin-bottom: 8px;
+					font-size: $third-font-size;
+
+					a {
+						width: 100%;
+						height: 32px;
+						padding-left: $space-5x;
+						display: block;
+						line-height: 32px;
+						position: relative;
+
+						&:hover {
+							color: $secondary-font-color;
+						}
+
+						&:before {
+							@include border-radius(100%);
+							content: '';
+							display: block;
+							width: 32px;
+							height: 32px;
+							position: absolute;
+							top: 0px;
+							left: 0px;
+							background-color: $grey;
+						}
+
+						.icon {
+							position: absolute;
+							top: 0px;
+							left: 11px;
+							color: $third-font-color;
+						}
+					}
+
+					&.facebook {
+						.icon {
+							left: 12px;
+						}
+					}
+
+					&.twitter {
+						.icon {
+							left: 8px;
+						}
+					}
+
+					&.goggle {
+						.icon {
+							left: 11px;
+						}
+					}
+				}
+			}
+
+			ul.hb-store {
+				li {
+					margin-bottom: $space;
+
+					&.mobile {
+						.icon {
+							left: 14px;
+						}
+					}
+
+					&.tablet {
+						.icon {
+							top: 5px;
+							left: 10px;
+							font-size: 28px;
+						}
+					}
+
+					&.android {
+					 .icon {
+					 		top: 6px;
+							left: 10px;
+							font-size: 24px;
+					 }
+					}
+				}
+
+				a {
+					@include border-radius($primary-radius-size);
+					width: 175px;
+					height: 45px;
+					display: inline-block;
+					color: rgba(72,72,72,.6);
+					padding-top: 7px;
+					padding-left: $space-5x;
+					border: 1px solid #ccc;
+					position: relative;
+					
+					span {
+						display: block;
+						color: #ccc;
+					}
+
+					.icon {
+						position: absolute;
+						top: $space;
+						font-size: 21px;
+						color: $secondary-font-color;
+					}
+				}
+			}
+		}
+	}
+
+	.hb-footer-deep {
+		margin-top: $space-3x;
+		background-color: $footer-deep-bg-color;
+		padding: $space-3x 0;
+
+		.hb-footer-deep-top {
+			@include clearfix;
+
+			h6 {
+				width: 150px;
+				padding: 0px;
+				margin: 0px 16px 0 0;
+				font-size: 14px;
+				color: $secondary-font-color;
+				float: left;
+			}
+
+			.hb-norton-logo {
+				@include sprite($norton);
+				float: left;
+			}
+		}
+
+		.hb-footer-deep-bottom {
+			@include clearfix;
+
+			.hb-dol-logo {
+				@include sprite($dol);
+				margin-right: $space-2x;
+				float: left;
+			}
+		}
+
+		.hb-footer-deep-banks {
+			@include sprite($footer-logo-sprite);
+			margin-bottom: $space-3x;
+		}
+
+		.hb-footer-deep-copyright {
+			text-align: right;
+
+			span {
+				display: block;
+
+				&.hb-title {
+					margin-bottom: $space;
+					font-size: 12px;
+					font-family: $secondary-font;
+					text-align: left;
+
+					&.light {
+						color: #ccc;
+					}
+				}
+			}
+		}
+	}
+}

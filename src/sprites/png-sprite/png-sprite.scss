@@ -1,0 +1,112 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$dol-name: 'dol';
+$dol-x: 0px;
+$dol-y: 24px;
+$dol-offset-x: 0px;
+$dol-offset-y: -24px;
+$dol-width: 66px;
+$dol-height: 32px;
+$dol-total-width: 574px;
+$dol-total-height: 56px;
+$dol-image: 'png-sprite.png';
+$dol: (0px, 24px, 0px, -24px, 66px, 32px, 574px, 56px, 'png-sprite.png', 'dol', );
+$footer-logo-sprite-name: 'footer_logo_sprite';
+$footer-logo-sprite-x: 0px;
+$footer-logo-sprite-y: 0px;
+$footer-logo-sprite-offset-x: 0px;
+$footer-logo-sprite-offset-y: 0px;
+$footer-logo-sprite-width: 574px;
+$footer-logo-sprite-height: 24px;
+$footer-logo-sprite-total-width: 574px;
+$footer-logo-sprite-total-height: 56px;
+$footer-logo-sprite-image: 'png-sprite.png';
+$footer-logo-sprite: (0px, 0px, 0px, 0px, 574px, 24px, 574px, 56px, 'png-sprite.png', 'footer_logo_sprite', );
+$norton-name: 'norton';
+$norton-x: 66px;
+$norton-y: 24px;
+$norton-offset-x: -66px;
+$norton-offset-y: -24px;
+$norton-width: 60px;
+$norton-height: 32px;
+$norton-total-width: 574px;
+$norton-total-height: 56px;
+$norton-image: 'png-sprite.png';
+$norton: (66px, 24px, -66px, -24px, 60px, 32px, 574px, 56px, 'png-sprite.png', 'norton', );
+$spritesheet-width: 574px;
+$spritesheet-height: 56px;
+$spritesheet-image: 'png-sprite.png';
+$spritesheet-sprites: ($dol, $footer-logo-sprite, $norton, );
+$spritesheet: (574px, 56px, 'png-sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

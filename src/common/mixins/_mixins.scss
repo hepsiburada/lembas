@@ -67,6 +67,12 @@
           transform-origin: $origin;
 }
 
+@mixin vertical-center {
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+
 @mixin all-center {
   position: absolute;
   top: 50%;
