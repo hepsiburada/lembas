@@ -52,7 +52,6 @@
 .hb-list-box-content {
 	@include global-shadow;
 	background-color: $secondary-bg-color;
-	font-family: $secondary-font;
 
 	.hb-list-box {
 		@include clearfix;
@@ -60,6 +59,7 @@
 		border-bottom: 1px solid $primary-border-color;
 
 		span.hb-list-title-text {
+			font-family: $third-font;
 			padding-top: 3px;
 			font-size: 15px;
 			float: left;
@@ -70,10 +70,17 @@
 			}
 		}
 
+		.hb-list-title-text.link {
+			font-family: $third-font;
+		}
+
 		&.title {
+			font-family: $third-font;
+
 			.icon {
 				margin-right: $space;
-				font-size: 22px;
+				margin-top: 3px;
+				font-size: 20px;
 				float: left;
 				color: $secondary-font-color;
 				line-height: 1;
@@ -101,7 +108,7 @@
 						font-size: 6px;
 						color: $secondary-font-color;
 						position: absolute;
-						right: 0px;
+						right: -24px;
 					}
 
 					&.active {
@@ -111,19 +118,24 @@
 							@include transform(rotate(180deg));
 							color: $primary-price-font-color;
 						}
+
+						& + .hb-sub-list-item-content {
+							display: block;
+						}
 					}
 				}
 			}
 
 			.hb-sub-list-item-content {
 				width: 100%;
-				display: block;
+				display: none;
 				margin-top: $space-2x;
 				padding-left: $space;
 				border-left: 1px solid $primary-border-color;
 
 				.hb-list-title-text {
 					color: $secondary-font-color;
+					font-family: $secondary-font;
 				}
 			}
 		}
