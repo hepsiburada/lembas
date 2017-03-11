@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hepsiburada Styleguide</title>
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <link href="/static/prettify/prettify.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/static/prettify/prettify.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <header>
+      <div class="hb-container hb-fluid">
+        <div class="version-content"><span class="version">Version: 0.1</span></div>
+        <div class="logo-content"><a class="logo" href="/"></a></div>
+        <div class="hb-container menu">
+          <ul>
+            <li class="circle-1"><a href="https://github.com/hepsiburada/lembas">Download (0.1)</a></li>
+            <li class="circle-2"><a href="/">Let's Start</a></li>
+            <li class="circle-3"><a href="pages/documentation.html">Documentation</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="hb-container content">
+      <div class="left-column">
+        <div class="title-wrapper"><span class="title">How can i use?</span></div>
+        <ul class="navigation">
+          <li class="active"><a href="/">Homepage</a></li>
+          <li><a href="/pages/typography.html">Typography & Icons</a></li>
+          <li><a href="/pages/colors.html">Colors</a></li>
+          <li><a href="/pages/form-elements.html">Form Elements</a></li>
+          <li><a href="/pages/horizontal-lists.html">Horizontal Lists</a></li>
+          <li><a href="/pages/grid.html">Grid</a></li>
+          <li><a href="/pages/personalize.html">Personalize</a></li>
+          <li><a href="/pages/navigation.html">Navigation</a></li>
+          <li><a href="/pages/box.html">Box</a></li>
+          <li><a href="/pages/footer.html">Footer</a></li>
+        </ul>
+      </div>
+      <div class="right-column">
+        <div class="detail-content">
+          <div class="title-content" id="buttons">
+            <h1>Butonlar<span class="subtitle">/ Kullanılan butonlar</span></h1>
+          </div>
+          <elements-content>
+            <div id="smallButtons">
+              <xmp class="prettyprint lang-css">
+                <button class="hb-button normal" type="button">Sepete Ekle</button>
+                <button class="hb-button alternative" type="button">Sepete Ekle</button>
+                <button class="hb-button disabled" type="button" disabled="disabled">Sepete Ekle</button>
+              </xmp>
+              <button class="hb-button normal" type="button">Sepete Ekle</button>
+              <button class="hb-button alternative" type="button">Sepete Ekle</button>
+              <button class="hb-button disabled" type="button" disabled="disabled">Sepete Ekle</button>
+            </div>
+          </elements-content>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <button class="hb-button big" type="button">Sepete Ekle</button>
+              <button class="hb-button alternative big" type="button">Sepete Ekle</button>
+              <button class="hb-button disabled big" type="button" disabled="disabled">Sepete Ekle</button>
+            </xmp>
+            <button class="hb-button big" type="button">Sepete Ekle</button>
+            <button class="hb-button alternative big" type="button">Sepete Ekle</button>
+            <button class="hb-button disabled big" type="button" disabled="disabled">Sepete Ekle</button>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <button class="hb-button big" type="button"><i class="icon hb-icon-basket_icon_solid_disabled"></i>Sepete Ekle</button>
+              <button class="hb-button alternative big" type="button"><i class="icon hb-icon-occ_icon"></i>Sepete Ekle</button>
+              <button class="hb-button disabled big" type="button" disabled="disabled"><i class="icon hb-icon-basket_icon_solid_disabled"></i>Sepete Ekle</button>
+            </xmp>
+            <button class="hb-button big" type="button"><i class="icon hb-icon-basket_icon_solid_disabled"></i>Sepete Ekle</button>
+            <button class="hb-button alternative big" type="button"><i class="icon hb-icon-occ_icon"></i>Sepete Ekle</button>
+            <button class="hb-button disabled big" type="button" disabled="disabled"><i class="icon hb-icon-basket_icon_solid_disabled"></i>Sepete Ekle</button>
+          </div>
+          <div class="title-content" id="buttonGroups">
+            <h1>Buton Grupları<span class="subtitle">/ Kullanılan butonlar</span></h1>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-button-group eliptical">
+                <button class="hb-button active" type="button">Çok Satanlar</button>
+                <button class="hb-button" type="button">En Yeniler</button>
+                <button class="hb-button" type="button">En Düşük Fiyat</button>
+                <button class="hb-button" type="button">En Yüksek Fiyat</button>
+              </div>
+            </xmp>
+            <div class="hb-button-group eliptical">
+              <button class="hb-button active" type="button">Çok Satanlar</button>
+              <button class="hb-button" type="button">En Yeniler</button>
+              <button class="hb-button" type="button">En Düşük Fiyat</button>
+              <button class="hb-button" type="button">En Yüksek Fiyat</button>
+            </div>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-button-group square">
+                <button class="hb-button active" type="button">Çok Satanlar</button>
+                <button class="hb-button" type="button">En Yeniler</button>
+                <button class="hb-button" type="button">En Düşük Fiyat</button>
+                <button class="hb-button" type="button">En Yüksek Fiyat</button>
+              </div>
+            </xmp>
+            <div class="hb-button-group square">
+              <button class="hb-button active" type="button">Çok Satanlar</button>
+              <button class="hb-button" type="button">En Yeniler</button>
+              <button class="hb-button" type="button">En Düşük Fiyat</button>
+              <button class="hb-button" type="button">En Yüksek Fiyat</button>
+            </div>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-button-group square dark">
+                <button class="hb-button active" type="button">Çok Satanlar</button>
+                <button class="hb-button with-badge" type="button">En Yeniler<i class="notification">7</i></button>
+                <button class="hb-button" type="button">En Düşük Fiyat</button>
+                <button class="hb-button" type="button">En Yüksek Fiyat</button>
+              </div>
+            </xmp>
+            <div class="hb-button-group square dark">
+              <button class="hb-button active" type="button">Çok Satanlar</button>
+              <button class="hb-button with-badge" type="button">En Yeniler<i class="notification">7</i></button>
+              <button class="hb-button" type="button">En Düşük Fiyat</button>
+              <button class="hb-button" type="button">En Yüksek Fiyat</button>
+            </div>
+          </div>
+          <div class="title-content" id="inputs">
+            <h1>İnputlar<span class="subtitle">/ Kullanılan inputlar</span></h1>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-input-group">
+                <input class="hb-input" type="text" placeholder="Write Something">
+              </div><br>
+              <div class="hb-input-group error">
+                <input class="hb-input" type="text" placeholder="Write Something">
+              </div><br>
+              <div class="hb-input-group disabled">
+                <input class="hb-input" type="text" placeholder="Write Something">
+              </div>
+            </xmp>
+            <div class="hb-input-group">
+              <input class="hb-input" type="text" placeholder="Write Something">
+            </div><br>
+            <div class="hb-input-group error">
+              <input class="hb-input" type="text" placeholder="Write Something">
+            </div><br>
+            <div class="hb-input-group disabled">
+              <input class="hb-input" type="text" placeholder="Write Something">
+            </div>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-input-group animate">
+                <input class="hb-input" type="text"><span class="placeholder">Write Something</span>
+              </div><br>
+              <div class="hb-input-group animate error">
+                <input class="hb-input" type="text"><span class="placeholder">Write Something</span>
+              </div><br>
+              <div class="hb-input-group animate disabled">
+                <input class="hb-input" type="text" disabled><span class="placeholder">Write Something</span>
+              </div>
+            </xmp>
+            <div class="hb-input-group animate">
+              <input class="hb-input" type="text"><span class="placeholder">Write Something</span>
+            </div><br>
+            <div class="hb-input-group animate error">
+              <input class="hb-input" type="text"><span class="placeholder">Write Something</span>
+            </div><br>
+            <div class="hb-input-group animate disabled">
+              <input class="hb-input" type="text" disabled><span class="placeholder">Write Something</span>
+            </div>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-input-group no-animate">
+                <input class="hb-input" type="text"><span class="placeholder">Write Something</span>
+              </div><br>
+              <div class="hb-input-group no-animate error">
+                <input class="hb-input" type="text"><span class="placeholder">Write Something</span>
+              </div><br>
+              <div class="hb-input-group no-animate disabled">
+                <input class="hb-input" type="text" disabled><span class="placeholder">Write Something</span>
+              </div>
+            </xmp>
+            <div class="hb-input-group no-animate">
+              <input class="hb-input" type="text"><span class="placeholder">Write Something</span>
+            </div><br>
+            <div class="hb-input-group no-animate error">
+              <input class="hb-input" type="text"><span class="placeholder">Write Something</span>
+            </div><br>
+            <div class="hb-input-group no-animate disabled">
+              <input class="hb-input" type="text" disabled><span class="placeholder">Write Something</span>
+            </div>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-input-group search"><i class="icon hb-icon-search_icon"></i>
+                <input class="hb-input" type="text">
+                <button class="hb-button" type="button">ARA</button>
+              </div>
+            </xmp>
+            <div class="hb-input-group search"><i class="icon hb-icon-search_icon"></i>
+              <input class="hb-input" type="text">
+              <button class="hb-button" type="button">ARA</button>
+            </div>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-input-group animate">
+                <textarea class="hb-input textarea" type="text"></textarea><span class="placeholder">Write Something</span>
+              </div><br>
+              <div class="hb-input-group animate error">
+                <textarea class="hb-input textarea" type="text"></textarea><span class="placeholder">Write Something</span>
+              </div><br>
+              <div class="hb-input-group animate disabled">
+                <textarea class="hb-input textarea" type="text" disabled></textarea><span class="placeholder">Write Something</span>
+              </div>
+            </xmp>
+            <div class="hb-input-group animate">
+              <textarea class="hb-input textarea" type="text"></textarea><span class="placeholder">Write Something</span>
+            </div><br>
+            <div class="hb-input-group animate error">
+              <textarea class="hb-input textarea" type="text"></textarea><span class="placeholder">Write Something</span>
+            </div><br>
+            <div class="hb-input-group animate disabled">
+              <textarea class="hb-input textarea" type="text" disabled></textarea><span class="placeholder">Write Something</span>
+            </div>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-input-group no-animate">
+                <textarea class="hb-input textarea" type="text"></textarea><span class="placeholder">Write Something</span>
+              </div><br>
+              <div class="hb-input-group no-animate error">
+                <textarea class="hb-input textarea" type="text"></textarea><span class="placeholder">Write Something</span>
+              </div><br>
+              <div class="hb-input-group no-animate disabled">
+                <textarea class="hb-input textarea" type="text" disabled></textarea><span class="placeholder">Write Something</span>
+              </div>
+            </xmp>
+            <div class="hb-input-group no-animate">
+              <textarea class="hb-input textarea" type="text"></textarea><span class="placeholder">Write Something</span>
+            </div><br>
+            <div class="hb-input-group no-animate error">
+              <textarea class="hb-input textarea" type="text"></textarea><span class="placeholder">Write Something</span>
+            </div><br>
+            <div class="hb-input-group no-animate disabled">
+              <textarea class="hb-input textarea" type="text" disabled></textarea><span class="placeholder">Write Something</span>
+            </div>
+          </div>
+          <div class="title-content" id="inputs">
+            <h1>Dropdowns<span class="subtitle">/ Kullanılan dropdown stilleri</span></h1>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-input-group">
+                <select class="hb-input select" type="text">
+                  <option>Options 1</option>
+                </select><i class="icon hb-icon-selectbox_arrow"></i>
+              </div><br>
+              <div class="hb-input-group">
+                <select class="hb-input select" type="text">
+                  <option>Options 1</option>
+                </select><i class="icon hb-icon-selectbox_arrow"></i>
+              </div><br>
+              <div class="hb-input-group">
+                <select class="hb-input select" type="text" disabled>
+                  <option>Options 1</option>
+                </select><i class="icon hb-icon-selectbox_arrow"></i>
+              </div>
+            </xmp>
+            <div class="hb-input-group">
+              <select class="hb-input select" type="text">
+                <option>Options 1</option>
+              </select><i class="icon hb-icon-selectbox_arrow"></i>
+            </div><br>
+            <div class="hb-input-group">
+              <select class="hb-input select" type="text">
+                <option>Options 1</option>
+              </select><i class="icon hb-icon-selectbox_arrow"></i>
+            </div><br>
+            <div class="hb-input-group">
+              <select class="hb-input select" type="text" disabled>
+                <option>Options 1</option>
+              </select><i class="icon hb-icon-selectbox_arrow"></i>
+            </div>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-input-group no-animate">
+                <select class="hb-input select" type="text">
+                  <option>Options 1</option>
+                </select><span class="placeholder">Başlık</span><i class="icon hb-icon-selectbox_arrow"></i>
+              </div><br>
+              <div class="hb-input-group no-animate error">
+                <select class="hb-input select" type="text">
+                  <option>Options 1</option>
+                </select><span class="placeholder">Başlık</span><i class="icon hb-icon-selectbox_arrow"></i>
+              </div><br>
+              <div class="hb-input-group no-animate disabled">
+                <select class="hb-input select" type="text" disabled>
+                  <option>Options 1</option>
+                </select><span class="placeholder">Başlık</span><i class="icon hb-icon-selectbox_arrow"></i>
+              </div>
+            </xmp>
+            <div class="hb-input-group no-animate">
+              <select class="hb-input select" type="text">
+                <option>Options 1</option>
+              </select><span class="placeholder">Başlık</span><i class="icon hb-icon-selectbox_arrow"></i>
+            </div><br>
+            <div class="hb-input-group no-animate error">
+              <select class="hb-input select" type="text">
+                <option>Options 1</option>
+              </select><span class="placeholder">Başlık</span><i class="icon hb-icon-selectbox_arrow"></i>
+            </div><br>
+            <div class="hb-input-group no-animate disabled">
+              <select class="hb-input select" type="text" disabled>
+                <option>Options 1</option>
+              </select><span class="placeholder">Başlık</span><i class="icon hb-icon-selectbox_arrow"></i>
+            </div>
+          </div>
+          <div class="title-content" id="checkbox">
+            <h1>Checkbox & Radiobox<span class="subtitle">/ Kullanılan checkbox ve radiobox stilleri</span></h1>
+          </div>
+          <div class="elements-content">
+            <xmp class="prettyprint lang-css">
+              <div class="hb-input-group">
+                <div class="hb-checkbox-content">
+                  <label class="hb-box-value">Seçenek 1</label>
+                  <input class="hb-input checkbox" type="checkbox">
+                  <label></label><i class="icon hb-icon-checkbox_tick"></i>
+                </div>
+              </div><br>
+              <div class="hb-input-group">
+                <div class="hb-radiobox-content">
+                  <label class="hb-box-value">Seçenek 1</label>
+                  <input class="hb-input radiobox" type="radio">
+                  <label></label>
+                </div>
+              </div>
+            </xmp>
+            <div class="hb-input-group">
+              <div class="hb-checkbox-content">
+                <label class="hb-box-value">Seçenek 1</label>
+                <input class="hb-input checkbox" type="checkbox">
+                <label></label><i class="icon hb-icon-checkbox_tick"></i>
+              </div>
+            </div><br>
+            <div class="hb-input-group">
+              <div class="hb-radiobox-content">
+                <label class="hb-box-value">Seçenek 1</label>
+                <input class="hb-input radiobox" type="radio">
+                <label></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
