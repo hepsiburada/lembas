@@ -1,4 +1,7 @@
 .hb-account-tooltip {
+	padding-top: $space-3x;
+	z-index: 2;
+	
 	.hb-account-tooltip-content {
 		@include border-radius($primary-radius-size);
 		display: inline-block;
@@ -31,6 +34,7 @@
 
 			.hb-account-tooltip-item {
 				margin-bottom: $space;
+				white-space: nowrap;
 
 				&:last-child {
 					margin-bottom: 0;

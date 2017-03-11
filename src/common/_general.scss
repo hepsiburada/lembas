@@ -10,12 +10,12 @@ body {
 }
 
 a {
-  @include transition(color .3s .1s);
+  @include transition(color .2s .1s);
   color: $primary-link-color;
   text-decoration: none;
 
   &:hover {
-    @include transition(color .3s .1s);
+    @include transition(color .2s .1s);
   }
 }
 

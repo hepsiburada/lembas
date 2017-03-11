@@ -51,6 +51,24 @@
 			}
 		}
 	}
+
+	.hb-account-tooltip {
+		@include horizontal-center;
+		width: 0px;
+		height: 0px;
+		overflow: hidden;
+		visibility: hidden;
+		top: 100%;
+	}
+
+	&:hover {
+		.hb-account-tooltip {
+			@include transition-delay(.4s);
+			width: auto;
+			height: auto;
+			visibility: visible;
+		}
+	}
 }
 
 .my-basket {
