@@ -126,7 +126,7 @@ $menu-height: 48px;
 					@include transition-delay(.4s);
 					width: 100%;
 					height: auto;
-					visibility: hidden;
+					visibility: visible;
 				}
 			}
 		}
