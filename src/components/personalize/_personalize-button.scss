@@ -7,6 +7,7 @@
 	background-color: $my-account-bg-color;
 	position: relative;
 	cursor: pointer;
+	z-index: 2;
 
 	&.login {
 		background-color: $my-account-login-bg-color;
@@ -61,7 +62,22 @@
 		top: 100%;
 	}
 
+	& + .hb-overlay {
+    width: 0px;
+    height: 0px;
+    display: block;
+    visibility: hidden;
+  }
+
 	&:hover {
+		& + .hb-overlay {
+      @include transition-delay(.4s);
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+      z-index: 1;
+    }
+		
 		.hb-account-tooltip {
 			@include transition-delay(.4s);
 			width: auto;
