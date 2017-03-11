@@ -10,16 +10,16 @@
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
 $dol-name: 'dol';
-$dol-x: 0px;
+$dol-x: 76px;
 $dol-y: 24px;
-$dol-offset-x: 0px;
+$dol-offset-x: -76px;
 $dol-offset-y: -24px;
 $dol-width: 66px;
 $dol-height: 32px;
 $dol-total-width: 574px;
-$dol-total-height: 56px;
+$dol-total-height: 90px;
 $dol-image: 'png-sprite.png';
-$dol: (0px, 24px, 0px, -24px, 66px, 32px, 574px, 56px, 'png-sprite.png', 'dol', );
+$dol: (76px, 24px, -76px, -24px, 66px, 32px, 574px, 90px, 'png-sprite.png', 'dol', );
 $footer-logo-sprite-name: 'footer_logo_sprite';
 $footer-logo-sprite-x: 0px;
 $footer-logo-sprite-y: 0px;
@@ -28,25 +28,98 @@ $footer-logo-sprite-offset-y: 0px;
 $footer-logo-sprite-width: 574px;
 $footer-logo-sprite-height: 24px;
 $footer-logo-sprite-total-width: 574px;
-$footer-logo-sprite-total-height: 56px;
+$footer-logo-sprite-total-height: 90px;
 $footer-logo-sprite-image: 'png-sprite.png';
-$footer-logo-sprite: (0px, 0px, 0px, 0px, 574px, 24px, 574px, 56px, 'png-sprite.png', 'footer_logo_sprite', );
+$footer-logo-sprite: (0px, 0px, 0px, 0px, 574px, 24px, 574px, 90px, 'png-sprite.png', 'footer_logo_sprite', );
+$moda-menu-name: 'moda_menu';
+$moda-menu-x: 0px;
+$moda-menu-y: 24px;
+$moda-menu-offset-x: 0px;
+$moda-menu-offset-y: -24px;
+$moda-menu-width: 76px;
+$moda-menu-height: 66px;
+$moda-menu-total-width: 574px;
+$moda-menu-total-height: 90px;
+$moda-menu-image: 'png-sprite.png';
+$moda-menu: (0px, 24px, 0px, -24px, 76px, 66px, 574px, 90px, 'png-sprite.png', 'moda_menu', );
 $norton-name: 'norton';
-$norton-x: 66px;
+$norton-x: 142px;
 $norton-y: 24px;
-$norton-offset-x: -66px;
+$norton-offset-x: -142px;
 $norton-offset-y: -24px;
 $norton-width: 60px;
 $norton-height: 32px;
 $norton-total-width: 574px;
-$norton-total-height: 56px;
+$norton-total-height: 90px;
 $norton-image: 'png-sprite.png';
-$norton: (66px, 24px, -66px, -24px, 60px, 32px, 574px, 56px, 'png-sprite.png', 'norton', );
+$norton: (142px, 24px, -142px, -24px, 60px, 32px, 574px, 90px, 'png-sprite.png', 'norton', );
+$dol-2x-name: 'dol@2x';
+$dol-2x-x: 152px;
+$dol-2x-y: 48px;
+$dol-2x-offset-x: -152px;
+$dol-2x-offset-y: -48px;
+$dol-2x-width: 132px;
+$dol-2x-height: 64px;
+$dol-2x-total-width: 1148px;
+$dol-2x-total-height: 180px;
+$dol-2x-image: 'png-sprite@2x.png';
+$dol-2x: (152px, 48px, -152px, -48px, 132px, 64px, 1148px, 180px, 'png-sprite@2x.png', 'dol@2x', );
+$footer-logo-sprite-2x-name: 'footer_logo_sprite@2x';
+$footer-logo-sprite-2x-x: 0px;
+$footer-logo-sprite-2x-y: 0px;
+$footer-logo-sprite-2x-offset-x: 0px;
+$footer-logo-sprite-2x-offset-y: 0px;
+$footer-logo-sprite-2x-width: 1148px;
+$footer-logo-sprite-2x-height: 48px;
+$footer-logo-sprite-2x-total-width: 1148px;
+$footer-logo-sprite-2x-total-height: 180px;
+$footer-logo-sprite-2x-image: 'png-sprite@2x.png';
+$footer-logo-sprite-2x: (0px, 0px, 0px, 0px, 1148px, 48px, 1148px, 180px, 'png-sprite@2x.png', 'footer_logo_sprite@2x', );
+$moda-menu-2x-name: 'moda_menu@2x';
+$moda-menu-2x-x: 0px;
+$moda-menu-2x-y: 48px;
+$moda-menu-2x-offset-x: 0px;
+$moda-menu-2x-offset-y: -48px;
+$moda-menu-2x-width: 152px;
+$moda-menu-2x-height: 132px;
+$moda-menu-2x-total-width: 1148px;
+$moda-menu-2x-total-height: 180px;
+$moda-menu-2x-image: 'png-sprite@2x.png';
+$moda-menu-2x: (0px, 48px, 0px, -48px, 152px, 132px, 1148px, 180px, 'png-sprite@2x.png', 'moda_menu@2x', );
+$norton-2x-name: 'norton@2x';
+$norton-2x-x: 284px;
+$norton-2x-y: 48px;
+$norton-2x-offset-x: -284px;
+$norton-2x-offset-y: -48px;
+$norton-2x-width: 120px;
+$norton-2x-height: 64px;
+$norton-2x-total-width: 1148px;
+$norton-2x-total-height: 180px;
+$norton-2x-image: 'png-sprite@2x.png';
+$norton-2x: (284px, 48px, -284px, -48px, 120px, 64px, 1148px, 180px, 'png-sprite@2x.png', 'norton@2x', );
 $spritesheet-width: 574px;
-$spritesheet-height: 56px;
+$spritesheet-height: 90px;
 $spritesheet-image: 'png-sprite.png';
-$spritesheet-sprites: ($dol, $footer-logo-sprite, $norton, );
-$spritesheet: (574px, 56px, 'png-sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($dol, $footer-logo-sprite, $moda-menu, $norton, );
+$spritesheet: (574px, 90px, 'png-sprite.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 1148px;
+$retina-spritesheet-height: 180px;
+$retina-spritesheet-image: 'png-sprite@2x.png';
+$retina-spritesheet-sprites: ($dol-2x, $footer-logo-sprite-2x, $moda-menu-2x, $norton-2x, );
+$retina-spritesheet: (1148px, 180px, 'png-sprite@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$dol-group-name: 'dol';
+$dol-group: ('dol', $dol, $dol-2x, );
+$footer-logo-sprite-group-name: 'footer_logo_sprite';
+$footer-logo-sprite-group: ('footer_logo_sprite', $footer-logo-sprite, $footer-logo-sprite-2x, );
+$moda-menu-group-name: 'moda_menu';
+$moda-menu-group: ('moda_menu', $moda-menu, $moda-menu-2x, );
+$norton-group-name: 'norton';
+$norton-group: ('norton', $norton, $norton-2x, );
+$retina-groups: ($dol-group, $footer-logo-sprite-group, $moda-menu-group, $norton-group, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
@@ -98,6 +171,34 @@ $spritesheet: (574px, 56px, 'png-sprite.png', $spritesheet-sprites, );
   @include sprite-height($sprite);
 }
 
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
 // The `sprites` mixin generates identical output to the CSS template
 //   but can be overridden inside of SCSS
 //
@@ -107,6 +208,19 @@ $spritesheet: (574px, 56px, 'png-sprite.png', $spritesheet-sprites, );
     $sprite-name: nth($sprite, 10);
     .#{$sprite-name} {
       @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
     }
   }
 }

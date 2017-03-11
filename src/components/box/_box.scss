@@ -102,6 +102,7 @@
 				.hb-list-title-text {
 					display: block;
 					position: relative;
+					font-family: $secondary-font;
 
 					.icon {
 						@include vertical-center;
@@ -117,6 +118,7 @@
 						.icon {
 							@include transform(rotate(180deg));
 							color: $primary-price-font-color;
+							top: 5px;
 						}
 
 						& + .hb-sub-list-item-content {

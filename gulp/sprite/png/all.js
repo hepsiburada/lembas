@@ -9,7 +9,9 @@ module.exports = function () {
             config.styles.path + '/images/png-sprite/*.{png,jpg}'
         ])
         .pipe($.spritesmith({
+            retinaSrcFilter: './src/images/png-sprite/*@2x.png',
             imgName: fileName + '.png',
+            retinaImgName: fileName + '@2x.png',
             cssName: fileName + '.scss'
         }))
         .pipe(gulp.dest(config.styles.path + '/sprites/' + fileName + '/'));

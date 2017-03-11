@@ -19,7 +19,6 @@ $grid-map:
 							display: block;
 							float: left;
 							box-sizing: border-box;
-							overflow: hidden;
 							
 							@each $breakpoint-name, $breakpoint, $breakpoint-max, $smg in $grid-map {
 								@for $i from $y through 1 {
@@ -61,7 +60,6 @@ $grid-map:
 							display: block;
 							float: left;
 							box-sizing: border-box;
-							overflow: hidden;
 							
 							@each $breakpoint-name, $breakpoint, $breakpoint-max, $smg in $grid-map {
 								@for $i from $y through 1 {
