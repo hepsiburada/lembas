@@ -14,6 +14,10 @@ $menu-height: 48px;
 
 		.hb-navigation-sub-menu {
 			position: absolute;
+			width: 0px;
+			height: 0px;
+			visibility: hidden;
+			overflow: hidden;
 			top: 100%;
 			left: 0px;
 			z-index: 2;
@@ -100,7 +104,6 @@ $menu-height: 48px;
 			}
 
 			&:hover {
-
 				a.menu-link {
 					@include transition(none);
 					background-color: $navigation-hover-bg;
@@ -117,6 +120,13 @@ $menu-height: 48px;
 							display: none;
 						}
 					}
+				}
+
+				.hb-navigation-sub-menu {
+					@include transition-delay(.4s);
+					width: 100%;
+					height: auto;
+					visibility: hidden;
 				}
 			}
 		}
