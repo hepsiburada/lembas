@@ -73,6 +73,12 @@
     @include transform(translateY(-50%));
 }
 
+@mixin horizontal-center {
+    position: absolute;
+    left: 50%;
+    @include transform(translateX(-50%));
+}
+
 @mixin all-center {
   position: absolute;
   top: 50%;

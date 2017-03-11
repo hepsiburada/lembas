@@ -1,0 +1,53 @@
+.hb-account-tooltip {
+	.hb-account-tooltip-content {
+		@include border-radius($primary-radius-size);
+		display: inline-block;
+		padding: $space-3x $space-2x;
+		border: 2px solid $secondary-font-color;
+		background-color: $secondary-bg-color;
+		font-family: $third-font;
+		font-size: $primary-font-size;
+		position: relative;
+
+		&:before {
+			@include border-radius(4px);
+			@include transform(rotate(45deg) translateX(-50%));
+			content: '';
+			width: 20px;
+			height: 20px;
+			border: 2px solid $secondary-font-color;
+			border-right: 0px;
+			border-bottom: 0px;
+			background-color: inherit;
+			position: absolute;
+			top: -5px;
+			left: 50%;
+		}
+
+		.hb-account-tooltip-column {
+			padding: 0 $space-2x $space-2x;
+			margin-bottom: $space-2x;
+			border-bottom: 1px solid $primary-border-color;
+
+			.hb-account-tooltip-item {
+				margin-bottom: $space;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				a {
+					&:hover {
+						color: $secondary-font-color;
+					}
+				}
+			}
+
+			&:last-child {
+				border-bottom: none;
+				padding-bottom: 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
