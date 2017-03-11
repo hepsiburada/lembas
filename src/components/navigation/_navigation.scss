@@ -10,6 +10,14 @@ $menu-height: 48px;
 		max-width: $site-max-width;
 		height: $menu-height;
 		margin: 0 auto;
+		position: relative;
+
+		&.hb-navigation-sub-menu {
+			position: absolute;
+			top: 100%;
+			left: 0px;
+			z-index: 2;
+		}
 
 		li.menu-item {
 			width: calc(100%/9);
@@ -166,11 +174,11 @@ $menu-height: 48px;
 
 .hb-navigation-sub-menu {
 	padding: $space-6x $space-4x;
-	
+	background-color: $secondary-bg-color;
+
 	.hb-navigation-sub-menu-container {
 		@include clearfix;
 		padding-right: $space-2x;
-		background-color: $secondary-bg-color;
 		font-family: $secondary-font;
 
 		.hb-sub-menu-column {
