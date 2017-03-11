@@ -62,6 +62,20 @@ li {
   &.active {
     display: block;
   }
+
+  &.delay {
+    width: 0px;
+    height: 0px;
+    display: block;
+    visibility: hidden;
+
+    &.active {
+      @include transition-delay($animation-timing);
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+    }
+  }
 }
 
 .hb-loading {

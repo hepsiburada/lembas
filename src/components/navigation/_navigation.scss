@@ -123,7 +123,7 @@ $menu-height: 48px;
 				}
 
 				.hb-navigation-sub-menu {
-					@include transition-delay(.4s);
+					@include transition-delay($animation-timing);
 					width: 100%;
 					height: auto;
 					visibility: visible;
