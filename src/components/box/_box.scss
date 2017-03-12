@@ -154,3 +154,8 @@
 		}
 	}
 }
+
+.hb-box-content {
+	@include global-shadow;
+	background-color: $secondary-bg-color;
+}
