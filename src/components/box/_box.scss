@@ -1,6 +1,11 @@
 .hb-box {
 	text-align: center;
 	background-color: $white;
+	
+	&.content {
+		padding: $space-3x $space-2x;
+		text-align: left;
+	}
 
 	a {
 		line-height: 1;
@@ -153,9 +158,4 @@
 			}
 		}
 	}
-}
-
-.hb-box-content {
-	@include global-shadow;
-	background-color: $secondary-bg-color;
 }

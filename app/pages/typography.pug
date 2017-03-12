@@ -1,4 +1,5 @@
 extends ../partials/_template.pug
+include ../partials/_mixin.pug
 block content
   .type
     #type.title-content
@@ -16,6 +17,17 @@ block content
           |              Helvetica  ($secondary-font)
     br
     br
+
+    +showcase()
+      .hb-font-h1 Hepsiburada.com
+      .hb-font-h2 Hepsiburada.com
+      .hb-font-h3 Hepsiburada.com
+      .hb-font-h4 Hepsiburada.com
+      .hb-font-h5 Hepsiburada.com
+      .hb-font-h6 Hepsiburada.com
+    br
+    br
+
     #icons.title-content
       h1
         | İkonlar
