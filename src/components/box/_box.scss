@@ -72,6 +72,11 @@
 
 		.hb-list-title-text.link {
 			font-family: $third-font;
+			cursor: pointer;
+			
+			&:hover {
+				color: $primary-price-font-color;
+			}
 		}
 
 		&.title {
@@ -93,7 +98,7 @@
 			padding-top: $space-2x;
 
 			.hb-list-item {
-				padding: 0 $space-3x $space-2x 0;
+				padding: 0 0 $space-2x 0;
 
 				&:last-child {
 					padding-bottom: 0px;
@@ -101,24 +106,31 @@
 
 				.hb-list-title-text {
 					display: block;
+					padding-right: $space-3x;
 					position: relative;
 					font-family: $secondary-font;
+					cursor: pointer;
 
 					.icon {
 						@include vertical-center;
 						font-size: 6px;
 						color: $secondary-font-color;
 						position: absolute;
-						right: -24px;
+						right: 0;
 					}
 
-					&.active {
+					&:hover, &.active {
 						color: $primary-price-font-color;
 
 						.icon {
-							@include transform(rotate(180deg));
 							color: $primary-price-font-color;
 							top: 5px;
+						}
+					}
+
+					&.active {
+						.icon {
+							@include transform(rotate(180deg));
 						}
 
 						& + .hb-sub-list-item-content {
