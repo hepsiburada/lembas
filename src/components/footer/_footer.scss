@@ -1,6 +1,7 @@
 .hb-footer {
 	@include global-shadow;
 	background-color: $secondary-bg-color;
+	margin-top: $space-3x;
 
 	.hb-footer-top {
 		padding-top: 32px;

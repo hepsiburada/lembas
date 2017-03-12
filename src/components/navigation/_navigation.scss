@@ -131,12 +131,19 @@ $menu-height: 48px;
 			}
 		}
 	}
+
+	.hb-navigation-vertical {
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0px;
+	}
 }
 
 .hb-navigation-vertical {
 	.hb-vertical-menu {
-		width: 25%;
-		padding: $space-2x;
+		width: 20%;
+		padding: $space-2x 0 $space-2x;
 		background-color: $secondary-bg-color;
 
 		li {
@@ -162,6 +169,7 @@ $menu-height: 48px;
 
 		.hb-vertical-menu-title {
 			display: block;
+			padding-right: $space-2x;
 			font-size: $fourth-font-size;
 			color: $navigation-category-color;
 			font-family: $third-font;
