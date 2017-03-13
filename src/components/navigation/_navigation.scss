@@ -22,17 +22,6 @@ $menu-height: 48px;
 			top: 100%;
 			left: 0px;
 			z-index: 2;
-
-			&.first {
-				width: 100%;
-				padding-top: 16px;
-				padding-left: calc(20% + 24px);
-				background-color: $secondary-bg-color;
-				position: absolute;
-			    top: 0px;
-			    left: 0px;
-			    z-index: 0;
-			}
 		}
 
 		li.menu-item {
@@ -141,6 +130,17 @@ $menu-height: 48px;
 					min-height: 380px;
 					padding: $space-6x $space-4x;
 					visibility: visible;
+
+					&.first {
+						width: 100%;
+						padding-top: 16px;
+						padding-left: calc(20% + 24px);
+						background-color: $secondary-bg-color;
+						position: absolute;
+					    top: 0px;
+					    left: 0px;
+					    z-index: 0;
+					}
 				}
 
 				.hb-navigation-vertical {
