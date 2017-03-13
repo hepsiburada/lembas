@@ -127,6 +127,7 @@ $menu-height: 48px;
 					@include transition-delay($animation-timing);
 					width: 100%;
 					height: auto;
+					min-height: 380px;
 					padding: $space-6x $space-4x;
 					visibility: visible;
 				}
