@@ -139,6 +139,7 @@
 					&.active {
 						.icon {
 							@include transform(rotate(180deg));
+							top: 4px;
 						}
 
 						& + .hb-sub-list-item-content {

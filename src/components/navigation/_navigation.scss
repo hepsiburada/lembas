@@ -22,6 +22,16 @@ $menu-height: 48px;
 			top: 100%;
 			left: 0px;
 			z-index: 2;
+
+			&.first {
+				width: 100%;
+				padding-top: 16px;
+				padding-left: calc(20% + 24px);
+				position: absolute;
+			    top: 0px;
+			    left: 0px;
+			    z-index: 0;
+			}
 		}
 
 		li.menu-item {
@@ -162,7 +172,6 @@ $menu-height: 48px;
 		li {
 			padding: $space 0;
 			margin: 0px;
-			position: relative;
 
 			&.inline {
 				display: inline;
