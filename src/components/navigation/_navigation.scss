@@ -27,6 +27,7 @@ $menu-height: 48px;
 				width: 100%;
 				padding-top: 16px;
 				padding-left: calc(20% + 24px);
+				background-color: $secondary-bg-color;
 				position: absolute;
 			    top: 0px;
 			    left: 0px;
@@ -155,7 +156,6 @@ $menu-height: 48px;
 	.hb-navigation-vertical {
 		width: 0px;
 		height: 0px;
-		overflow: hidden;
 		visibility: hidden;
 		position: absolute;
 		top: 100%;
