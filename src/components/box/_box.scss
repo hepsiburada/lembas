@@ -63,6 +63,10 @@
 		padding: $space-2x;
 		border-bottom: 1px solid $primary-border-color;
 
+		&:last-child {
+			border-bottom: 0px;
+		}
+
 		span.hb-list-title-text {
 			font-family: $third-font;
 			padding-top: 3px;
