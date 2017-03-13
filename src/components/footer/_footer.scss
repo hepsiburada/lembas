@@ -6,11 +6,6 @@
 	.hb-footer-top {
 		padding-top: 32px;
 
-		.hb-footer-logo {
-			@extend %svg-logo;
-			@extend %svg-logo-dims;
-		}
-
 		.hb-footer-menu {
 			text-align: right;
 
