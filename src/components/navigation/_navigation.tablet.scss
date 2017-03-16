@@ -1,0 +1,204 @@
+.hb-navigation-tablet {
+    font-family: $primary-font;
+    color: $primary-font-color;
+    .hb-icon-hamburger_menu {
+        font-size: 17px;
+        color: inherit;
+    }
+    .menu-content {
+        background-color: $white;
+        .menu-my-account {
+            width: 100%;
+            position: relative;
+            .hb-icon-user_icon {
+                font-size: 20px;
+                position: absolute;
+                top: 18px;
+                left: 18px;
+            }
+            .menu-my-account-info {
+                height: 56px;
+                padding: $space-2x 0 $space-2x $space-6x;
+                background-color: $primary-tabs-background-color;
+                .menu-my-account-caption {
+                    display: block;
+                    font-size: $primary-font-size;
+                    line-height: 1;
+                }
+                .menu-my-account-name {
+                    display: block;
+                    font-size: 9px;
+                    line-height: 1.2;
+                }
+            }
+            .menu-my-account-items-content {
+                padding: 0 $space;
+                .menu-my-account-items {
+                    padding-bottom: $space-2x;
+                    border-bottom: 1px solid $primary-border-color;
+                    .my-account-item {
+                        width: auto;
+                        .my-account-item-link {
+                            width: auto;
+                            height: 50px;
+                            display: block;
+                            padding: 17px $space;
+                            color: $primary-font-color;
+                        }
+                    }
+                }
+            }
+        }
+        .hb-menu {
+            padding: $space;
+            .menu-item {
+                .menu-link {
+                    display: block;
+                    padding: $space-3x $space-2x 23px;
+                    position: relative;
+                    line-height: 1;
+                    color: $primary-font-color;
+                    border-bottom: 1px solid $primary-border-color;
+                    font-size: $ninth-font-size;
+                    i.icon {
+                        font-size: 10px;
+                        position: absolute;
+                        top: 50%;
+                        right: $space-2x;
+                        width: 20px;
+                        height: 10px;
+                        margin-top: -5px;
+                    }
+                }
+                &.active {
+                    &>a {
+                        background-color: $navigation-mobile-item-bg;
+                        color: #f28b00;
+                        i.icon {
+                            @include transform(rotate(180deg));
+                        }
+                    }
+                    .sub-menu {
+                        display: block !important;
+                    }
+                }
+                &:not(:first-child) {
+                    .sub-menu {
+                        display: none;
+                        padding: 0 $space;
+                        background-color: $navigation-mobile-bg;
+                        .sub-menu-item {
+                            padding: $space-2x $space-4x;
+                            &>a {
+                                display: block;
+                                margin-bottom: $space-4x;
+                                color: $secondary-link-color;
+                                font-size: $primary-font-size;
+                                position: relative;
+                                i.hb-icon-indent_icon {
+                                    position: absolute;
+                                    top: -4px;
+                                    left: -16px;
+                                }
+                            }
+                            ul {
+                                li {
+                                    display: block;
+                                    margin-bottom: $space-4x;
+                                    &:last-child {
+                                        margin-bottom: 0px;
+                                    }
+                                    a {
+                                        color: $primary-font-color;
+                                        font-family: $secondary-font;
+                                        font-size: $primary-font-size;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sub-menu {
+                display: none;
+                .sub-menu-item {
+                    background-color: $navigation-mobile-bg;
+                    &.active {
+                        .sub-menu-item-link {
+                            background-color: $gainsboro;
+                            color: $charcoal;
+                            i.hb-icon-indent_icon {
+                                display: block;
+                            }
+                        }
+                        .sub-sub-menu {
+                            display: block;
+                        }
+                    }
+                    .sub-menu-item-link {
+                        display: block;
+                        padding: $space-3x $space-2x 23px;
+                        background-color: $navigation-mobile-bg;
+                        position: relative;
+                        line-height: 1;
+                        color: $primary-font-color;
+                        font-size: $fourth-font-size;
+                        border-bottom: 1px solid $primary-border-color;
+                        i.hb-icon-indent_icon {
+                            display: none;
+                            color: $primary-bg-color;
+                            position: absolute;
+                            top: 14px;
+                            left: $space;
+                        }
+                        i.hb-icon-down_arrow {
+                            font-size: 8px;
+                            width: 20px;
+                            height: 8px;
+                            position: absolute;
+                            top: 50%;
+                            right: $space-2x;
+                            margin-top: -4px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .sub-sub-menu {
+                display: none;
+                background-color: #e2e2e2;
+                padding: $space-2x 0;
+                .sub-sub-menu-item {
+                    padding: 4px $space-2x;
+                    &>a {
+                        display: block;
+                        margin-bottom: $space;
+                        color: $secondary-link-color;
+                        font-size: $secondary-button-font-size;
+                        font-family: $third-font;
+                        position: relative;
+                        i.hb-icon-indent_icon {
+                            position: absolute;
+                            top: -4px;
+                            left: -16px;
+                        }
+                    }
+                    ul {
+                        li {
+                            display: block;
+                            margin-bottom: $space;
+                            &:last-child {
+                                margin-bottom: 0px;
+                            }
+                            a {
+                                color: $primary-font-color;
+                                font-family: $secondary-font;
+                                font-size: $primary-font-size;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

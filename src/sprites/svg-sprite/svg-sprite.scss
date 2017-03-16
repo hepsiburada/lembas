@@ -1,10 +1,20 @@
 %svg-common {
-	background: url("svg/sprite.view-8d09cfad.svg") no-repeat;
+	background: url("svg/sprite.view-3b0f08ee.svg") no-repeat;
+}
+
+%svg-apple_download_logo {
+	@extend %svg-common;
+	background-position: 0 52.32149613534404%;
+}
+
+%svg-apple_download_logo-dims {
+	width: 137.36px;
+	height: 41.99px;
 }
 
 %svg-back_to_top {
 	@extend %svg-common;
-	background-position: 0 99.79381443298969%;
+	background-position: 0 99.88397790055248%;
 }
 
 %svg-back_to_top-dims {
@@ -14,7 +24,7 @@
 
 %svg-back_to_top_mobile {
 	@extend %svg-common;
-	background-position: 17.169811320754718% 99.79381443298969%;
+	background-position: 17.169811320754718% 99.88397790055248%;
 }
 
 %svg-back_to_top_mobile-dims {
@@ -24,7 +34,7 @@
 
 %svg-footer_blog_logo {
 	@extend %svg-common;
-	background-position: 0 58.07622504537205%;
+	background-position: 0 32.9557157569516%;
 }
 
 %svg-footer_blog_logo-dims {
@@ -42,9 +52,19 @@
 	height: 26px;
 }
 
+%svg-gplay_logo {
+	@extend %svg-common;
+	background-position: 0 75.02162162162162%;
+}
+
+%svg-gplay_logo-dims {
+	width: 137px;
+	height: 42px;
+}
+
 %svg-logo {
 	@extend %svg-common;
-	background-position: 0 24.761904761904763%;
+	background-position: 0 13.756613756613756%;
 }
 
 %svg-logo-dims {
@@ -54,7 +74,7 @@
 
 %svg-logo_mobile {
 	@extend %svg-common;
-	background-position: 48.01980198019802% 21.84873949579832%;
+	background-position: 48.01980198019802% 12.807881773399014%;
 }
 
 %svg-logo_mobile-dims {

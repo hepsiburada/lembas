@@ -1,7 +1,6 @@
 .hb-footer {
 	@include global-shadow;
 	background-color: $secondary-bg-color;
-
 	.hb-footer-top {
 		padding-top: 32px;
 
@@ -134,7 +133,6 @@
 
 			ul.hb-social {
 				font-family: $secondary-font;
-
 				li {
 					height: $space-4x;
 					display: block;

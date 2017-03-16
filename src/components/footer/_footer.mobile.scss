@@ -1,0 +1,207 @@
+.right-column .detail-content {
+    padding: 16px !important;
+}
+
+.hb-footer-mobile {
+    .hb-footer-mobile-badges {
+        ul {
+            @include clearfix;
+            li {
+                display: inline-block;
+                width: 50%;
+                float: left;
+                padding: $space-2x 0;
+                a.badge-link {
+                    display: block;
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        &.badge-icon {
+                            margin-right: 10px;
+                            i {
+                                display: block;
+                                width: 103.5px;
+                                height: 103.5px;
+                                zoom: .5;
+                                background-color: $white-smoke;
+                                @include border-radius(50%);
+                                &:before {
+                                    font-size: 103.5px;
+                                }
+                            }
+                        }
+                        &.badge-title {
+                            font-family: $primary-font;
+                            font-size: $sixth-font-size;
+                            line-height: 1.12;
+                            color: $charcoal;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hb-footer-mobile-help {
+        ul {
+            @include clearfix;
+            padding: $space-2x 0;
+            li {
+                display: inline-block;
+                float: left;
+                width: 32.4%;
+                margin-right: 4px;
+                a {
+                    display: block;
+                    text-align: center;
+                    padding: $space 0;
+                    background-color: $suva-grey;
+                    color: $white;
+                    @include border-radius($primary-radius-size);
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .hb-footer-mobile-description {
+        padding: $space-2x 0;
+        p {
+            color: $suva-grey;
+            font-size: $third-font-size;
+            font-family: $secondary-font;
+            margin: 0;
+            line-height: 1.2rem;
+            b {
+                font-family: $third-font;
+                &.see-more {
+                    color: $black;
+                }
+            }
+        }
+    }
+    .hb-footer-mobile-categories {
+        div {
+            padding: $space-2x 0;
+            h5 {
+                margin: 0;
+                font-size: $fourth-font-size;
+                font-family: $third-font;
+                color: $suva-grey;
+                line-height: 1.07;
+                margin-bottom: $space;
+            }
+            ul {
+                @include clearfix;
+                li {
+                    display: inline-block;
+                    width: 50%;
+                    float: left;
+                    a {
+                        font-size: $third-font-size;
+                        font-family: $secondary-font;
+                        color: $suva-grey;
+                        line-height: 2.25;
+                    }
+                }
+            }
+            p {
+                margin: 0;
+                font-size: $third-font-size;
+                font-family: $third-font;
+                color: $black;
+                line-height: 2.25;
+            }
+        }
+    }
+    .hb-footer-mobile-social {
+        border-top: 1px solid $primary-border-color;
+        text-align: center;
+        padding: $space-2x 0 $space;
+        ul {
+            li {
+                display: inline-block;
+                width: 13.3%;
+                a {
+                    display: block;
+                    .icon {
+                        height: 32px;
+                        width: 32px;
+                        line-height: 32px;
+                        display: inline-block;
+                        color: $third-font-color;
+                        background-color: $suva-grey;
+                        @include border-radius(50%);
+                    }
+                }
+            }
+        }
+    }
+    .hb-footer-mobile-store {
+        text-align: center;
+        padding: $space 0 $space-2x;
+        ul {
+            @include clearfix;
+            li {
+                display: inline-block;
+                width: 50%;
+                float: left;
+                a {
+                    display: inline-block;
+                    &.apple {
+                        @extend %svg-apple_download_logo-dims;
+                        @extend %svg-apple_download_logo;
+                    }
+                    &.google {
+                        @extend %svg-gplay_logo-dims;
+                        @extend %svg-gplay_logo;
+                    }
+                }
+            }
+        }
+    }
+    .hb-footer-mobile-blog {
+        border-top: 1px solid $primary-border-color;
+        text-align: center;
+        padding: $space-2x 0;
+        .link {
+            display: inline-block;
+            @extend %svg-logo_mobile-dims;
+            @extend %svg-logo_mobile;
+        }
+    }
+    .hb-footer-mobile-copyright {
+        border-top: 1px solid $primary-border-color;
+        text-align: center;
+        padding: $space-2x 0;
+        p {
+            margin: 0;
+            color: $black;
+            font-size: $third-font-size;
+            font-family: $secondary-font;
+            line-height: 1.2rem;
+            b {
+                font-family: $third-font;
+                color: $silver;
+                margin-top: $space;
+            }
+        }
+    }
+    .hb-footer-mobile-secure {
+        text-align: center;
+        padding: $space-2x 0;
+        .link {
+            display: inline-block;
+            vertical-align: middle;
+            @include sprite($norton);
+        }
+        p {
+            font-family: $primary-button-font-family;
+            font-size: $fourth-font-size;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    }
+}

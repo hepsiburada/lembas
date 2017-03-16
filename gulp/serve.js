@@ -5,7 +5,7 @@ module.exports = function () {
     server: 'publish',
     logPrefix: 'Lembas'
   });
-  gulp.watch('src/lembas.scss', ['sass:lembas']).on('change', $.browserSync.reload);
+  gulp.watch('src/**/*.scss', ['sass:lembas', 'sass:app']).on('change', $.browserSync.reload);
   gulp.watch('app/style/main.scss', ['sass:app']).on('change', $.browserSync.reload);
   gulp.watch('publish/**/*').on('change', $.browserSync.reload);
   gulp.watch('app/**/*.pug', ['template']).on('change', $.browserSync.reload);

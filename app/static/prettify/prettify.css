@@ -1,5 +1,5 @@
 /* desert scheme ported from vim to google prettify */
-xmp.prettyprint { display: block; background-color: #2b2b2b }
+xmp.prettyprint { display: block; background-color: #2b2b2b; overflow: auto; }
 xmp .nocode { background-color: none; color: #000 }
 xmp .str { color: #a9b7c6 } /* string */
 xmp .kwd { color: #f0e68c; font-weight: bold }
