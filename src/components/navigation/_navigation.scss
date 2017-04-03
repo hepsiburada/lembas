@@ -201,7 +201,7 @@ $menu-height: 48px;
 			.hb-navigation-sub-menu {
 				width: 500% !important;
 				height: auto !important;
-				display: none !important;
+				display: none;
 				padding-top: 16px !important;
 				padding-left: calc(100% + 24px) !important;
 				position: absolute !important;
