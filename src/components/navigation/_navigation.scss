@@ -164,10 +164,14 @@ $menu-height: 48px;
 }
 
 .hb-navigation-vertical {
+	max-width: 1200px;
+
 	.hb-vertical-menu {
 		width: 20%;
 		padding: $space-2x 0 $space-2x $space-2x;
 		background-color: $secondary-bg-color;
+		position: relative;
+		z-index: 1;
 
 		li {
 			padding: $space 0;
@@ -178,25 +182,63 @@ $menu-height: 48px;
 			}
 			
 			&:hover {
-				&:after {
-					content: '';
-					height: 100%;
-					border-right: 5px solid $primary-hover-link-color;
-					position: absolute;
-					top: 0px;
-					right: 0px;
+				.hb-vertical-menu-title {
+					&:after {
+						content: '';
+						height: calc(100% + 16px);
+						border-right: 5px solid $primary-hover-link-color;
+						position: absolute;
+						top: -8px;
+						right: 0px;
+					}
+				}
+
+				.hb-navigation-sub-menu {
+					display: block;
+				}
+			}
+
+			.hb-navigation-sub-menu {
+				width: 500%;
+				height: auto;
+				display: none;
+				padding-top: 16px;
+				padding-left: calc(100% + 24px);
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: -1;
+				
+				.hb-vertical-menu-title {
+					&:after, &:before {
+						display: none;
+					}
+				}
+
+				li {
+					padding: 0px;
 				}
 			}
 		}
 
 		.hb-vertical-menu-title {
 			display: block;
-			padding-right: $space-3x;
+			padding-right: $space-4x;
 			font-size: $fourth-font-size;
 			color: $navigation-category-color;
 			font-family: $third-font;
 			line-height: 1.3;
 			position: relative;
+			
+			&:before {
+				content: '';
+				width: 5px;
+				height: calc(100% + 16px);
+				background-color: $primary-scroll-track-bg-color;
+				position: absolute;
+				top: -8px;
+				right: 0px;
+			}
 
 			&.maintainHover {
 				padding-right: $space-2x;
@@ -209,7 +251,7 @@ $menu-height: 48px;
 
 			.icon {
 				@include vertical-center;
-				right: $space-2x;
+				right: $space-3x;
 				color: $primary-font-color;
 			}
 		}
@@ -217,6 +259,7 @@ $menu-height: 48px;
 }
 
 .hb-navigation-sub-menu {
+	@include transition-delay($animation-timing);
 	padding: $space-6x $space-4x;
 	background-color: $secondary-bg-color;
 
