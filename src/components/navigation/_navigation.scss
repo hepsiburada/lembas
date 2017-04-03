@@ -199,15 +199,15 @@ $menu-height: 48px;
 			}
 
 			.hb-navigation-sub-menu {
-				width: 500%;
-				height: auto;
-				display: none;
-				padding-top: 16px;
-				padding-left: calc(100% + 24px);
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				z-index: -1;
+				width: 500% !important;
+				height: auto !important;
+				display: none !important;
+				padding-top: 16px !important;
+				padding-left: calc(100% + 24px) !important;
+				position: absolute !important;
+				top: 0px !important;
+				left: 0px !important;
+				z-index: -1 !important;
 				
 				.hb-vertical-menu-title {
 					&:after, &:before {
